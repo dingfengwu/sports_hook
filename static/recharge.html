@@ -1,0 +1,44 @@
+<html>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+  function getQueryString() {
+    var result = location.search.match(new RegExp("[\?\&][^\?\&]+=[^\?\&]+", "g"));
+    if (result == null) {
+      return "";
+    }
+    for (var i = 0; i < result.length; i++) {
+      result[i] = result[i].substring(1);
+    }
+    return result;
+  }
+
+  var html = "";
+  var url = "";
+  var data = {};
+  var content = getQueryString();
+  for (var i = 0; i < content.length; i++) {
+    var array = content[i].split("=");
+    var key = array[0];
+    var value = decodeURIComponent(array[1] || "");
+    if (key == "url") {
+      url = value;
+    }
+    else {
+      html += `<input type="hidden" name="${key}" value="${value}" />`;
+      data[key] = value;
+    }
+  }
+
+  let f = document.createElement("form");
+  f.action = url;
+  f.method = "POST"; // 指定为post
+  f.innerHTML = html;
+  document.body.appendChild(f);
+  f.submit();
+</script>

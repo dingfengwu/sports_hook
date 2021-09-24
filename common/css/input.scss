@@ -1,0 +1,15 @@
+.uni-easyinput{
+	&.circle{
+		background-color: rgba($color: #fff, $alpha: 0.7);
+		border-radius: 80upx;
+		padding: 0 10upx;
+		
+		.uni-input-input{
+			//font-size: 0.8rem;
+			line-height: 2;
+		}
+	}
+}
+.uni-input-placeholder{
+	font-size: 1rem;
+}
