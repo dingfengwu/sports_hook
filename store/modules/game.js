@@ -121,8 +121,9 @@ export default {
 						data,
 						message
 					} = res;
+					
 					if (errno === 0) {
-						commit("setMatchList", res);
+						commit("setMatchList", data);
 						return resolve();
 					}
 					return reject();

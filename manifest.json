@@ -83,16 +83,16 @@
 	        "port" : 8080, //端口号
 	        "disableHostCheck" : true,
 	        "proxy" : {
-	            "/api" : {
-	                "target" : "http://www.bohui-851.com",
-	                "changeOrigin" : true,
-	                "secure" : false
-	            },
 				"/api?action=GetMatchList" : {
 				    "target" : "https://sport.com",
 				    "changeOrigin" : true,
 				    "secure" : false
 				},
+	            "/api" : {
+	                "target" : "http://www.bohui-851.com",
+	                "changeOrigin" : true,
+	                "secure" : false
+	            },
 	            "/json" : {
 	                "target" : "http://www.bohui-851.com",
 	                "changeOrigin" : true,

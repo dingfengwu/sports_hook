@@ -7,37 +7,47 @@
 		</view>
 		<view class="m">
 			<p>{{item.game}}</p>
-			<p class="score" v-if="item.status===2">{{item.score_a}} - {{score_b}}</p>
+			<p class="score" v-if="item.status===2">{{item.score_a}} - {{item.score_b}}</p>
 			<p class="score vs" v-else>VS</p>
 		</view>
 		<view class="r">
 			<image :src="item.client_logo"></image>
 			<p>{{item.team_b}}</p>
-			<p class="sale-volume"><i>{{$t("game.saleVolume")}}</i> {{item.sale_volume}}</p>
+			<p class="sale-volume" v-if="config.showSaleVolume===1"><i>{{$t("game.saleVolume")}}</i>
+				{{item.sale_volume}}</p>
 		</view>
 	</view>
 </template>
 
 <script>
-	import {mapGetters,mapActions} from "vuex";
-	
+	import {
+		mapGetters,
+		mapActions
+	} from "vuex";
+	import {
+		getCurrentTime
+	} from "../../common/js/util/util.js"
+	import vm from "../../main.js"
+
 	export default {
 		props: ["item"],
 		filters: {
 			time(val) {
-				let now = this.getCurrentTime();
+				let now = getCurrentTime();
 
 				if (val.status === 2) {
-					return this.$t("game.finished");
+					return vm.$t("game.finished");
 				} else if (now > val.time) {
-					return this.$t("game.matching")
+					return vm.$t("game.matching")
 				} else {
-					return this.$t("game.unstart");
+					return vm.$t("game.unstart");
 				}
 			}
 		},
+		computed: {
+			...mapGetters(["config"]),
+		},
 		methods: {
-			...mapActions(["getCurrentTime"]),
 			open() {
 				this.$emit("open");
 			}

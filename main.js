@@ -8,6 +8,7 @@ import {
 	registerComponents
 } from "./common/js/util/main.js"
 import "./common/js/util/popup.js";
+require("./common/js/mock/mock.js");
 
 
 import './common/css/all.scss';

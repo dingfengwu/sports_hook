@@ -1,4 +1,7 @@
 import md5 from "blueimp-md5";
+import {
+	getSystemConfigCache 
+} from "../cache/config.js"
 
 export const encryptionPassword = (username, password) => {
 	if (!password || !username) return "";
@@ -317,4 +320,10 @@ export const thisQuarter = () => {
 		getMonthDays(quarterEndMonth));
 	let time2 = formatDate(quarterStartDate);
 	return [time1, time2];
+}
+
+export const getCurrentTime = () => {
+	let sysconfig = getSystemConfigCache();
+	let zone = sysconfig["time_zone"];
+	return convertToZoneTime(new Date().getTime(), zone);
 }

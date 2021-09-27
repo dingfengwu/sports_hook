@@ -4,6 +4,6 @@ export const errorCode = {
 	invalidToken: 2020
 };
 export const isInvalidLogin = (code) => {
-	if (code === errorCode.loginTimeout || code === invalidToken) return true;
+	if (code === errorCode.loginTimeout || code === errorCode.invalidToken) return true;
 	return false;
 }

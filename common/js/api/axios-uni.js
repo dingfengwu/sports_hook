@@ -5,7 +5,6 @@ import {
 	getToken
 } from "../cache/account.js";
 import qs from "qs";
-import request from "axios";
 
 export const axios = (data) => {
 	return new Promise((resolve, reject) => {
@@ -29,7 +28,6 @@ export const axios = (data) => {
 		}
 
 		let requestData = {};
-		let requestParams = {};
 		if (method === "POST") {
 			requestData = {
 				...data.data || {},
@@ -40,7 +38,7 @@ export const axios = (data) => {
 				console.warn("此提交方法为POST,但未指定data");
 			}
 		} else {
-			requestParams = {
+			requestData = {
 				...data.params,
 				...baseData
 			};
@@ -54,30 +52,31 @@ export const axios = (data) => {
 			};
 		}
 		
-		request({
+		uni.request({
 			url: url,
 			data: requestData,
-			params: requestParams,
 			method: method,
-			header: header
-		}).then(res => {
-			let data = res.data;
+			header: header,
+			success: (res) => {
+				let data = res.data;
 
-			if (res.status === 200) {
-				resolve(data);
-			} else {
-				console.error(data);
+				if (res.statusCode === 200) {
+					resolve(data);
+				} else {
+					console.error(data);
+					reject({
+						errno: 400,
+						message: "Network Error"
+					});
+				}
+			},
+			fail: (err) => {
+				console.error(err);
 				reject({
 					errno: 400,
 					message: "Network Error"
 				});
 			}
-		}).catch(err => {
-			console.error(err);
-			reject({
-				errno: 400,
-				message: "Network Error"
-			});
 		})
 	})
 }
@@ -86,17 +85,35 @@ export const axiosJson = ({
 	url
 }) => {
 	return new Promise((resolve, reject) => {
-		request({
+		uni.request({
 			url: url,
-			method: "GET"
-		}).then(res => {
-			let data = res.data;
-			resolve(data);
-		}).catch(err => {
-			reject(err);
+			method: "GET",
+			success: (res) => {
+				let data = res.data;
+				resolve(data);
+			},
+			fail: (err) => {
+				reject(err);
+			}
 		})
 	});
 };
 
+uni.addInterceptor('request', {
+	invoke(args) {
+		const {
+			data,
+			method,
+		} = args;
+		if (method === "GET") {
+			const newData = qs.stringify(data)
+			delete args.data;
+			args.url = `${args.url}?${newData}`;
+		}
+	},
+	success(args) {},
+	fail(err) {},
+	complete(res) {}
+})
 
 export default axios;

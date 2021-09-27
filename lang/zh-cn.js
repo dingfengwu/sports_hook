@@ -47,6 +47,7 @@ export default {
 	game:{
 		finished:"已完成",
 		matching:"进行中...",
-		unstart:"未开始"
+		unstart:"未开始",
+		saleVolume:"销量"
 	}
 }
