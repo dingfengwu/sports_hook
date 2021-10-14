@@ -1,0 +1,12 @@
+[submodule "store"]
+	path = store
+	url = git@github.com:dingfengwu/sports_store.git
+[submodule "static"]
+	path = static
+	url = git@github.com:dingfengwu/sports_static.git
+[submodule "lang"]
+	path = lang
+	url = git@github.com:dingfengwu/sports_lang.git
+[submodule "common"]
+	path = common
+	url = git@github.com:dingfengwu/sports_common.git
