@@ -48,6 +48,20 @@ export default {
 		finished:"已完成",
 		matching:"进行中...",
 		unstart:"未开始",
-		saleVolume:"销量"
+		saleVolume:"销量",
+		stopSale: "此赛事已结束或暂未开启下注",
+		status1:"未开始",
+		status2:"上半场",
+		status3:"中半场",
+		status4:"下半场",
+		status5:"加时赛",
+		status6:"点球大战",
+		status7:"完场",
+		status8:"取消",
+		status9:"中断",
+		status10:"推迟",
+		status11:"腰斩",
+		status12:"待定",
+		status13:"异常",
 	}
 }

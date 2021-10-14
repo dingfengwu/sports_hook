@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import item from "./races-item.vue";
+	import item from "./match-item.vue";
 	
 	export default {
 		components:{item},

@@ -77,38 +77,38 @@
 		"template": "assest/index.html",
 		"sdkConfigs": {
 			"maps": {}
-		},
-		"devServer": {
-			"https": false,
-			"port": 8080, //端口号
-			"disableHostCheck": true,
-			"proxy": {
-				"/api": {
-					"target": "http://www.bohui-851.com",
-					"changeOrigin": true,
-					"secure": false
-				},
-				"/json": {
-					"target": "http://www.bohui-851.com",
-					"changeOrigin": true,
-					"secure": false
-				},
-				"/pc": {
-					"target": "http://www.bohui-851.com",
-					"changeOrigin": true,
-					"secure": false
-				},
-				"/ad": {
-					"target": "http://www.bohui-851.com",
-					"changeOrigin": true,
-					"secure": false
-				},
-				"/logo.png": {
-					"target": "http://www.bohui-851.com",
-					"changeOrigin": true,
-					"secure": false
-				}
-			}
 		}
+		// "devServer": {
+		// 	"https": false,
+		// 	"port": 8080, //端口号
+		// 	"disableHostCheck": true,
+		// 	"proxy": {
+		// 		"/api": {
+		// 			"target": "http://www.bohui-851.com",
+		// 			"changeOrigin": true,
+		// 			"secure": false
+		// 		},
+		// 		"/json": {
+		// 			"target": "http://www.bohui-851.com",
+		// 			"changeOrigin": true,
+		// 			"secure": false
+		// 		},
+		// 		"/pc": {
+		// 			"target": "http://www.bohui-851.com",
+		// 			"changeOrigin": true,
+		// 			"secure": false
+		// 		},
+		// 		"/ad": {
+		// 			"target": "http://www.bohui-851.com",
+		// 			"changeOrigin": true,
+		// 			"secure": false
+		// 		},
+		// 		"/logo.png": {
+		// 			"target": "http://www.bohui-851.com",
+		// 			"changeOrigin": true,
+		// 			"secure": false
+		// 		}
+		// 	}
+		//}
 	}
 }

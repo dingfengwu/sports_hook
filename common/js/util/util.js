@@ -1,7 +1,13 @@
 import md5 from "blueimp-md5";
 import {
-	getSystemConfigCache 
+	getSystemConfigCache
 } from "../cache/config.js"
+import {
+	getTheme
+} from "../cache/config.js"
+import {
+	config
+} from "../config.js";
 
 export const encryptionPassword = (username, password) => {
 	if (!password || !username) return "";
@@ -148,6 +154,42 @@ export const convertToZoneTime = (timestampMilliseconds, zone) => {
 		sub = segs[1];
 	}
 
+	//检查是否需要执行夏时令
+	let begin = config.startDSTTime;
+	let end = config.stopDSTTime;
+	if (begin && end) {
+		let currZone = (now.getTimezoneOffset() / 60).toString();
+		
+		let segs = currZone.split('.');
+		if (segs.length === 2) {
+			let point = +segs[1] * 60 / 10;
+			currZone = segs[0] + ":" + point;
+		} else {
+			currZone = segs[0] + ":00";
+		}
+
+		//存在"-"表示为东时区，不存在为西时区，转化为平台格式
+		//平台格式为存在"-"为西时区，不存在为东时区
+		if (currZone.indexOf("-") >= 0) {
+			currZone = currZone.replace(/-/igm, "");
+		} else {
+			currZone = "-" + currZone;
+		}
+		
+		if (currZone !== zone) {
+			try {
+				begin = new Date(begin.replace(/-/igm, "/")).getTime();
+				end = new Date(end.replace(/-/igm, "/")).getTime();
+
+				if (timestampMilliseconds >= begin && timestampMilliseconds < end) {
+					timestampMilliseconds += 1 * 3600 * 1000; //夏时令比标准时间快一小时
+				}
+			} catch (e) {
+				console.warn(`执行夏时令转化出错,原因:${e}`);
+			}
+		}
+	}
+
 	timestampMilliseconds = timestampMilliseconds + flag * (+main * 3600 * 1000 + +sub * 60 * 1000);
 
 	let offsetMilliseconds = now.getTimezoneOffset() * 60 * 1000;
@@ -156,12 +198,12 @@ export const convertToZoneTime = (timestampMilliseconds, zone) => {
 	now.setTime(timestampMilliseconds);
 	return now;
 }
-
 export const addDays = (date, days) => {
 	var date = new Date(date.valueOf());
 	date.setDate(date.getDate() + days);
 	return date;
 }
+
 
 export const getMonthDays = (myMonth) => {
 	var now = new Date(); //当前日期
@@ -321,9 +363,55 @@ export const thisQuarter = () => {
 	let time2 = formatDate(quarterStartDate);
 	return [time1, time2];
 }
+export const recentlyYear = () => {
+	var now = new Date(); //当前日期
+	var nowDayOfWeek = now.getDay() - 1; //今天本周的第几天
+	var nowDay = now.getDate(); //当前日
+	var nowMonth = now.getMonth(); //当前月
+	var nowYear = now.getYear(); //当前年
+	nowYear += (nowYear < 2000) ? 1900 : 0; //
+	var lastMonthDate = new Date(); //上月日期
+	lastMonthDate.setDate(1);
+	lastMonthDate.setMonth(lastMonthDate.getMonth() - 1);
+	var lastYear = lastMonthDate.getYear();
+	var lastMonth = lastMonthDate.getMonth();
+
+	var yearStartDate = new Date();
+	yearStartDate.setYear(nowYear - 1);
+	let time1 = formatDate(yearStartDate);
+
+	var time2 = formatDate(now);
+	return [time1, time2];
+}
+export const allTime = () => {
+	var now = new Date(); //当前日期
+	var nowDayOfWeek = now.getDay() - 1; //今天本周的第几天
+	var nowDay = now.getDate(); //当前日
+	var nowMonth = now.getMonth(); //当前月
+	var nowYear = now.getYear(); //当前年
+	nowYear += (nowYear < 2000) ? 1900 : 0; //
+	var lastMonthDate = new Date(); //上月日期
+	lastMonthDate.setDate(1);
+	lastMonthDate.setMonth(lastMonthDate.getMonth() - 1);
+	var lastYear = lastMonthDate.getYear();
+	var lastMonth = lastMonthDate.getMonth();
+
+	let time1 = '2020-01-01';
+
+	var time2 = formatDate(now);
+	return [time1, time2];
+}
 
 export const getCurrentTime = () => {
 	let sysconfig = getSystemConfigCache();
 	let zone = sysconfig["time_zone"];
 	return convertToZoneTime(new Date().getTime(), zone);
+}
+
+export const setSystemTheme = () => {
+	let theme = getTheme();
+	if (theme === undefined) {
+		theme = 'theme-' + window.config.defaultTheme;
+	}
+	document.documentElement.className = theme;
 }

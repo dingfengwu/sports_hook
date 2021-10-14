@@ -1,10 +1,10 @@
 <template>
 	<view class="game-list">
 		<view class="list">
-			<races-item v-for="(item,index) in matchList" :key="index" :item="item" v-if="item.status!==2"></races-item>
+			<match-item v-for="(item,index) in matchList" :key="index" :item="item" v-if="item.status!==2" :openable="false"></match-item>
 		</view>
 		<view class="bottom">
-			<button>{{$t("home.betting")}}</button>
+			<button type="primary">{{$t("home.betting")}}</button>
 		</view>
 	</view>
 </template>
@@ -14,7 +14,15 @@
 		mapGetters,
 		mapActions
 	} from "vuex";
-	import racesItem from "../game/races-item.vue";
+	import matchItem from "../game/match-item.vue";
+	import {
+		MATCH_STATUS_BETABLE
+	} from "../../common/js/util/const.js"
+	import {
+		addDays,
+		formatDate,
+		getCurrentTime
+	} from "../../common/js/util/util.js"
 
 	export default {
 		data() {
@@ -23,20 +31,24 @@
 			}
 		},
 		components: {
-			racesItem
+			matchItem
 		},
 		computed: {
-			...mapGetters(["matchList", "getCurrentTime"]),
-
+			...mapGetters(["matchList"])
 		},
 		methods: {
 			...mapActions(["getMatchList"]),
 		},
 		created() {
+			let now = getCurrentTime();
+			let stop = addDays(now, 1);
+			now = formatDate(now);
+			stop = formatDate(stop);
+			
 			this.getMatchList({
-				status: 0,
-				beginDate: "2021-09-24",
-				endDate: "2021-09-25"
+				status: MATCH_STATUS_BETABLE,
+				beginDate: now,
+				endDate: stop
 			});
 		}
 	}
@@ -56,8 +68,6 @@
 
 			uni-button {
 				border-radius: 100upx;
-				border-color: $uni-color-primary;
-				background-color: $uni-color-primary;
 				color: #fff;
 			}
 		}

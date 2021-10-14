@@ -1,0 +1,17 @@
+@mixin background-color {
+	@include themify($themes){
+	    background-color: themed('background-color');
+	}
+}
+
+@mixin light-background-color {
+	@include themify($themes){
+	    background-color: themed('light-background-color');
+	}
+}
+
+@mixin background-image {
+	@include themify($themes){
+		background-image: linear-gradient(to right,themed('light-background-color'),themed('background-color'));
+	}
+}

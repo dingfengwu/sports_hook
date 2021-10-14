@@ -1,15 +1,23 @@
-.button.circle{
-	border-radius: 100upx;
-	background-color: rgba($color: #fff, $alpha: 0.8);
-	color: #333;
-	border: 0;
+@import "./theme.scss";
+
+button,uni-button{
+	margin: 0 2px;
+	
+	&[type=primary]{
+		@include background-color;
+	}
+	
+	&.circle{
+		padding: 0px 40px;
+		border-radius: 20px;
+		
+		&[size=mini]{
+			padding: 0px 20px;
+		}
+		
+		&[size=middle]{
+			line-height: 2;
+		}
+	}
 }
 
-button.circle{
-	border-radius: 100upx;
-}
-button.bottom{
-	margin-left: 20upx;
-	margin-right: 20upx;
-	margin-top: 20upx;
-}

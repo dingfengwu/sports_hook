@@ -49,7 +49,7 @@
 		mapGetters,
 		mapActions
 	} from "vuex";
-	import item from "../../components/game/races-item.vue";
+	import item from "../../components/game/match-item.vue";
 	import allSite from "../../components/game/all-site.vue";
 	import upHalfSite from "../../components/game/up-half-site.vue"
 

@@ -2,6 +2,7 @@ const LOTTERY_CONFIG = "LOTTERY_CONFIG";
 const LOTTERY_MENU = "LOTTERY_MENU";
 const LANG = "LANG";
 const SYSTEM_CONFIG = "SYSTEM_CONFIG";
+const THEME = "THEME";
 
 export const getLotteryConfig = () => {
 	try {
@@ -78,4 +79,22 @@ export const setSystemConfigCache = (val) => {
 		console.error(e);
 	}
 	return false;
+}
+export const setTheme = (val) => {
+	try {
+		uni.setStorageSync(THEME, val);
+		return true;
+	} catch (e) {
+		console.error(e);
+	}
+	return false;
+}
+export const getTheme = (val) => {
+	try {
+		let theme = uni.getStorageSync(THEME);
+		if (theme) return theme;
+	} catch (e) {
+		console.error(e);
+	}
+	return undefined;
 }

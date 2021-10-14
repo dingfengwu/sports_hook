@@ -4,7 +4,10 @@
 	} from "vuex";
 	import pageAnimation from './components/page-animation'
 	import axios from "axios";
-
+	import {
+		setSystemTheme
+	} from "./common/js/util/util.js";
+	
 	export default {
 		mixins: [pageAnimation],
 		methods: {
@@ -22,7 +25,7 @@
 			console.log('App Hide')
 		},
 		created() {
-			console.log("created app");
+			setSystemTheme();
 			//this.getHomeConfigVersion();
 			this.getLotteryConfigVersion().then(res => {
 				this.getSystemConfig();

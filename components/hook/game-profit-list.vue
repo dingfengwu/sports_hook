@@ -94,6 +94,8 @@
 </script>
 
 <style lang="scss" scoped>
+	@import  "../../common/css/theme.scss";
+	
 	.profit-list {
 		.bottom-nav {
 			display: flex;
@@ -113,6 +115,7 @@
 				&.active {
 					background-color: $uni-color-primary;
 					color: #fff;
+					@include background-color;
 				}
 
 				&:after {

@@ -70,7 +70,7 @@
 <style lang="scss" scoped>
 	.home-container {
 		.switch {
-			position: absolute;
+			position: fixed;
 			right: 0;
 			height: 40upx;
 			bottom: 300upx;

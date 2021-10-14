@@ -6,3 +6,7 @@ export const PAYMENT_TYPE_EMAIL = "Email";
 export const PAYMENT_TYPE_EVP = "EVP";
 export const PAYMENT_TYPE_BANK_CARD = "BankCard";
 export const INPUT_DEFAULT_MAX_LENGTH = 50;
+export const MATCH_STATUS_MATCHING = [2, 3, 4, 5, 6];
+export const MATCH_STATUS_BETABLE = [1, 2, 3, 4, 5, 6];
+export const MATCH_STATUS_FINISHED = 7;
+export const MATCH_STATUS_UNSTART = 1;
