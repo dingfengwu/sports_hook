@@ -1,0 +1,30 @@
+{
+  "name": "sports-hook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "blueimp-md5": "^2.18.0",
+    "es6-promise": "^4.2.8",
+    "mockjs": "^1.1.0",
+    "promise-polyfill": "^8.2.0",
+    "qs": "^6.10.1",
+    "qrcode": "^1.4.4",
+    "vue-clipboard2": "^0.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingfengwu/sports_hook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dingfengwu/sports_hook/issues"
+  },
+  "homepage": "https://github.com/dingfengwu/sports_hook#readme"
+}
