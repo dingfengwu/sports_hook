@@ -9,7 +9,9 @@
 		<meta name="viewport" content="width=device-width, viewport-fit=cover">
 		<link rel="icon" href="/static/196x196.png">
 		<script src="/static/config.js"></script>
-		
+		<script>
+			document.title = window.config.title;
+		</script>
 		<link rel="stylesheet" href="<%= BASE_URL %>static/index.<%= VUE_APP_INDEX_CSS_HASH %>.css" />
 	</head>
 	<body>
