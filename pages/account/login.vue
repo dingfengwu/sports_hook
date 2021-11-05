@@ -3,7 +3,7 @@
 		<view class="mask"></view>
 		<view class="login-body">
 			<view class="logo">
-				<image src="../../static/logo.png" mode="aspectFit" />
+				<image src="/static/logo.png" mode="aspectFit" />
 			</view>
 			<login></login>
 		</view>
@@ -27,7 +27,7 @@
 
 <style lang="scss" scoped>
 	.login-container {
-		background-image: url(../../static/account/login-bg.jpg);
+		background-image: url(../../static/account/login-bg-hook.jpg);
 		background-repeat: none;
 		background-size: 100% 100%;
 		position: absolute;

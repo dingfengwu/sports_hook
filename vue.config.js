@@ -1,11 +1,32 @@
-let extraActions = ["GetMatchList", "GetGameList","GetMatchDetail"];
+const TransformPages = require('uni-read-pages')
+const {
+	webpack
+} = new TransformPages()
+
+let extraActions = ["GetMatchList", "GetGameList", "GetMatchDetail", "sportBet"];
 let extraProxyHost = "sport.com";
-let proxyUrl="http://www.kyrin.com";
+let proxyUrl = "http://www.kyrin.com";
+
+// let extraActions = [];
+// let extraProxyHost = "";
+// let proxyUrl = "http://sport.com";
 
 module.exports = {
+	configureWebpack: {
+		plugins: [
+			new webpack.DefinePlugin({
+				ROUTES: webpack.DefinePlugin.runtimeValue(() => {
+					const tfPages = new TransformPages({
+						includes: ['path', 'name', 'aliasPath', 'style', 'meta']
+					});
+					return JSON.stringify(tfPages.routes)
+				}, true)
+			})
+		]
+	},
 	devServer: {
 		"https": false,
-		"port": 8081, //端口号
+		"port": 8082, //端口号
 		"disableHostCheck": true,
 		"proxy": {
 			"/api": {
@@ -37,7 +58,7 @@ module.exports = {
 										'host': testHost,
 										'origin': testHost,
 										'referer': testHost,
-										'Cookie': "" //your login cookie here
+										'Cookie': ""
 									})
 								};
 
@@ -52,6 +73,7 @@ module.exports = {
 								}).on("error", function() {
 									res.end();
 								});
+								console.log(buf);
 								_req.write(buf);
 								_req.end();
 							});

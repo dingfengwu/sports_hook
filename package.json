@@ -9,8 +9,10 @@
     "es6-promise": "^4.2.8",
     "mockjs": "^1.1.0",
     "promise-polyfill": "^8.2.0",
-    "qs": "^6.10.1",
     "qrcode": "^1.4.4",
+    "qs": "^6.10.1",
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^2.0.7",
     "vue-clipboard2": "^0.3.3"
   },
   "devDependencies": {},

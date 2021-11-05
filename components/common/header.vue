@@ -1,7 +1,7 @@
 <template>
 	<view class="header">
 		<view class="avatar">
-			<image src="../../static/account/avatar.jpg"></image>
+			<image src="../../static/my/avatar.png"></image>
 		</view>
 		<view class="info">
 			<view class="username">{{userInfo.username}}</view>
