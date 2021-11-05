@@ -7,6 +7,9 @@
 	import {
 		setSystemTheme
 	} from "./common/js/util/util.js";
+	import {
+		config
+	} from "./common/js/config.js";
 	
 	export default {
 		mixins: [pageAnimation],
@@ -19,7 +22,8 @@
 			console.log('App Launch')
 		},
 		onShow: function() {
-			console.log('App Show')
+			console.log('App Show');
+			document.title = config.title;
 		},
 		onHide: function() {
 			console.log('App Hide')
