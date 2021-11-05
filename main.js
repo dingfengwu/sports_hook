@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import i18n from "./lang";
+process.env.NODE_ENV === 'development' && require("./common/js/mock/index");
 import {
 	registerConstant,
 	registerFilters,

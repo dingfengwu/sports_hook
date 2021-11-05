@@ -7,7 +7,7 @@
 			<view class="username">{{userInfo.username}}</view>
 			<view>ID:{{userInfo.id}}</view>
 			<view class="money">
-				<span>{{systemConfig.currency_symbol}} {{userInfo.abalance}}</span>
+				<span>{{systemConfig.currency_symbol}} {{userInfo.abalance | toThousandslsFilter}}</span>
 			</view>
 		</view>
 		<view class="operation">
@@ -78,6 +78,7 @@
 			display: flex;
 			flex-shrink: 0;
 			flex-grow: 0;
+			flex-direction: column;
 
 			button {
 				padding: 0upx 20upx;
@@ -86,10 +87,12 @@
 				color: #fff;
 				line-height: 2;
 				font-size: 1em;
+				margin-top: 10px;
 
 				&:first-child {
-					margin-right: 10upx;
+					margin-top: 0upx;
 				}
+				
 			}
 		}
 	}
