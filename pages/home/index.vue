@@ -69,6 +69,8 @@
 
 <style lang="scss" scoped>
 	.home-container {
+		height: 100%;
+		
 		.switch {
 			position: fixed;
 			right: 0;
@@ -89,5 +91,6 @@
 		background-image: url(../../static/common/green-header.png);
 		background-repeat: no-repeat;
 		background-position: 0 -140upx;
+		background-size: 100% 400upx;
 	}
 </style>

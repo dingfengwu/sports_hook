@@ -3,13 +3,19 @@ const {
 	webpack
 } = new TransformPages()
 
-let extraActions = ["GetMatchList", "GetGameList", "GetMatchDetail", "sportBet"];
-let extraProxyHost = "sport.com";
-let proxyUrl = "http://www.kyrin.com";
+// let extraActions = ["GetMatchList", "GetGameList", "GetMatchDetail", "sportBet"];
+// let extraProxyHost = "sport.com";
+// let proxyUrl = "http://www.kyrin.com";
 
+// //本地
 // let extraActions = [];
 // let extraProxyHost = "";
 // let proxyUrl = "http://sport.com";
+
+//线上
+let extraActions = [];
+let extraProxyHost = "";
+let proxyUrl = "https://www.footballtest-88.com";
 
 module.exports = {
 	configureWebpack: {

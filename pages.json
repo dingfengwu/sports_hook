@@ -9,6 +9,9 @@
 		"path": "pages/home/index",
 		"style": {
 			"navigationStyle": "custom"
+		},
+		"meta": {
+			"authorization": true
 		}
 	}],
 	"globalStyle": {

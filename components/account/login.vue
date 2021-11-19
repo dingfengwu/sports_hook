@@ -34,7 +34,7 @@
 	} from "vuex";
 	import {
 		errorCode
-	} from "../../common/js/util/errorCode.js";
+	} from "../../common/js/util/error-code.js";
 	import {
 		getCaptcha
 	} from "../../common/js/api/account.js";
@@ -73,14 +73,14 @@
 			}
 		},
 		methods: {
-			...mapActions(["login", "getCaptcha", "openCustomerService"]),
+			...mapActions(["autoBetLogin", "getCaptcha", "openCustomerService"]),
 			signIn() {
 				this.$refs["form"].validate().then(res => {
 					uni.showLoading({
 						mask: true,
 						title: this.$t("account.loginLoading")
 					});
-					this.login({
+					this.autoBetLogin({
 						username: this.form.username,
 						password: this.form.password,
 						captcha: this.form.captcha

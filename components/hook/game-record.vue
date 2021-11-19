@@ -16,6 +16,6 @@
 
 <style lang="scss" scoped>
 	.game-record{
-		
+		height: calc(100% - 200upx);
 	}
 </style>

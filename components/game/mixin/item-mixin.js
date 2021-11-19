@@ -10,7 +10,9 @@ import vm from "../../../main.js"
 import {
 	MATCH_STATUS_MATCHING,
 	MATCH_STATUS_BETABLE,
-	MATCH_STATUS_FINISHED
+	MATCH_STATUS_FINISHED,
+	SPORT_ALL_SITE_WAY_ID,
+	SPORT_HALF_SITE_WAY_ID
 } from "../../../common/js/util/const.js";
 
 export default {
@@ -55,7 +57,6 @@ export default {
 				if (formatDate(now) === formatDate(time)) {
 					let span = time.getTime() - now.getTime();
 					if (span < 0) {
-						//return vm.$t(key);
 						return formatDate(time, "HH:mm");
 					} else {
 						span = parseInt(span / 1000 / 60);
@@ -70,7 +71,15 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters(["config"])
+		...mapGetters(["config"]),
+		wayText() {
+			if (this.item === undefined) return "";
+			if (+this.item.wayId === SPORT_ALL_SITE_WAY_ID) {
+				return this.$t("game.labeAllSite");
+			} else if (+this.item.wayId === SPORT_HALF_SITE_WAY_ID) {
+				return this.$t("game.labHalfSite");
+			}
+		}
 	},
 	methods: {
 		open() {

@@ -1,16 +1,16 @@
 <template>
 	<view class="game-record-header">
 		<view>
-			<view class="value">--</view>
-			<view>{{$t("gameRecord.billCount")}}</view>
-		</view>
-		<view>
-			<view class="value">{{userProfitSummary.turnover}}</view>
+			<view class="value">{{userProfitSummary.turnover | toThousandslsFilter}}</view>
 			<view>{{$t("gameRecord.betAmount")}}</view>
 		</view>
 		<view>
-			<view class="value">{{userProfitSummary.profit}}</view>
+			<view class="value">{{userProfitSummary.prize | toThousandslsFilter}}</view>
 			<view>{{$t("gameRecord.betResult")}}</view>
+		</view>
+		<view>
+			<view class="value">{{userProfitSummary.profit | toThousandslsFilter}}</view>
+			<view>{{$t("gameRecord.profit")}}</view>
 		</view>
 	</view>
 </template>
@@ -23,11 +23,10 @@
 
 	export default {
 		computed: {
-			...mapGetters(["userProfit"]),
+			...mapGetters(["userProfitList"]),
 			userProfitSummary() {
-				if (this.userProfit) {
-					return this.userProfit.summary;
-				}
+				if (this.userProfitList === undefined || this.userProfitList.summary === undefined) return {};
+				return this.userProfitList.summary;
 			}
 		}
 	}
@@ -38,7 +37,6 @@
 		display: flex;
 		align-items: center;
 		background-color: #fff;
-		margin: 20upx;
 		padding: 40upx;
 		border-radius: 20upx;
 		box-shadow: 0 0.2rem 0.5rem 0 rgb(20, 25, 44/56%);

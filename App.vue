@@ -2,8 +2,7 @@
 	import {
 		mapActions
 	} from "vuex";
-	import pageAnimation from './components/page-animation'
-	import axios from "axios";
+	//import pageAnimation from './components/page-animation'
 	import {
 		setSystemTheme
 	} from "./common/js/util/util.js";
@@ -12,7 +11,7 @@
 	} from "./common/js/config.js";
 	
 	export default {
-		mixins: [pageAnimation],
+		//mixins: [pageAnimation],
 		methods: {
 			...mapActions(["getHomeConfigVersion", "getLotteryConfigVersion", "getSystemConfig", "getUserInfo",
 				"getMessageCount", "getLotteryMenuList"
@@ -37,28 +36,6 @@
 				//this.getMessageCount();
 				this.getLotteryMenuList();
 			});
-
-			///api?action=GetMatchList&match_id=&status=0&date[]=2021-09-24&date[]=2021-09-25&page=1&pagesize=10&terminal_id=1&lang=zh-CN
-			// axios({
-			// 	url: "/api",
-			// 	method: "GET",
-			// 	params: {
-			// 		action: "GetMatchList",
-			// 		match_id: "",
-			// 		status: 0,
-			// 		date: ["2021-09-24", "2021-09-25"],
-			// 		page: 1,
-			// 		pagesize: 10,
-			// 		terminal_id: 1,
-			// 		lang: "zh-CN"
-			// 	}
-			// }).then(res => {
-			// 	console.log(res, "mock res");
-			// });
 		}
 	}
 </script>
-
-<style>
-	/*每个页面公共css */
-</style>

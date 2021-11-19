@@ -1,19 +1,26 @@
 <template>
-	<view class="profit-list">
-		<uni-table border stripe :emptyText="$t('common.empty')">
-			<uni-tr>
-				<uni-th align="center" width="50">{{$t("gameRecord.date")}}</uni-th>
-				<uni-th align="center" width="50">{{$t("gameRecord.quantity")}}</uni-th>
-				<uni-th align="center" width="50">{{$t("gameRecord.amount")}}</uni-th>
-				<uni-th align="center" width="50">{{$t("gameRecord.profit")}}</uni-th>
-			</uni-tr>
-			<uni-tr v-for="(item,index) in userProfitList" :key="index">
-				<uni-td>{{item.date}}</uni-td>
-				<uni-td>--</uni-td>
-				<uni-td>{{item.turnover}}</uni-td>
-				<uni-td>{{item.profit}}</uni-td>
-			</uni-tr>
-		</uni-table>
+	<view class="record-list profit-list">
+		<scroll-view-infinity-load @refresh="refreshData" @load="loadData" :load-completed="loadCompleted"
+			:show-completed="showCompleted">
+			<uni-table border stripe :emptyText="$t('common.empty')">
+				<uni-tr>
+					<uni-th align="center" width="50">{{$t("gameRecord.date")}}</uni-th>
+					<uni-th align="center" width="50">{{$t("gameRecord.betAmount")}}</uni-th>
+					<uni-th align="center" width="50">{{$t("gameRecord.labelPrize")}}</uni-th>
+					<!-- <uni-th align="center" width="50">{{$t("gameRecord.labelCommision")}}</uni-th> -->
+					<!-- <uni-th align="center" width="50">{{$t("gameRecord.labelBonus")}}</uni-th> -->
+					<uni-th align="center" width="50">{{$t("gameRecord.profit")}}</uni-th>
+				</uni-tr>
+				<uni-tr v-for="(item,index) in userProfitRecord" :key="index">
+					<uni-td>{{item.date|toMMdd}}</uni-td>
+					<uni-td>{{item.turnover | toThousandslsFilter}}</uni-td>
+					<uni-td>{{item.prize | toThousandslsFilter}}</uni-td>
+					<!-- <uni-td>{{item.commission}}</uni-td> -->
+					<!-- <uni-td>{{item.bonus}}</uni-td> -->
+					<uni-td>{{item.profit | toThousandslsFilter}}</uni-td>
+				</uni-tr>
+			</uni-table>
+		</scroll-view-infinity-load>
 
 		<view class="bottom-nav">
 			<button :class="{active:active===0}" @click="active=0">{{$t("gameRecord.thisWeek")}}</button>
@@ -35,13 +42,22 @@
 		thisMonth,
 		lastMonth
 	} from "../../common/js/util/util.js"
+	import scrollViewInfinityLoad from "../common/scroll-view-infinity-load.vue";
 
 	export default {
+		components: {
+			scrollViewInfinityLoad
+		},
 		data() {
 			return {
+				loadCompleted: true,
+				showCompleted: true,
 				active: 0,
-				beginDate: "",
-				endDate: ""
+				filter: {
+					beginDate: "",
+					endDate: "",
+					page: 1
+				}
 			}
 		},
 		watch: {
@@ -50,10 +66,10 @@
 			}
 		},
 		computed: {
-			...mapGetters(["userProfit"]),
-			userProfitList() {
-				if (this.userProfit && this.userProfit.lists) {
-					return this.userProfit.lists.data;
+			...mapGetters(["userProfitList"]),
+			userProfitRecord() {
+				if (this.userProfitList && this.userProfitList.lists) {
+					return this.userProfitList.lists.data;
 				}
 			}
 		},
@@ -77,15 +93,23 @@
 						break;
 				}
 				if (timeSpan.length >= 2) {
-					this.beginDate = timeSpan[0];
-					this.endDate = timeSpan[1];
+					this.filter.beginDate = timeSpan[0];
+					this.filter.endDate = timeSpan[1];
 				}
 
-				this.getUserProfitData({
-					beginDate: this.beginDate,
-					endDate: this.endDate
+				this.loadCompleted = false;
+				this.getUserProfitData(this.filter).then(res => {
+					this.loadCompleted = true;
 				});
-			}
+			},
+			loadData() {
+				this.filter.page = this.filter.page + 1;
+				this.getUserProfit();
+			},
+			refreshData() {
+				this.filter.page = 1;
+				this.getUserProfit();
+			},
 		},
 		created() {
 			this.getUserProfit();
@@ -94,9 +118,15 @@
 </script>
 
 <style lang="scss" scoped>
-	@import  "../../common/css/theme.scss";
-	
+	@import "../../common/css/theme.scss";
+
 	.profit-list {
+		height: calc(100% - 220upx);
+
+		/deep/ .scroll-view-infinity-load {
+			margin-top: 20upx;
+		}
+
 		.bottom-nav {
 			display: flex;
 			align-items: center;
@@ -106,11 +136,13 @@
 			bottom: 0;
 			width: 100%;
 			box-sizing: border-box;
+			
 
 			uni-button {
 				flex: 1;
 				border: 0;
 				border-radius: 0;
+				font-size: 0.9em;
 
 				&.active {
 					background-color: $uni-color-primary;
@@ -140,7 +172,7 @@
 			}
 		}
 
-		/deep/ .uni-table-td{
+		/deep/ .uni-table-td {
 			white-space: nowrap;
 		}
 	}
