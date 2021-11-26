@@ -20,7 +20,9 @@ export default {
 	data() {
 		return {
 			MATCH_STATUS_FINISHED,
-			MATCH_STATUS_MATCHING
+			MATCH_STATUS_MATCHING,
+			SPORT_ALL_SITE_WAY_ID,
+			SPORT_HALF_SITE_WAY_ID
 		}
 	},
 	filters: {
