@@ -25,7 +25,7 @@
 			document.title = config.title;
 		},
 		onHide: function() {
-			console.log('App Hide')
+			console.log('App Hide');
 		},
 		created() {
 			setSystemTheme();
