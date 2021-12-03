@@ -31,6 +31,7 @@
 		data() {
 			return {
 				filter: {
+					status: [1],
 					page: 1,
 					status: MATCH_STATUS_BETABLE,
 					beginDate: "",

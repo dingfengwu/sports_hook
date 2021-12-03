@@ -31,7 +31,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["bannerList", "config", "noticeList", "messageCount"]),
+			...mapGetters(["bannerList", "config", "noticeList", "messageCount", "isLogin"]),
 			noticeTitle() {
 				let title = "";
 				for (let index in this.noticeList) {
@@ -42,7 +42,7 @@
 		},
 		methods: {
 			...mapActions(["getBannerList", "getUserInfo", "getNoticeList", "getHomeConfigVersion",
-				"openCustomerService"
+				"openCustomerService", "logout"
 			]),
 			change(e) {
 				this.current = e.detail.current;
@@ -63,6 +63,12 @@
 			this.getHomeConfigVersion().then(res => {
 				this.getNoticeList();
 			});
+		},
+		onShow() {
+			//仅挂机存在,因为在pages.json文件中未配置meta
+			if (!this.isLogin) {
+				this.logout();
+			}
 		}
 	}
 </script>
@@ -70,11 +76,11 @@
 <style lang="scss" scoped>
 	.home-container {
 		height: 100%;
-		
+
 		.switch {
 			position: fixed;
 			right: 0;
-			height: 40upx;
+			//height: 40upx;
 			bottom: 300upx;
 			padding: 10upx 20upx;
 			font-size: 1em;

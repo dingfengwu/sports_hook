@@ -15,7 +15,7 @@ const {
 //线上
 let extraActions = [];
 let extraProxyHost = "";
-let proxyUrl = "https://www.footballtest-88.com";
+let proxyUrl = "https://www.fc-6888.com";
 
 module.exports = {
 	configureWebpack: {

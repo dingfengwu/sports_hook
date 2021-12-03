@@ -50,12 +50,10 @@ export default {
 		remainder(val) {
 			if (!val || !val.time) return "";
 
+			let time = new Date(val.time.replace("-", "/"));
 			let key = `game.status${val.status}`;
-			if (MATCH_STATUS_MATCHING.indexOf(val.status) >= 0) {
-				return "";
-			} else if (val.status === 1) {
+			if (val.status === 1) {
 				let now = getCurrentTime();
-				let time = new Date(val.time.replace("-", "/"));
 				if (formatDate(now) === formatDate(time)) {
 					let span = time.getTime() - now.getTime();
 					if (span < 0) {
@@ -64,12 +62,9 @@ export default {
 						span = parseInt(span / 1000 / 60);
 						return `${span}'`;
 					}
-				} else {
-					return formatDate(time, "yyyy-MM-dd");
 				}
-			} else if (val.status > 7) {
-				return vm.$t(key);
 			}
+			return formatDate(time, "MM-dd HH:mm");
 		}
 	},
 	computed: {

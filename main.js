@@ -23,12 +23,12 @@ import "./common/js/util/popup.js";
 import './common/css/all.scss';
 
 
-Vue.config.productionTip = false
-
+Vue.config.productionTip = false;
 registerFilters(Vue);
 registerGlobalVariable(Vue);
 registerConstant(Vue);
 registerComponents(Vue);
+
 
 App.mpType = 'app'
 var el = document.getElementById("app");
@@ -36,7 +36,7 @@ export const app = new Vue({
 	i18n,
 	...App
 });
-app.$mount(el);
+
 
 // #ifdef H5
 RouterMount(app, router, '#app')
