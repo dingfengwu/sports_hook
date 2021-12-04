@@ -132,7 +132,7 @@
 			align-items: center;
 			padding: 20upx;
 			background-color: #fff;
-			position: fixed;
+			position: absolute;
 			bottom: 0;
 			width: 100%;
 			box-sizing: border-box;

@@ -78,7 +78,7 @@
 		height: 100%;
 
 		.switch {
-			position: fixed;
+			position: absolute;
 			right: 0;
 			//height: 40upx;
 			bottom: 300upx;

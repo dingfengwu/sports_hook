@@ -16,7 +16,7 @@
 		</view>
 		<view class="operation">
 			<button @click="download" v-if="showDownload">{{$t("account.download")}}</button>
-			<button @click="logout">{{$t("account.exit")}}</button>
+			<button @click="logoutApp">{{$t("account.exit")}}</button>
 		</view>
 	</view>
 </template>
@@ -45,6 +45,12 @@
 			...mapActions(["logout", "getTodayProfitData"]),
 			download() {
 				openUrlInNewWindow(window.config.appUrl);
+			},
+			logoutApp(){
+				this.logout().then(res=>{
+					console.log("sssssss");
+					this.$push("/pages/account/login");
+				});
 			}
 		},
 		created() {
