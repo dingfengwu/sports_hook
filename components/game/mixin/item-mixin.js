@@ -51,20 +51,22 @@ export default {
 			if (!val || !val.time) return "";
 
 			let time = new Date(val.time.replace("-", "/"));
-			let key = `game.status${val.status}`;
-			if (val.status === 1) {
-				let now = getCurrentTime();
-				if (formatDate(now) === formatDate(time)) {
-					let span = time.getTime() - now.getTime();
-					if (span < 0) {
-						return formatDate(time, "HH:mm");
-					} else {
-						span = parseInt(span / 1000 / 60);
-						return `${span}'`;
-					}
-				}
-			}
 			return formatDate(time, "MM-dd HH:mm");
+			
+			// let key = `game.status${val.status}`;
+			// if (val.status === 1) {
+			// 	let now = getCurrentTime();
+			// 	if (formatDate(now) === formatDate(time)) {
+			// 		let span = time.getTime() - now.getTime();
+			// 		if (span < 0) {
+			// 			return formatDate(time, "HH:mm");
+			// 		} else {
+			// 			span = parseInt(span / 1000 / 60);
+			// 			return `${span}'`;
+			// 		}
+			// 	}
+			// }
+			// return formatDate(time, "MM-dd HH:mm");
 		}
 	},
 	computed: {

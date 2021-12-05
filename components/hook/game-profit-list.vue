@@ -96,6 +96,7 @@
 					this.filter.beginDate = timeSpan[0];
 					this.filter.endDate = timeSpan[1];
 				}
+				console.log(timeSpan);
 
 				this.loadCompleted = false;
 				this.getUserProfitData(this.filter).then(res => {
