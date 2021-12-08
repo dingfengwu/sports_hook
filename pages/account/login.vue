@@ -27,7 +27,7 @@
 
 <style lang="scss" scoped>
 	.login-container {
-		background-image: url(../../static/account/login-bg-hook.jpg);
+		background-image: url(/static/account/login-bg-hook.jpg);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		position: absolute;
