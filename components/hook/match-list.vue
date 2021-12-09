@@ -21,7 +21,8 @@
 	import {
 		addDays,
 		formatDate,
-		getCurrentTime
+		getCurrentTime,
+		getCurrentBeijinTime 
 	} from "../../common/js/util/util.js"
 	import scrollViewInfinityLoad from "../common/scroll-view-infinity-load.vue";
 	import emptyList from "../../components/common/empty-list.vue";
