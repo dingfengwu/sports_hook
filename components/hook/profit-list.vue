@@ -1,5 +1,9 @@
 <template>
 	<view class="record-list profit-list">
+		<uni-segmented-control :current="active" :values="items" styleType="button" activeColor="#34d585"
+			@clickItem="selected">
+		</uni-segmented-control>
+
 		<scroll-view-infinity-load @refresh="refreshData" @load="loadData" :load-completed="loadCompleted"
 			:show-completed="showCompleted">
 			<uni-table border stripe :emptyText="$t('common.empty')">
@@ -21,13 +25,6 @@
 				</uni-tr>
 			</uni-table>
 		</scroll-view-infinity-load>
-
-		<view class="bottom-nav">
-			<button :class="{active:active===0}" @click="active=0">{{$t("gameRecord.thisWeek")}}</button>
-			<button :class="{active:active===1}" @click="active=1">{{$t("gameRecord.lastWeek")}}</button>
-			<button :class="{active:active===2}" @click="active=2">{{$t("gameRecord.thisMonth")}}</button>
-			<button :class="{active:active===3}" @click="active=3">{{$t("gameRecord.lastMonth")}}</button>
-		</view>
 	</view>
 </template>
 
@@ -57,7 +54,13 @@
 					beginDate: "",
 					endDate: "",
 					page: 1
-				}
+				},
+				items: [
+					this.$t("gameRecord.thisWeek"),
+					this.$t("gameRecord.lastWeek"),
+					this.$t("gameRecord.thisMonth"),
+					this.$t("gameRecord.lastMonth")
+				]
 			}
 		},
 		watch: {
@@ -100,7 +103,7 @@
 
 				this.loadCompleted = false;
 				this.getUserProfitData(this.filter).then(res => {
-					this.loadCompleted = true;
+					this.loadCompleted = res.lists.total_count===res.lists.data.length;
 				});
 			},
 			loadData() {
@@ -111,6 +114,9 @@
 				this.filter.page = 1;
 				this.getUserProfit();
 			},
+			selected(e) {
+				this.active = e.currentIndex;
+			}
 		},
 		created() {
 			this.getUserProfit();
@@ -172,7 +178,7 @@
 				}
 			}
 		}
-
+		
 		/deep/ .uni-table-td {
 			white-space: nowrap;
 		}
