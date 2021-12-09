@@ -4,19 +4,19 @@
 			<uni-icons type="closeempty" size="20" @click="close"></uni-icons>
 			<text>{{$t("home.downloadNotice")}}</text>
 		</view>
-		<button type="primary" size="mini" @click="download">{{$t("home.downloadNow")}}</button>
+		<button type="warn" size="mini" @click="download">{{$t("home.downloadNow")}}</button>
 	</view>
 </template>
 
 <script>
 	import {
-		openUrlInNewWindow
+		openUrlInNewWindow,
+		isApp
 	} from "../../common/js/util/util.js";
 	import {
 		mapGetters,
 		mapActions
 	} from "vuex";
-
 
 	export default {
 		props: ["url"],
@@ -25,6 +25,7 @@
 			show() {
 				if (this.downloadPopupState === undefined) return false;
 				if (this.url === undefined) return false;
+				if (isApp()) return false;
 				return this.downloadPopupState;
 			}
 		},
@@ -49,7 +50,7 @@
 		left: 0;
 		right: 0;
 		padding: 10upx 10upx;
-		background-color: rgb(58, 58, 58);
+		background-color: rgba($color: #000000, $alpha: 0.6);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
