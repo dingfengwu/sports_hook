@@ -82,7 +82,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		border-top: solid 2upx #ccc;
+		//border-top: solid 2upx #ccc;
 		line-height: 1.1;
 		font-size: 1em;
 

@@ -8,6 +8,7 @@
 		<h1>{{$t("trackOrder.labelMatchList")}}</h1>
 		<match-list></match-list>
 
+		<download-popup :url="url"></download-popup>
 		<bottom-menu current="0"></bottom-menu>
 	</view>
 </template>
@@ -20,7 +21,8 @@
 	import matchList from "../../components/hook/match-list.vue";
 	import bottomMenu from "../../components/common/bottom-menu.vue";
 	import evanSwitch from "../../components/evan-switch/evan-switch.vue";
-	
+	import downloadPopup from "../../components/common/download-popup.vue";
+
 	export default {
 		data() {
 			return {
@@ -30,7 +32,8 @@
 		components: {
 			matchList,
 			bottomMenu,
-			evanSwitch
+			evanSwitch,
+			downloadPopup
 		},
 		mounted() {
 			this.$nextTick(function() {
@@ -43,11 +46,14 @@
 			}
 		},
 		computed: {
-			...mapGetters(["isLogin", "taskStatus"]),
+			...mapGetters(["isLogin", "taskStatus", "config"]),
 			actived() {
 				if (this.taskStatus === undefined) return false;
 				return this.taskStatus;
 			},
+			url() {
+				return this.config.appUrl;
+			}
 		},
 		methods: {
 			...mapActions(["logout", "startAutoBet", "stopAutoBet"]),
@@ -86,14 +92,14 @@
 
 <style lang="scss" scoped>
 	@import "../../common/css/theme.scss";
-	
+
 	.home-container {
 		height: 100%;
-		
-		/deep/ .match-list{
+
+		/deep/ .match-list {
 			height: calc(100% - 88upx - 84upx - 104upx - 116upx);
 		}
-		
+
 		.switch {
 			@include background-color;
 			text-align: center;
@@ -102,13 +108,13 @@
 			justify-content: center;
 			align-items: center;
 			padding: 10upx 0;
-		
+
 			text {
 				margin-right: 20upx;
 				font-size: 1.2em;
 			}
 		}
-		
+
 		h1 {
 			text-align: center;
 			font-size: 1.5em;
