@@ -1,15 +1,30 @@
 {
 	//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 	"pages": [{
+		"path": "pages/account/login",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	},{
 		"path": "pages/home/index",
 		"style": {
 			"navigationStyle": "custom"
-		}//,
+		} //,
 		// "meta": {
 		// 	"authorization": true
 		// }
-	},{
-		"path": "pages/account/login",
+	},  {
+		"path": "pages/fund/profit-list",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/my/index",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/game/game-record-list",
 		"style": {
 			"navigationStyle": "custom"
 		}

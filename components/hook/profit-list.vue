@@ -1,5 +1,9 @@
 <template>
 	<view class="record-list profit-list">
+		<uni-segmented-control :current="active" :values="items" styleType="button" activeColor="#34d585"
+			@clickItem="selected">
+		</uni-segmented-control>
+
 		<scroll-view-infinity-load @refresh="refreshData" @load="loadData" :load-completed="loadCompleted"
 			:show-completed="showCompleted">
 			<uni-table border stripe :emptyText="$t('common.empty')">
@@ -57,7 +61,13 @@
 					beginDate: "",
 					endDate: "",
 					page: 1
-				}
+				},
+				items: [
+					this.$t("gameRecord.thisWeek"),
+					this.$t("gameRecord.lastWeek"),
+					this.$t("gameRecord.thisMonth"),
+					this.$t("gameRecord.lastMonth")
+				]
 			}
 		},
 		watch: {
@@ -99,7 +109,7 @@
 
 				this.loadCompleted = false;
 				this.getUserProfitData(this.filter).then(res => {
-					this.loadCompleted = true;
+					this.loadCompleted = res.lists.total_count===res.lists.data.length;
 				});
 			},
 			loadData() {
@@ -110,6 +120,9 @@
 				this.filter.page = 1;
 				this.getUserProfit();
 			},
+			selected(e) {
+				this.active = e.currentIndex;
+			}
 		},
 		created() {
 			this.getUserProfit();
@@ -136,7 +149,7 @@
 			bottom: 0;
 			width: 100%;
 			box-sizing: border-box;
-			
+
 
 			uni-button {
 				flex: 1;

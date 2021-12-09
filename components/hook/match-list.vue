@@ -1,13 +1,11 @@
 <template>
-	<view class="record-list game-list">
+	<view class="record-list match-list">
 		<scroll-view-infinity-load @refresh="refreshData" @load="loadData" :load-completed="loadCompleted"
 			:show-completed="showCompleted">
 			<hook-item v-for="(item,index) in matchList" :key="index" :item="item" v-if="item.status!==2"
 				:openable="false"></hook-item>
+			<empty-list v-if="matchList.length===0"></empty-list>
 		</scroll-view-infinity-load>
-		<view class="bottom">
-			<button type="primary" @click="bet">{{betButtonText}}</button>
-		</view>
 	</view>
 </template>
 
@@ -26,7 +24,8 @@
 		getCurrentTime
 	} from "../../common/js/util/util.js"
 	import scrollViewInfinityLoad from "../common/scroll-view-infinity-load.vue";
-
+	import emptyList from "../../components/common/empty-list.vue";
+	
 	export default {
 		data() {
 			return {
@@ -38,27 +37,16 @@
 					endDate: ""
 				},
 				loadCompleted: true,
-				showCompleted: true,
-				items: []
+				showCompleted: true
 			}
 		},
 		components: {
 			hookItem,
-			scrollViewInfinityLoad
+			scrollViewInfinityLoad,
+			emptyList
 		},
 		computed: {
-			...mapGetters(["autoBetMatchList", "taskStatus"]),
-			betButtonText() {
-				if (!this.actived) {
-					return this.$t("home.betting");
-				} else {
-					return this.$t("home.closeBetting")
-				}
-			},
-			actived() {
-				if (this.taskStatus === undefined) return false;
-				return this.taskStatus;
-			},
+			...mapGetters(["autoBetMatchList"]),
 			matchList() {
 				if (this.autoBetMatchList === undefined) return [];
 
@@ -83,7 +71,7 @@
 			}
 		},
 		methods: {
-			...mapActions(["getAutoBetMatchList", "startAutoBet", "stopAutoBet"]),
+			...mapActions(["getAutoBetMatchList"]),
 			queryHookMatchList() {
 				let now = getCurrentTime();
 				let stop = addDays(now, 1);
@@ -105,42 +93,18 @@
 				this.filter.page = 1;
 				this.queryHookMatchList();
 			},
-			bet() {
-				if (this.actived) {
-					this.$showLoading();
-					this.stopAutoBet().then(res => {
-						this.$hideLoading();
-						this.$message(this.$t("home.closeSuccessfully"));
-					}).catch(err => {
-						this.$hideLoading();
-						if (err !== undefined && err.message !== undefined) {
-							this.$message(err.message);
-						}
-					});
-				} else {
-					this.$showLoading();
-					this.startAutoBet().then(res => {
-						this.$hideLoading();
-						this.$message(this.$t("home.openSuccessfully"));
-					}).catch(err => {
-						this.$hideLoading();
-						if (err !== undefined && err.message !== undefined) {
-							this.$message(err.message);
-						}
-					});
-				}
-			}
 		},
 		created() {
-			this.queryHookMatchList();
+			//this.queryHookMatchList();
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
-	.game-list {
-		padding-bottom: 130upx;
-		height: calc(100% - 200upx);
+	@import "../../common/css/theme.scss";
+
+	.match-list {
+		height: calc(100% - 210upx);
 		box-sizing: border-box;
 
 		/deep/ .hook-item {
@@ -149,20 +113,6 @@
 
 		/deep/ .scroll-view-infinity-load {
 			height: 100% !important;
-		}
-
-		.bottom {
-			padding: 20upx;
-			background-color: #fff;
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			right: 0;
-
-			uni-button {
-				border-radius: 100upx;
-				color: #fff;
-			}
 		}
 	}
 

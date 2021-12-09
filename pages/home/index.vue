@@ -1,68 +1,85 @@
 <template>
 	<view class="home-container">
-		<common-header></common-header>
-		<game-list v-if="current===0"></game-list>
-		<game-record v-if="current===1"></game-record>
+		<uni-nav-bar :title="$t('home.title')" :shadow="false" :border="false"></uni-nav-bar>
 
-		<view class="switch" v-if="current===0" @click="current=1">{{$t("home.goGameRecord")}}</view>
-		<view class="switch" v-else-if="current===1" @click="current=0">{{$t("home.goHome")}}</view>
+		<view class="switch"><text>{{$t("trackOrder.labelSmartBet")}}</text>
+			<evan-switch v-model="checked" @change="trackOrderChanging"></evan-switch>
+		</view>
+		<h1>{{$t("trackOrder.labelMatchList")}}</h1>
+		<match-list></match-list>
+
+		<bottom-menu current="0"></bottom-menu>
 	</view>
 </template>
 
 <script>
-	import commonHeader from "../../components/common/header.vue";
-	import gameList from "../../components/hook/game-list.vue";
-	import gameRecord from "../../components/hook/game-record.vue"
-
 	import {
 		mapGetters,
 		mapActions
 	} from "vuex";
-
+	import matchList from "../../components/hook/match-list.vue";
+	import bottomMenu from "../../components/common/bottom-menu.vue";
+	import evanSwitch from "../../components/evan-switch/evan-switch.vue";
+	
 	export default {
-		components: {
-			commonHeader,
-			gameList,
-			gameRecord
-		},
 		data() {
 			return {
-				current: 0
+				checked: false
+			}
+		},
+		components: {
+			matchList,
+			bottomMenu,
+			evanSwitch
+		},
+		mounted() {
+			this.$nextTick(function() {
+				this.checked = this.actived;
+			});
+		},
+		watch: {
+			taskStatus(val) {
+				this.checked = val;
 			}
 		},
 		computed: {
-			...mapGetters(["bannerList", "config", "noticeList", "messageCount", "isLogin"]),
-			noticeTitle() {
-				let title = "";
-				for (let index in this.noticeList) {
-					title += `${(+index+1)}.${this.noticeList[index].title};`;
-				}
-				return title;
-			}
+			...mapGetters(["isLogin", "taskStatus"]),
+			actived() {
+				if (this.taskStatus === undefined) return false;
+				return this.taskStatus;
+			},
 		},
 		methods: {
-			...mapActions(["getBannerList", "getUserInfo", "getNoticeList", "getHomeConfigVersion",
-				"openCustomerService", "logout"
-			]),
-			change(e) {
-				this.current = e.detail.current;
-			},
-			openMessageList() {
-				this.$push("/pages/home/message-list");
-			},
-			openNoticeList() {
-				this.$push("/pages/home/notice-list");
-			},
-			openMatchDetail(item) {
-				this.$store.commit("setCurrentGameDetail", item);
-				this.$push("/pages/game/bet");
+			...mapActions(["logout", "startAutoBet", "stopAutoBet"]),
+			trackOrderChanging() {
+				if (this.actived) {
+					this.$showLoading();
+					this.stopAutoBet().then(res => {
+						this.checked = false;
+						this.$hideLoading();
+						this.$message(this.$t("home.closeSuccessfully"));
+					}).catch(err => {
+						this.checked = true;
+						this.$hideLoading();
+						if (err !== undefined && err.message !== undefined) {
+							this.$message(err.message);
+						}
+					});
+				} else {
+					this.$showLoading();
+					this.startAutoBet().then(res => {
+						this.checked = true;
+						this.$hideLoading();
+						this.$message(this.$t("home.openSuccessfully"));
+					}).catch(err => {
+						this.checked = false;
+						this.$hideLoading();
+						if (err !== undefined && err.message !== undefined) {
+							this.$message(err.message);
+						}
+					});
+				}
 			}
-		},
-		created() {
-			this.getBannerList();
-			this.getHomeConfigVersion().then(res => {
-				this.getNoticeList();
-			});
 		},
 		onShow() {
 			//仅挂机存在,因为在pages.json文件中未配置meta
@@ -74,29 +91,36 @@
 </script>
 
 <style lang="scss" scoped>
+	@import "../../common/css/theme.scss";
+	
 	.home-container {
 		height: 100%;
-
-		.switch {
-			position: fixed;
-			right: 0;
-			//height: 40upx;
-			bottom: 300upx;
-			padding: 10upx 20upx;
-			font-size: 1em;
-			color: #fff;
-			background: linear-gradient(90deg, #ff5b1f, #ff332f);
-			//box-shadow: 1.4rem 5.7rem 0 rgba(255,84,63,0.46);
-			opacity: .9;
-			border-radius: 1rem 0 0 1rem;
-			text-align: center;
+		
+		/deep/ .match-list{
+			height: calc(100% - 88upx - 84upx - 104upx - 116upx);
 		}
-	}
-
-	uni-page-body {
-		background-image: url(../../static/common/green-header.png);
-		background-repeat: no-repeat;
-		background-position: 0 -140upx;
-		background-size: 100% 400upx;
+		
+		.switch {
+			@include background-color;
+			text-align: center;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10upx 0;
+		
+			text {
+				margin-right: 20upx;
+				font-size: 1.2em;
+			}
+		}
+		
+		h1 {
+			text-align: center;
+			font-size: 1.5em;
+			font-weight: 700;
+			padding: 20upx 0;
+			background-color: #fff;
+		}
 	}
 </style>

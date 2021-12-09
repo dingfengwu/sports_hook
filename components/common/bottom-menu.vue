@@ -15,7 +15,7 @@
 		},
 		data() {
 			return {
-				bottomNavList: config.bottomMenu
+				bottomNavList: config.bottomMenuHook
 			}
 		}
 	}

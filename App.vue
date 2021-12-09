@@ -9,13 +9,11 @@
 	import {
 		config
 	} from "./common/js/config.js";
-	
+
 	export default {
 		//mixins: [pageAnimation],
 		methods: {
-			...mapActions(["getHomeConfigVersion", "getLotteryConfigVersion", "getSystemConfig", "getUserInfo",
-				"getMessageCount", "getLotteryMenuList"
-			])
+			...mapActions(["getHomeConfigVersion", "getLotteryConfigVersion", "getSystemConfig", "getUserInfo"])
 		},
 		onLaunch: function() {
 			console.log('App Launch')
@@ -33,8 +31,6 @@
 			this.getLotteryConfigVersion().then(res => {
 				this.getSystemConfig();
 				this.getUserInfo();
-				//this.getMessageCount();
-				this.getLotteryMenuList();
 			});
 		}
 	}
