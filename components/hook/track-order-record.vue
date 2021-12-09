@@ -22,15 +22,21 @@
 	} from "../../common/js/util/util.js"
 	import scrollViewInfinityLoad from "../common/scroll-view-infinity-load.vue";
 	import emptyList from "../../components/common/empty-list.vue";
+	import {
+		ORDER_COMPLETED,
+		ORDER_UNCOMPLETED
+	} from "../../common/js/util/const.js";
 
 	export default {
+		props: ["completed"],
 		data() {
 			return {
 				filter: {
 					page: 1,
 					beginTime: "",
 					endTime: "",
-					autoBet: 1
+					autoBet: 1,
+					status: []
 				},
 				loadCompleted: true,
 				showCompleted: true
@@ -40,6 +46,11 @@
 			trackOrderItem,
 			scrollViewInfinityLoad,
 			emptyList
+		},
+		watch: {
+			completed() {
+				this.queryTrackOrderList();
+			}
 		},
 		computed: {
 			...mapGetters(["orderList"]),
@@ -53,9 +64,15 @@
 			...mapActions(["getOrderList"]),
 			queryTrackOrderList() {
 				let end = getCurrentTime();
+				end = addDays(end, 1);
 				let start = addDays(end, -30);
 				start = formatDate(start);
 				end = formatDate(end);
+				if (this.completed) {
+					this.filter.status = ORDER_COMPLETED;
+				} else {
+					this.filter.status = ORDER_UNCOMPLETED;
+				}
 
 				this.filter.beginTime = start;
 				this.filter.endTime = end;

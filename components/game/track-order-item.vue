@@ -17,10 +17,12 @@
 			<view class="content">
 				<view><text class="label">{{$t("trackOrder.labelOrderNo")}}：</text>{{item.serial_number}}</view>
 				<view><text class="label">{{$t("trackOrder.labelTradeTime")}}：</text>{{item.bought_at}}</view>
-				<view><text class="label">{{$t("trackOrder.labelMarket")}}：</text>{{item.way}} {{item.bet_number}} @{{item.odds | formatOdds}}%</view>
+				<view><text class="label">{{$t("trackOrder.labelMarket")}}：</text>{{item.way}} {{item.bet_number}}
+					@{{item.odds | formatOdds}}%</view>
 				<view class="bottom">
 					<text>{{$t("trackOrder.labelBetAmount")}}：{{systemConfig.currency_symbol}}{{item.amount | toThousandslsFilter}}</text>
-					<text>{{$t("trackOrder.labelPrize")}}：{{systemConfig.currency_symbol}}{{item.prize | toThousandslsFilter}}</text>
+					<text
+						v-if="showPrize">{{$t("trackOrder.labelPrize")}}：{{systemConfig.currency_symbol}}{{item.prize | toThousandslsFilter}}</text>
 				</view>
 			</view>
 		</view>
@@ -43,6 +45,10 @@
 		MATCH_STATUS_FINISHED,
 		SPORT_ALL_SITE_WAY_ID,
 		SPORT_HALF_SITE_WAY_ID
+	} from "../../common/js/util/const.js";
+	import {
+		ORDER_COMPLETED,
+		ORDER_UNCOMPLETED
 	} from "../../common/js/util/const.js";
 
 	export default {
@@ -85,7 +91,7 @@
 			}
 		},
 		computed: {
-			...mapGetters(["config","systemConfig"]),
+			...mapGetters(["config", "systemConfig"]),
 			wayText() {
 				if (this.item === undefined) return "";
 				if (+this.item.wayId === SPORT_ALL_SITE_WAY_ID) {
@@ -93,6 +99,11 @@
 				} else if (+this.item.wayId === SPORT_HALF_SITE_WAY_ID) {
 					return this.$t("game.labHalfSite");
 				}
+			},
+			showPrize() {
+				if (this.item === undefined) return false;
+				if (ORDER_COMPLETED.indexOf(this.item.status) >= 0) return true;
+				return false;
 			}
 		},
 		methods: {
@@ -167,6 +178,8 @@
 				}
 
 				.r {
+					width: 290upx;
+					flex-shrink: 0;
 
 					.status,
 					.site {
@@ -193,13 +206,13 @@
 				flex-direction: column;
 				line-height: 2;
 				font-size: 0.9em;
-				
-				text{
+
+				text {
 					display: inline-block;
 					width: 140upx;
 				}
-				
-				.bottom{
+
+				.bottom {
 					display: flex;
 					flex-direction: row;
 					justify-content: space-between;
@@ -208,8 +221,8 @@
 					color: #fff;
 					padding: 0 10upx;
 					border-radius: 5upx;
-					
-					text{
+
+					text {
 						display: inline-block;
 						width: inherit;
 					}

@@ -9,26 +9,43 @@
 				</view>
 				<view class="column">
 					<view class="item">
-						<text class="label">{{$t("trackOrder.labelYesterdayProfit")}}</text>
+						<text class="label">{{$t("trackOrder.labelUncompleted")}}</text>
 						<text
-							class="value">{{systemConfig.currency_symbol}}{{yesterdaySummary.profit | toThousandslsFilter}}</text>
+							class="value">{{systemConfig.currency_symbol}}{{orderSummary.turnover | toThousandslsFilter}}</text>
+					</view>
+					<view class="item">
+						<text class="label">{{$t("trackOrder.labelCompleted")}}</text>
+						<text
+							class="value">{{systemConfig.currency_symbol}}{{todaySummary.turnover | toThousandslsFilter}}</text>
+					</view>
+				</view>
+			</view>
+		</uni-card>
+
+		<uni-card>
+			<view class="card-body">
+				<view class="column">
+					<view class="item">
+						<text class="label">{{$t("trackOrder.labelYesterdayProfit")}}</text>
+						<text class="value"
+							:class="returnToNumber(yesterdaySummary.profit)<0?'green':''">{{systemConfig.currency_symbol}}{{yesterdaySummary.profit | toThousandslsFilter}}</text>
 					</view>
 					<view class="item">
 						<text class="label">{{$t("trackOrder.labelTodayProfit")}}</text>
-						<text
-							class="value">{{systemConfig.currency_symbol}}{{todaySummary.profit | toThousandslsFilter}}</text>
+						<text class="value"
+							:class="returnToNumber(todaySummary.profit)<0?'green':''">{{systemConfig.currency_symbol}}{{todaySummary.profit | toThousandslsFilter}}</text>
 					</view>
 				</view>
 				<view class="column">
 					<view class="item">
 						<text class="label">{{$t("trackOrder.labelAllProfit")}}</text>
-						<text
-							class="value">{{systemConfig.currency_symbol}}{{totalSummary.profit | toThousandslsFilter}}</text>
+						<text class="value"
+							:class="returnToNumber(totalSummary.profit)<0?'green':''">{{systemConfig.currency_symbol}}{{totalSummary.profit | toThousandslsFilter}}</text>
 					</view>
 					<view class="item">
 						<text class="label">{{$t("trackOrder.labelTradeAmount")}}</text>
 						<text
-							class="value">{{systemConfig.currency_symbol}}{{totalSummary.turnover | toThousandslsFilter}}</text>
+							class="value">{{systemConfig.currency_symbol}}{{totalOrderAmount | toThousandslsFilter}}</text>
 					</view>
 				</view>
 			</view>
@@ -62,9 +79,25 @@
 				if (this.userProfitSummary === undefined || this.userProfitSummary.totalSummary === undefined) return {};
 				return this.userProfitSummary.totalSummary;
 			},
+			orderSummary() {
+				if (this.userProfitSummary === undefined || this.userProfitSummary.orderSummary === undefined) return {};
+				return this.userProfitSummary.orderSummary;
+			},
+			totalOrderAmount() {
+				if (this.totalSummary.turnover === undefined || this.orderSummary.turnover === undefined) return "--";
+
+				return this.convertFormattedNumberToNumber(this.totalSummary.turnover) + this.orderSummary.turnover;
+			},
+			returnToNumber() {
+				return this.convertFormattedNumberToNumber;
+			}
 		},
 		methods: {
-			...mapActions(["logout"])
+			...mapActions(["logout"]),
+			convertFormattedNumberToNumber(val) {
+				if (val === undefined) return 0;
+				return +(val.replace(/,/igm, ""));
+			}
 		}
 	}
 </script>
@@ -87,9 +120,10 @@
 			padding: 10px 0;
 
 			.value {
-				@include primary-text-color;
+				//@include primary-text-color;
 				font-size: 1.4em;
 				font-weight: 700;
+				color: #A50000;
 			}
 		}
 	}
