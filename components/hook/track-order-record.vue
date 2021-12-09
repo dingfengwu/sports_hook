@@ -94,8 +94,4 @@
 			height: 100% !important;
 		}
 	}
-
-	uni-page-body {
-		height: 100%;
-	}
 </style>

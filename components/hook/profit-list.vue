@@ -25,13 +25,6 @@
 				</uni-tr>
 			</uni-table>
 		</scroll-view-infinity-load>
-
-		<view class="bottom-nav">
-			<button :class="{active:active===0}" @click="active=0">{{$t("gameRecord.thisWeek")}}</button>
-			<button :class="{active:active===1}" @click="active=1">{{$t("gameRecord.lastWeek")}}</button>
-			<button :class="{active:active===2}" @click="active=2">{{$t("gameRecord.thisMonth")}}</button>
-			<button :class="{active:active===3}" @click="active=3">{{$t("gameRecord.lastMonth")}}</button>
-		</view>
 	</view>
 </template>
 
@@ -139,52 +132,7 @@
 		/deep/ .scroll-view-infinity-load {
 			margin-top: 20upx;
 		}
-
-		.bottom-nav {
-			display: flex;
-			align-items: center;
-			padding: 20upx;
-			background-color: #fff;
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-			box-sizing: border-box;
-
-
-			uni-button {
-				flex: 1;
-				border: 0;
-				border-radius: 0;
-				font-size: 0.9em;
-
-				&.active {
-					background-color: $uni-color-primary;
-					color: #fff;
-					@include background-color;
-				}
-
-				&:after {
-					border-right-width: 0;
-					border-radius: 0;
-				}
-
-				&:last-child {
-					border-top-right-radius: 10upx;
-					border-bottom-right-radius: 10upx;
-
-					&:after {
-						border-right-width: 2upx;
-						border-radius: 0upx;
-					}
-				}
-
-				&:first-child {
-					border-top-left-radius: 10upx;
-					border-bottom-left-radius: 10upx;
-				}
-			}
-		}
-
+		
 		/deep/ .uni-table-td {
 			white-space: nowrap;
 		}

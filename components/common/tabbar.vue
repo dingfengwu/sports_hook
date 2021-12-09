@@ -89,6 +89,7 @@
 		.navigator {
 			text-align: center;
 			flex-basis: 20%;
+			cursor: pointer;
 
 			&.middle {
 				margin-top: -30upx;
