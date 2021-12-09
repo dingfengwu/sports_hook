@@ -5,28 +5,37 @@
 		"style": {
 			"navigationStyle": "custom"
 		}
-	},{
+	}, {
 		"path": "pages/home/index",
 		"style": {
 			"navigationStyle": "custom"
-		} //,
-		// "meta": {
-		// 	"authorization": true
-		// }
-	},  {
+		},
+		"meta": {
+			"authorization": true
+		}
+	}, {
 		"path": "pages/fund/profit-list",
 		"style": {
 			"navigationStyle": "custom"
+		},
+		"meta": {
+			"authorization": true
 		}
 	}, {
 		"path": "pages/my/index",
 		"style": {
 			"navigationStyle": "custom"
+		},
+		"meta": {
+			"authorization": true
 		}
 	}, {
 		"path": "pages/game/game-record-list",
 		"style": {
 			"navigationStyle": "custom"
+		},
+		"meta": {
+			"authorization": true
 		}
 	}],
 	"globalStyle": {

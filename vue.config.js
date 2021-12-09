@@ -15,7 +15,7 @@ const {
 //线上
 let extraActions = [];
 let extraProxyHost = "";
-let proxyUrl = "https://www.fc-6888.com";
+let proxyUrl = "https://www.dong8688.net";
 
 module.exports = {
 	configureWebpack: {

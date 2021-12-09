@@ -12,14 +12,15 @@
 	} from './common/js/config.js';
 	import {
 		CLIENT_H5,
-		CLIENT_PC
+		CLIENT_PC,
+		APP_ID_HOOK
 	} from './common/js/util/const.js';
 
 	export default {
 		//mixins: [pageAnimation],
 		methods: {
 			...mapActions(['getHomeConfigVersion', 'getLotteryConfigVersion', 'getSystemConfig', 'getUserInfo',
-				'getMessageCount', 'getLotteryMenuList'
+				'getMessageCount', 'getLotteryMenuList','setAppId'
 			]),
 			adapteClient() {
 				let client = getClientType();
@@ -48,6 +49,7 @@
 			console.log('App Hide');
 		},
 		created() {
+			this.setAppId(APP_ID_HOOK);
 			this.adapteClient();
 			setSystemTheme();
 			//this.getHomeConfigVersion();

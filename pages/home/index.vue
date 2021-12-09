@@ -80,16 +80,6 @@
 					});
 				}
 			}
-		},
-		onShow() {
-			console.log("created");
-			//仅挂机存在,因为在pages.json文件中未配置meta
-			if (!this.isLogin) {
-				this.logout().then(res=>{
-					console.log("outside redirect");
-					this.$push("pages/account/login");
-				});
-			}
 		}
 	}
 </script>

@@ -25,12 +25,6 @@
 		},
 		methods: {
 			...mapActions(["logout"])
-		},
-		onShow() {
-			//仅挂机存在,因为在pages.json文件中未配置meta
-			if (!this.isLogin) {
-				this.logout();
-			}
 		}
 	}
 </script>

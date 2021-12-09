@@ -21,12 +21,11 @@
 	import {
 		addDays,
 		formatDate,
-		getCurrentTime,
-		getCurrentBeijinTime 
+		getCurrentTime
 	} from "../../common/js/util/util.js"
 	import scrollViewInfinityLoad from "../common/scroll-view-infinity-load.vue";
 	import emptyList from "../../components/common/empty-list.vue";
-
+	
 	export default {
 		data() {
 			return {
@@ -52,8 +51,6 @@
 				if (this.autoBetMatchList === undefined) return [];
 
 				let result = [];
-				let now = getCurrentBeijinTime();
-				let nowStr = formatDate(now, 'yyyy-MM-dd HH:mm:ss');
 				for (let index in this.autoBetMatchList) {
 					let item = this.autoBetMatchList[index];
 					for (let wayId in item.scores) {
@@ -61,18 +58,17 @@
 						for (let score in detail) {
 							let odds = detail[score];
 
-							if (nowStr < item.time) {
-								result.push({
-									...item,
-									wayId,
-									score,
-									odds
-								});
-							}
+							result.push({
+								...item,
+								wayId,
+								score,
+								odds
+							});
 						}
 					}
 				}
-			},
+				return result;
+			}
 		},
 		methods: {
 			...mapActions(["getAutoBetMatchList"]),
@@ -101,7 +97,7 @@
 		created() {
 			//this.queryHookMatchList();
 		}
-	};
+	}
 </script>
 
 <style lang="scss" scoped>
