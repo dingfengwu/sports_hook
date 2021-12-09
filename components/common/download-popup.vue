@@ -20,18 +20,18 @@
 
 	export default {
 		props: ["url"],
-		data() {
-			return {
-				show: true
+		computed: {
+			...mapGetters(["downloadPopupState"]),
+			show() {
+				if (this.downloadPopupState === undefined) return false;
+				if (this.url === undefined) return false;
+				return this.downloadPopupState;
 			}
-		},
-		computed:{
-			...mapGetters(["downloadPopupState"])
 		},
 		methods: {
 			...mapActions(["setDownloadPopupState"]),
 			close() {
-				this.show = false;
+				this.setDownloadPopupState(false);
 			},
 			download() {
 				if (this.url === undefined) return;
