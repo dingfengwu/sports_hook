@@ -19,7 +19,7 @@
 				<checkbox-group @change="savePasswordChanged">
 					<label>
 						<checkbox value="true" :checked="form.savePassword" style="transform:scale(0.7)" />
-						<text>{{$t("account.savePassword")}}</text>
+						<text class="checkbox-label">{{$t("account.savePassword")}}</text>
 					</label>
 				</checkbox-group>
 			</uni-forms-item>
@@ -177,6 +177,10 @@
 
 		/deep/ .button.circle {
 			background-color: #fff;
+		}
+		
+		.checkbox-label{
+			color: #777;
 		}
 	}
 </style>
