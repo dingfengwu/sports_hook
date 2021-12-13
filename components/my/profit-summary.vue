@@ -2,10 +2,17 @@
 	<view class="profit-summary">
 		<uni-card>
 			<view class="card-body">
-				<view class="item">
-					<text class="label">{{$t("trackOrder.labelAccountBalance")}}</text>
-					<text
-						class="value">{{systemConfig.currency_symbol}}{{userInfo.abalance | toThousandslsFilter}}</text>
+				<view class="column">
+					<view class="item">
+						<text class="label">{{$t("trackOrder.labelUsername")}}</text>
+						<text
+							class="value black">{{userInfo.username}}</text>
+					</view>
+					<view class="item">
+						<text class="label">{{$t("trackOrder.labelAccountBalance")}}</text>
+						<text
+							class="value">{{systemConfig.currency_symbol}}{{userInfo.abalance | toThousandslsFilter}}</text>
+					</view>
 				</view>
 				<view class="column">
 					<view class="item">
@@ -124,6 +131,10 @@
 				font-size: 1.4em;
 				font-weight: 700;
 				color: #A50000;
+			}
+			
+			.black{
+				color: #333;
 			}
 		}
 	}

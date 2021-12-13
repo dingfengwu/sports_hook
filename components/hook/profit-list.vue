@@ -9,7 +9,7 @@
 			<uni-table border stripe :emptyText="$t('common.empty')">
 				<uni-tr>
 					<uni-th align="center" width="50">{{$t("gameRecord.date")}}</uni-th>
-					<uni-th align="center" width="50">{{$t("gameRecord.betAmount")}}</uni-th>
+					<uni-th align="center" width="50">{{$t("gameRecord.tradeAmount")}}</uni-th>
 					<uni-th align="center" width="50">{{$t("gameRecord.labelPrize")}}</uni-th>
 					<!-- <uni-th align="center" width="50">{{$t("gameRecord.labelCommision")}}</uni-th> -->
 					<!-- <uni-th align="center" width="50">{{$t("gameRecord.labelBonus")}}</uni-th> -->

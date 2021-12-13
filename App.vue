@@ -20,7 +20,7 @@
 		//mixins: [pageAnimation],
 		methods: {
 			...mapActions(['getHomeConfigVersion', 'getLotteryConfigVersion', 'getSystemConfig', 'getUserInfo',
-				'getMessageCount', 'getLotteryMenuList','setAppId'
+				'getMessageCount', 'setAppId'
 			]),
 			adapteClient() {
 				let client = getClientType();
