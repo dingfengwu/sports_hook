@@ -15,6 +15,14 @@
 					confirmType="next" type="text" v-model="form.captcha"
 					:placeholder="$t('account.messageInputcaptcha')" />
 			</uni-forms-item>
+			<uni-forms-item name="savePassword">
+				<checkbox-group @change="savePasswordChanged">
+					<label>
+						<checkbox value="true" :checked="form.savePassword" style="transform:scale(0.7)" />
+						<text>{{$t("account.savePassword")}}</text>
+					</label>
+				</checkbox-group>
+			</uni-forms-item>
 		</uni-forms>
 
 		<button type="default" class="circle button" @click="signIn">{{$t("account.login")}}</button>
@@ -38,6 +46,7 @@
 	import {
 		getCaptcha
 	} from "../../common/js/api/account.js";
+
 	export default {
 		data() {
 			return {
@@ -45,7 +54,8 @@
 				form: {
 					username: "",
 					password: "",
-					captcha: ""
+					captcha: "",
+					savePassword: false
 				},
 				rules: {
 					username: {
@@ -73,18 +83,15 @@
 			}
 		},
 		methods: {
-			...mapActions(["autoBetLogin", "getCaptcha", "openCustomerService"]),
+			...mapActions(["autoBetLogin", "getCaptcha", "openCustomerService", "getSavedPassword"]),
 			signIn() {
 				this.$refs["form"].validate().then(res => {
 					uni.showLoading({
 						mask: true,
 						title: this.$t("account.loginLoading")
 					});
-					this.autoBetLogin({
-						username: this.form.username,
-						password: this.form.password,
-						captcha: this.form.captcha
-					}).then(res => {
+					this.autoBetLogin(this.form).then(res => {
+						this.$refs["form"].resetFields();
 						uni.hideLoading();
 						this.$push('/pages/home/index');
 					}).catch(err => {
@@ -102,7 +109,32 @@
 				}).catch(err => {
 					console.error(err);
 				});
+			},
+			savePasswordChanged(e) {
+				if (e.detail.value.length > 0) {
+					this.form.savePassword = true;
+				} else {
+					this.form.savePassword = false;
+				}
+			},
+			initUsernamePassword() {
+				this.getSavedPassword().then(res => {
+					let {
+						savePassword,
+						username,
+						password
+					} = res;
+
+					if (savePassword) {
+						this.form.savePassword = true;
+						this.form.username = username;
+						this.form.password = password;
+					}
+				});
 			}
+		},
+		created() {
+			this.initUsernamePassword();
 		}
 	}
 </script>
@@ -113,7 +145,7 @@
 		position: relative;
 
 		.button {
-			margin-top: 60upx;
+			//margin-top: 60upx;
 		}
 
 		a {
@@ -133,17 +165,17 @@
 			right: 8%;
 			top: 256upx;
 		}
-		
-		/deep/ .uni-easyinput{
+
+		/deep/ .uni-easyinput {
 			background-color: #fff;
 			padding: 6upx 10upx;
 		}
-		
-		/deep/ .uni-icons{
+
+		/deep/ .uni-icons {
 			font-size: 24px !important;
 		}
-		
-		/deep/ .button.circle{
+
+		/deep/ .button.circle {
 			background-color: #fff;
 		}
 	}

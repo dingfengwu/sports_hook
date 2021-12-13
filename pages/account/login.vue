@@ -5,7 +5,7 @@
 			<view class="logo">
 				<image src="/static/logo.png" mode="aspectFit" />
 			</view>
-			<login></login>
+			<login ref="login"></login>
 		</view>
 	</view>
 </template>
@@ -21,6 +21,11 @@
 		},
 		components: {
 			login
+		},
+		onShow() {
+			if (this.$refs["login"]) {
+				this.$refs["login"].initUsernamePassword();
+			}
 		}
 	}
 </script>
@@ -47,7 +52,6 @@
 
 			.logo {
 				margin-top: 200upx;
-				margin-bottom: 100upx;
 
 				image {
 					height: 200upx;
@@ -74,7 +78,7 @@
 				}
 			}
 		}
-		
-		
+
+
 	}
 </style>
