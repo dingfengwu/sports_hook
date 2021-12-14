@@ -1,6 +1,6 @@
 <template>
 	<view class="game-record-list-container">
-		<uni-nav-bar :title="$t('home.title')" :shadow="false" :border="false"></uni-nav-bar>
+		<uni-nav-bar :title="$t('gameRecord.title')" :shadow="false" :border="false"></uni-nav-bar>
 		<track-order-list></track-order-list>
 		<bottom-menu current="1"></bottom-menu>
 	</view>

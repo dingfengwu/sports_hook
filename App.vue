@@ -43,7 +43,6 @@
 		},
 		onShow: function() {
 			console.log('App Show');
-			document.title = config.title;
 		},
 		onHide: function() {
 			console.log('App Hide');
@@ -62,7 +61,9 @@
 		}
 	};
 </script>
-<style>
+<style lang="scss">
+	@import "./common/css/theme.scss";
+	
 	uni-page-body {
 		height: 100%;
 	}
@@ -70,4 +71,30 @@
 	.bottom-menu {
 		position: absolute !important;
 	}
+	
+	.uni-navbar__header{
+		@include background-color;
+		color: #fff !important;
+		
+		.uni-nav-bar-text{
+			color: #fff !important;
+		}
+	}
+	
+	.segmented-control__item{
+		@include light-border-color;
+		
+		.segmented-control__text{
+			@include primary-text-color;
+		}
+		
+		&.segmented-control__item--button--active{
+			@include background-color;
+			
+			.segmented-control__text{
+				color: #fff !important;
+			}
+		}
+	}
+	
 </style>

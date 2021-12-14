@@ -1,7 +1,6 @@
 <template>
 	<view class="game-record">
-		<uni-segmented-control :current="active" :values="items" styleType="button" activeColor="#34d585"
-			@clickItem="selected">
+		<uni-segmented-control :current="active" :values="items" styleType="button" @clickItem="selected">
 		</uni-segmented-control>
 		<track-order-record :completed="false" v-if="active===0"></track-order-record>
 		<track-order-record :completed="true" v-if="active===1"></track-order-record>
@@ -35,6 +34,10 @@
 <style lang="scss" scoped>
 	.game-record {
 		height: calc(100% - 200upx);
+		
+		/deep/ .segmented-control{
+			margin-top: 20upx;
+		}
 
 		/deep/ .record-list {
 			padding-top: 20upx;

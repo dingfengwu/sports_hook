@@ -1,7 +1,7 @@
 const TransformPages = require('uni-read-pages')
 const {
 	webpack
-} = new TransformPages()
+} = new TransformPages();
 
 // let extraActions = ["GetMatchList", "GetGameList", "GetMatchDetail", "sportBet"];
 // let extraProxyHost = "sport.com";
@@ -15,7 +15,7 @@ const {
 //线上
 let extraActions = [];
 let extraProxyHost = "";
-let proxyUrl = "https://www.dong8688.net";
+let proxyUrl = "https://www.bet100688.net";
 
 module.exports = {
 	configureWebpack: {
@@ -32,7 +32,7 @@ module.exports = {
 	},
 	devServer: {
 		"https": false,
-		"port": 8082, //端口号
+		"port": 80, //端口号
 		"disableHostCheck": true,
 		"proxy": {
 			"/api": {

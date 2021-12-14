@@ -41,19 +41,20 @@
 		margin: 0upx 20upx;
 		background-color: #fff;
 		padding-bottom: 20upx;
-		//@include primary-border-color;
-		border-color: #00562F;
+		@include primary-border-color;
+		//border-color: #00562F;
 		border-style: solid;
 		border-width: 1upx;
 		border-top-left-radius: 15upx;
 		border-top-right-radius: 15upx;
+		
 		
 		//border-bottom-left-radius: 15upx;
 		//border-bottom-right-radius: 15upx;
 
 		.header {
 			padding: 20upx 10upx;
-			//@include background-color;
+			@include background-color;
 			border-top-left-radius: 10upx;
 			border-top-right-radius: 10upx;
 			display: flex;
@@ -62,7 +63,7 @@
 			color: #fff;
 			font-size: 1.2em;
 			font-weight: 700;
-			background-color: #00562F;
+			//background-color: #00562F;
 		}
 
 		.body {

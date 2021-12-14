@@ -108,6 +108,7 @@
 			justify-content: center;
 			align-items: center;
 			padding: 10upx 0;
+			margin-top: 20upx;
 
 			text {
 				margin-right: 20upx;

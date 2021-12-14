@@ -25,12 +25,11 @@
 	} from "../../common/js/util/util.js"
 	import scrollViewInfinityLoad from "../common/scroll-view-infinity-load.vue";
 	import emptyList from "../../components/common/empty-list.vue";
-	
+
 	export default {
 		data() {
 			return {
 				filter: {
-					status: [1],
 					page: 1,
 					status: MATCH_STATUS_BETABLE,
 					beginDate: "",
@@ -75,7 +74,7 @@
 			queryHookMatchList() {
 				let now = getCurrentTime();
 				let stop = addDays(now, 1);
-				now = formatDate(now);
+				now = formatDate(now, "yyyy-MM-dd HH:mm:ss");
 				stop = formatDate(stop);
 
 				this.filter.beginDate = now;

@@ -100,8 +100,8 @@
 	@import "../../common/css/theme.scss";
 
 	.track-order-record {
-		height: 100%;
-		box-sizing: border-box;
+		height: calc(100% - 20upx - 72upx - 0upx);
+		//box-sizing: border-box;
 
 		/deep/ .hook-item {
 			margin-bottom: 20upx;

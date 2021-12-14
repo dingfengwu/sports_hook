@@ -1,15 +1,17 @@
 <template>
 	<view class="uni-navbar">
-		<view :class="{ 'uni-navbar--fixed': fixed, 'uni-navbar--shadow': shadow, 'uni-navbar--border': border }" :style="{ 'background-color': backgroundColor }"
-		 class="uni-navbar__content">
+		<view :class="{ 'uni-navbar--fixed': fixed, 'uni-navbar--shadow': shadow, 'uni-navbar--border': border }"
+			:style="{ 'background-color': backgroundColor }" class="uni-navbar__content">
 			<status-bar v-if="statusBar" />
-			<view :style="{ color: color,backgroundColor: backgroundColor }" class="uni-navbar__header uni-navbar__content_view">
-				<view @tap="onClickLeft" class="uni-navbar__header-btns uni-navbar__header-btns-left uni-navbar__content_view">
+			<view :style="{ color: color,backgroundColor: backgroundColor }"
+				class="uni-navbar__header uni-navbar__content_view">
+				<view @tap="onClickLeft"
+					class="uni-navbar__header-btns uni-navbar__header-btns-left uni-navbar__content_view">
 					<view class="uni-navbar__content_view" v-if="leftIcon.length">
 						<uni-icons :color="color" :type="leftIcon" size="24" />
 					</view>
-					<view :class="{ 'uni-navbar-btn-icon-left': !leftIcon.length }" class="uni-navbar-btn-text uni-navbar__content_view"
-					 v-if="leftText.length">
+					<view :class="{ 'uni-navbar-btn-icon-left': !leftIcon.length }"
+						class="uni-navbar-btn-text uni-navbar__content_view" v-if="leftText.length">
 						<text :style="{ color: color, fontSize: '14px' }">{{ leftText }}</text>
 					</view>
 					<slot name="left" />
@@ -21,12 +23,14 @@
 					<!-- 标题插槽 -->
 					<slot />
 				</view>
-				<view :class="title.length ? 'uni-navbar__header-btns-right' : ''" @tap="onClickRight" class="uni-navbar__header-btns uni-navbar__content_view">
+				<view :class="title.length ? 'uni-navbar__header-btns-right' : ''" @tap="onClickRight"
+					class="uni-navbar__header-btns uni-navbar__content_view">
 					<view class="uni-navbar__content_view" v-if="rightIcon.length">
 						<uni-icons :color="color" :type="rightIcon" size="24" />
 					</view>
 					<!-- 优先显示图标 -->
-					<view class="uni-navbar-btn-text uni-navbar__content_view" v-if="rightText.length && !rightIcon.length">
+					<view class="uni-navbar-btn-text uni-navbar__content_view"
+						v-if="rightText.length && !rightIcon.length">
 						<text class="uni-nav-bar-right-text">{{ rightText }}</text>
 					</view>
 					<slot name="right" />
@@ -66,7 +70,7 @@
 		components: {
 			statusBar
 		},
-		emits:['clickLeft','clickRight','clickTitle'],
+		emits: ['clickLeft', 'clickRight', 'clickTitle'],
 		props: {
 			title: {
 				type: String,
@@ -113,11 +117,14 @@
 				default: true
 			}
 		},
-        mounted() {
-          if(uni.report && this.title !== '') {
-              uni.report('title', this.title)
-          }
-        },
+		mounted() {
+			if (uni.report && this.title !== '') {
+				uni.report('title', this.title)
+			}
+			if (this.title !== '' && window.config.title) {
+				document.title = `${window.config.title}-${this.title}`;
+			}
+		},
 		methods: {
 			onClickLeft() {
 				this.$emit("clickLeft");
@@ -134,6 +141,7 @@
 
 <style lang="scss" scoped>
 	$nav-height: 44px;
+
 	.uni-nav-bar-text {
 		/* #ifdef APP-PLUS */
 		font-size: 34rpx;
@@ -232,7 +240,7 @@
 		right: var(--window-right);
 		/* #endif */
 		/* #ifndef H5 */
-		left:0;
+		left: 0;
 		right: 0;
 		/* #endif */
 

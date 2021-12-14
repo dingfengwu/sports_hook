@@ -1,7 +1,6 @@
 <template>
 	<view class="record-list profit-list">
-		<uni-segmented-control :current="active" :values="items" styleType="button" activeColor="#34d585"
-			@clickItem="selected">
+		<uni-segmented-control :current="active" :values="items" styleType="button" @clickItem="selected">
 		</uni-segmented-control>
 
 		<scroll-view-infinity-load @refresh="refreshData" @load="loadData" :load-completed="loadCompleted"
@@ -38,7 +37,7 @@
 		lastWeek,
 		thisMonth,
 		lastMonth
-	} from "../../common/js/util/util.js"
+	} from "../../common/js/util/util.js";
 	import scrollViewInfinityLoad from "../common/scroll-view-infinity-load.vue";
 
 	export default {
@@ -132,6 +131,11 @@
 		/deep/ .scroll-view-infinity-load {
 			margin-top: 20upx;
 		}
+		
+		/deep/ .segmented-control{
+			margin-top: 20upx;
+		}
+		
 
 		.bottom-nav {
 			display: flex;
