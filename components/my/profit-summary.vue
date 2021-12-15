@@ -57,10 +57,6 @@
 				</view>
 			</view>
 		</uni-card>
-
-		<view>
-			<button type="warn" @click="logout">{{$t("account.exit")}}</button>
-		</view>
 	</view>
 </template>
 
@@ -100,7 +96,6 @@
 			}
 		},
 		methods: {
-			...mapActions(["logout"]),
 			convertFormattedNumberToNumber(val) {
 				if (val === undefined) return 0;
 				return +(val.replace(/,/igm, ""));
@@ -113,7 +108,6 @@
 	@import "../../common/css/theme.scss";
 
 	.profit-summary {
-
 		.column {
 			display: flex;
 			justify-content: space-around;
