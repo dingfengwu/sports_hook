@@ -108,8 +108,8 @@
 
 			&.on {
 				/deep/ uni-text,/deep/ uni-view {
-					//@include primary-text-color;
-					color: #34d585 !important;
+					@include light-text-color;
+					//color: #34d585 !important;
 				}
 			}
 		}
