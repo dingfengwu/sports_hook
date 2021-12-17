@@ -91,7 +91,7 @@
 			},
 		},
 		created() {
-			this.queryTrackOrderList();
+			//this.queryTrackOrderList();
 		}
 	}
 </script>

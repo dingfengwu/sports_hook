@@ -23,6 +23,8 @@
 					<text>{{$t("trackOrder.labelBetAmount")}}：{{systemConfig.currency_symbol}}{{item.amount | toThousandslsFilter}}</text>
 					<text
 						v-if="showPrize">{{$t("trackOrder.labelPrize")}}：{{systemConfig.currency_symbol}}{{item.prize | toThousandslsFilter}}</text>
+					<text
+						v-else>{{$t("trackOrder.labelExpectProfit")}}：{{systemConfig.currency_symbol}}{{item | expectProfit | toThousandslsFilter}}</text>
 				</view>
 			</view>
 		</view>
@@ -50,7 +52,12 @@
 		ORDER_COMPLETED,
 		ORDER_UNCOMPLETED
 	} from "../../common/js/util/const.js";
-
+	import {
+		getHandFee
+	} from "../../common/js/util/game.js";
+	import {
+		getSystemConfigCache
+	} from "../../common/js/cache/config.js";
 	export default {
 		props: ["item", "openable"],
 		data() {
@@ -88,6 +95,17 @@
 
 				let time = new Date(val.match_start_time.replace("-", "/"));
 				return formatDate(time, "MM-dd HH:mm");
+			},
+			expectProfit(val) {
+				if (!val || !val.amount) return "--";
+
+				let systemConfig = getSystemConfigCache();
+				let handleFee = getHandFee(val.amount, systemConfig.profit_fee_rules);
+				if (handleFee.type === "rate") {
+					return val.amount * val.odds * (1 - handleFee.value);
+				} else {
+					return val.amount * val.odds - handleFee.value;
+				}
 			}
 		},
 		computed: {
@@ -151,7 +169,7 @@
 		//border-bottom-right-radius: 15upx;
 
 		.header {
-			padding: 20upx 10upx;
+			padding: 10upx 10upx;
 			//@include background-color;
 			border-top-left-radius: 10upx;
 			border-top-right-radius: 10upx;
