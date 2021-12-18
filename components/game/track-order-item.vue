@@ -84,7 +84,7 @@
 				if (!val || !val.time) return "";
 
 				let now = getCurrentTime();
-				let time = new Date(val.time.replace("-", "/"));
+				let time = new Date(val.time.replace(/\-/g, "/"));
 				let span = now.getTime() - time.getTime();
 				span = parseInt(span / 1000 / 60);
 
@@ -93,7 +93,7 @@
 			remainder(val) {
 				if (!val || !val.time) return "";
 
-				let time = new Date(val.match_start_time.replace("-", "/"));
+				let time = new Date(val.match_start_time.replace(/\-/g, "/"));
 				return formatDate(time, "MM-dd HH:mm");
 			},
 			expectProfit(val) {
