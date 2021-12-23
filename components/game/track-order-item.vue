@@ -91,7 +91,7 @@
 				return `${span}'`;
 			},
 			remainder(val) {
-				if (!val || !val.time) return "";
+				if (!val || !val.match_start_time) return "";
 
 				let time = new Date(val.match_start_time.replace(/\-/g, "/"));
 				return formatDate(time, "MM-dd HH:mm");

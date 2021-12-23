@@ -49,6 +49,7 @@
 		},
 		watch: {
 			completed() {
+				this.filter.page = 1;
 				this.queryTrackOrderList();
 			}
 		},
