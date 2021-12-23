@@ -15,9 +15,13 @@
 		CLIENT_PC,
 		APP_ID_HOOK
 	} from './common/js/util/const.js';
+	import {showWindow} from "./common/js/router/animation.js"
 
 	export default {
 		//mixins: [pageAnimation],
+		onLaunch(){
+			showWindow();
+		},
 		methods: {
 			...mapActions(['getHomeConfigVersion', 'getLotteryConfigVersion', 'getSystemConfig', 'getUserInfo',
 				'getMessageCount', 'setAppId'
