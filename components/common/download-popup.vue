@@ -46,7 +46,7 @@
 <style lang="scss" scoped>
 	.download-popup {
 		position: absolute;
-		bottom: 113upx;
+		bottom: 105upx;
 		left: 0;
 		right: 0;
 		padding: 10upx 10upx;
@@ -60,11 +60,17 @@
 		.notice {
 			display: flex;
 			align-items: center;
+			line-height: 1.1;
 
 			.uni-icons {
 				transform: translateY(5upx);
 				color: #fff !important;
 			}
+		}
+		
+		/deep/ uni-button {
+			line-height: 1.1;
+			padding: 10upx 20upx;
 		}
 	}
 </style>

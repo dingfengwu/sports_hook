@@ -19,7 +19,7 @@ import "./common/js/util/popup.js";
 //import popup from "./components/index.js";
 //Vue.use(popup);
 
-
+import './common/css/icon-font/iconfont.css';
 import './common/css/all.scss';
 
 

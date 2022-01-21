@@ -17,7 +17,7 @@
 			</view>
 			<view class="content">
 				<text>{{$t("game.reversedNumber")}}</text>
-				<text>{{wayText}}</text>
+				<text>-{{wayText}}</text>
 				<text>{{item.score}}</text>
 				<text>@</text>
 				<text>{{item.odds | formatOdds}}%</text>
@@ -79,6 +79,7 @@
 				}
 
 				.r {
+					width: 500upx;
 					.status,.site{
 						color: #a50000;
 						border-radius: 5upx;
