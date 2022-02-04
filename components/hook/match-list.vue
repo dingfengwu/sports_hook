@@ -66,18 +66,16 @@
 						}
 					}
 				}
-				result.sort(function(e1,e2){
-					if(e1.time>e2.time){
+				result.sort(function(e1, e2) {
+					if (e1.time > e2.time) {
 						return 1;
-					}
-					else if(e1.time>e2.time){
+					} else if (e1.time < e2.time) {
 						return -1;
-					}
-					else{
+					} else {
 						return 0;
 					}
 				});
-				
+
 				return result;
 			}
 		},
