@@ -10,9 +10,7 @@ import vm from "../../../main.js"
 import {
 	MATCH_STATUS_MATCHING,
 	MATCH_STATUS_BETABLE,
-	MATCH_STATUS_FINISHED,
-	SPORT_ALL_SITE_WAY_ID,
-	SPORT_HALF_SITE_WAY_ID
+	MATCH_STATUS_FINISHED
 } from "../../../common/js/util/const.js";
 
 export default {
@@ -20,9 +18,7 @@ export default {
 	data() {
 		return {
 			MATCH_STATUS_FINISHED,
-			MATCH_STATUS_MATCHING,
-			SPORT_ALL_SITE_WAY_ID,
-			SPORT_HALF_SITE_WAY_ID
+			MATCH_STATUS_MATCHING
 		}
 	},
 	filters: {
@@ -52,32 +48,13 @@ export default {
 
 			let time = new Date(val.time.replace(/\-/g, "/"));
 			return formatDate(time, "MM-dd HH:mm");
-			
-			// let key = `game.status${val.status}`;
-			// if (val.status === 1) {
-			// 	let now = getCurrentTime();
-			// 	if (formatDate(now) === formatDate(time)) {
-			// 		let span = time.getTime() - now.getTime();
-			// 		if (span < 0) {
-			// 			return formatDate(time, "HH:mm");
-			// 		} else {
-			// 			span = parseInt(span / 1000 / 60);
-			// 			return `${span}'`;
-			// 		}
-			// 	}
-			// }
-			// return formatDate(time, "MM-dd HH:mm");
 		}
 	},
 	computed: {
 		...mapGetters(["config"]),
 		wayText() {
-			if (this.item === undefined) return "";
-			if (+this.item.wayId === SPORT_ALL_SITE_WAY_ID) {
-				return this.$t("game.labeAllSite");
-			} else if (+this.item.wayId === SPORT_HALF_SITE_WAY_ID) {
-				return this.$t("game.labHalfSite");
-			}
+			if (this.item === undefined || this.item.wayName === undefined) return "--";
+			return this.item.wayName;
 		}
 	},
 	methods: {

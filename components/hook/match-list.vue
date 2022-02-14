@@ -54,12 +54,15 @@
 					let item = this.autoBetMatchList[index];
 					for (let wayId in item.scores) {
 						let detail = item.scores[wayId];
+						let key = `game.wayName${wayId}`;
+						let wayName = this.$t(key);
 						for (let score in detail) {
 							let odds = detail[score];
 
 							result.push({
 								...item,
 								wayId,
+								wayName,
 								score,
 								odds
 							});
