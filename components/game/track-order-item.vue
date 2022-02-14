@@ -44,9 +44,7 @@
 	import {
 		MATCH_STATUS_MATCHING,
 		MATCH_STATUS_BETABLE,
-		MATCH_STATUS_FINISHED,
-		SPORT_ALL_SITE_WAY_ID,
-		SPORT_HALF_SITE_WAY_ID
+		MATCH_STATUS_FINISHED
 	} from "../../common/js/util/const.js";
 	import {
 		ORDER_COMPLETED,
@@ -63,9 +61,7 @@
 		data() {
 			return {
 				MATCH_STATUS_FINISHED,
-				MATCH_STATUS_MATCHING,
-				SPORT_ALL_SITE_WAY_ID,
-				SPORT_HALF_SITE_WAY_ID
+				MATCH_STATUS_MATCHING
 			}
 		},
 		filters: {
@@ -110,14 +106,6 @@
 		},
 		computed: {
 			...mapGetters(["config", "systemConfig"]),
-			wayText() {
-				if (this.item === undefined) return "";
-				if (+this.item.wayId === SPORT_ALL_SITE_WAY_ID) {
-					return this.$t("game.labeAllSite");
-				} else if (+this.item.wayId === SPORT_HALF_SITE_WAY_ID) {
-					return this.$t("game.labHalfSite");
-				}
-			},
 			showPrize() {
 				if (this.item === undefined) return false;
 				if (ORDER_COMPLETED.indexOf(this.item.status) >= 0) return true;
