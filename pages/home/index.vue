@@ -1,6 +1,10 @@
 <template>
 	<view class="home-container">
-		<uni-nav-bar :title="$t('home.title')" :shadow="false" :border="false"></uni-nav-bar>
+		<uni-nav-bar :title="$t('home.title')" :shadow="false" :border="false">
+			<view slot="right">
+				<change-language></change-language>
+			</view>
+		</uni-nav-bar>
 
 		<view class="switch"><text>{{$t("trackOrder.labelSmartBet")}}</text>
 			<evan-switch v-model="checked" @change="trackOrderChanging"></evan-switch>
@@ -22,6 +26,7 @@
 	import bottomMenu from "../../components/common/bottom-menu.vue";
 	import evanSwitch from "../../components/evan-switch/evan-switch.vue";
 	import downloadPopup from "../../components/common/download-popup.vue";
+	import changeLanguage from "../../components/common/change-language.vue";
 
 	export default {
 		data() {
@@ -33,7 +38,8 @@
 			matchList,
 			bottomMenu,
 			evanSwitch,
-			downloadPopup
+			downloadPopup,
+			changeLanguage
 		},
 		mounted() {
 			this.$nextTick(function() {
@@ -122,6 +128,14 @@
 			font-weight: 700;
 			padding: 20upx 0;
 			background-color: #fff;
+		}
+		
+		/deep/ .change-language {
+			
+			.icon-change-lang {
+				color: #fff !important;
+				font-size: 1.5em !important;
+			}
 		}
 	}
 </style>

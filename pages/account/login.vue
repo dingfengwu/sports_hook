@@ -6,12 +6,14 @@
 				<image src="/static/logo.png" mode="aspectFit" />
 			</view>
 			<login ref="login"></login>
+			<change-language></change-language>
 		</view>
 	</view>
 </template>
 
 <script>
 	import login from "../../components/account/login.vue";
+	import changeLanguage from "../../components/common/change-language.vue";
 
 	export default {
 		data() {
@@ -20,7 +22,8 @@
 			}
 		},
 		components: {
-			login
+			login,
+			changeLanguage
 		},
 		onShow() {
 			if (this.$refs["login"]) {
@@ -75,6 +78,18 @@
 					&.active {
 						border-color: #fff;
 					}
+				}
+			}
+
+			/deep/ .change-language {
+				position: absolute;
+				top: 5upx;
+				right: 5upx;
+				z-index: 4;
+				
+				.icon-change-lang {
+					color: #fff !important;
+					font-size: 1.5em !important;
 				}
 			}
 		}
