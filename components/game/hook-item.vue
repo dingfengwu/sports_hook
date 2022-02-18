@@ -16,8 +16,8 @@
 				</view>
 			</view>
 			<view class="content">
-				<text>{{$t("game.reversedNumber")}}</text>
-				<text>-{{wayText}}</text>
+				<!-- <text>{{$t("game.reversedNumber")}}</text> -->
+				<text>{{wayText}}</text>
 				<text>{{item.score}}</text>
 				<text>@</text>
 				<text>{{item.odds | formatOdds}}%</text>
