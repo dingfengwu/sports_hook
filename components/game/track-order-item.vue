@@ -215,7 +215,7 @@
 
 				text {
 					display: inline-block;
-					width: 140upx;
+					width: 240upx;
 				}
 
 				.bottom {
