@@ -15,7 +15,7 @@ const {
 //线上
 let extraActions = [];
 let extraProxyHost = "";
-let proxyUrl = "https://www.bet100688.net";
+let proxyUrl = "https://www.king-688.net";
 
 module.exports = {
 	configureWebpack: {

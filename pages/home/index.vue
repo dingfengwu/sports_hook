@@ -47,22 +47,23 @@
 			});
 		},
 		watch: {
-			taskStatus(val) {
-				this.checked = val;
+			autoBetTaskStatus(val) {
+				if(val===undefined||val.status===undefined) return false;
+				this.checked = val.status;
 			}
 		},
 		computed: {
-			...mapGetters(["isLogin", "taskStatus", "config"]),
+			...mapGetters(["isLogin", "taskStatus", "config", "autoBetTaskStatus"]),
 			actived() {
-				if (this.taskStatus === undefined) return false;
-				return this.taskStatus;
+				if (this.autoBetTaskStatus === undefined || this.autoBetTaskStatus.status === undefined) return false;
+				return this.autoBetTaskStatus.status;
 			},
 			url() {
 				return this.config.appUrl;
 			}
 		},
 		methods: {
-			...mapActions(["logout", "startAutoBet", "stopAutoBet"]),
+			...mapActions(["logout", "startAutoBet", "stopAutoBet", "queryAutoBetTaskStatus"]),
 			trackOrderChanging() {
 				if (this.actived) {
 					this.$showLoading();
@@ -92,6 +93,9 @@
 					});
 				}
 			}
+		},
+		created() {
+			this.queryAutoBetTaskStatus();
 		}
 	}
 </script>
@@ -129,9 +133,9 @@
 			padding: 20upx 0;
 			background-color: #fff;
 		}
-		
+
 		/deep/ .change-language {
-			
+
 			.icon-change-lang {
 				color: #fff !important;
 				font-size: 1.5em !important;
