@@ -1,7 +1,12 @@
 const TransformPages = require('uni-read-pages')
-const {
-	webpack
-} = new TransformPages();
+const check = require("./command/check-uni-cli-shared");
+
+let webpack = {};
+if (check()) {
+	webpack = new TransformPages().webpack;
+} else {
+	webpack = require('webpack');
+}
 
 // let extraActions = ["GetMatchList", "GetGameList", "GetMatchDetail", "sportBet"];
 // let extraProxyHost = "sport.com";
