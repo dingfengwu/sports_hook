@@ -1,1 +1,21 @@
-export default {"title":"Surat stesen","receiveBox":"peti masuk","sendBox":"Kotak Dihantar","sendMsg":"Mesej dari stesen","receiver":"penerima","sender":"penghantar","username":"Nama Pengguna Penerima","messageTitle":"gelaran","content":"kandungan","send":"menghantar","reset":"menetapkan semula","errorMsg1":"Sila pilih penerima","errorMsg2":"Sila pilih nama pengguna penerima","errorMsg3":"Sila masukkan tajuk mesej","errorMsg4":"Sila masukkan maklumat","sendMessageSuccess":"Berjaya Dihantar","unread":"belum dibaca","readed":"MEMBACA","readMessage":"Baca mesej"}
+export default {
+  title: "Surat stesen",
+  receiveBox: "peti masuk",
+  sendBox: "Kotak Dihantar",
+  sendMsg: "Mesej dari stesen",
+  receiver: "penerima",
+  sender: "penghantar",
+  username: "Nama Pengguna Penerima",
+  messageTitle: "gelaran",
+  content: "kandungan",
+  send: "menghantar",
+  reset: "menetapkan semula",
+  errorMsg1: "Sila pilih penerima",
+  errorMsg2: "Sila pilih nama pengguna penerima",
+  errorMsg3: "Sila masukkan tajuk mesej",
+  errorMsg4: "Sila masukkan maklumat",
+  sendMessageSuccess: "Berjaya Dihantar",
+  unread: "belum dibaca",
+  readed: "MEMBACA",
+  readMessage: "Baca mesej",
+};

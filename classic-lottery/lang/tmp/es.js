@@ -48,19 +48,19 @@ export default {
     transfer: "Transferencias",
     action: "actividad",
     lotteryHall: "Sala de la Lotería",
-    lotteryPrizeGroup: "Reembolsos  de la Lotería"
+    lotteryPrizeGroup: "Reembolsos  de la Lotería",
   },
   bottom: {
     home: "Casa",
     play: "loterías",
     result: "Resultados de Lotto",
-    my: "Mio"
+    my: "Mio",
   },
   theme: {
     red: "Rojo",
     blue: "Azul",
     orange: "Naranja",
-    violet: "Púrpura"
+    violet: "Púrpura",
   },
   header: {
     digitalLottery: "Lotería Digital",
@@ -70,7 +70,7 @@ export default {
     liveVideo: "Casino en vivo",
     sportsEvent: "Deportes",
     eSports: "eSports",
-    liveInteraction: "Transmisión"
+    liveInteraction: "Transmisión",
   },
   home: {
     day: "Día",
@@ -102,7 +102,7 @@ export default {
     prize: "Premio",
     playNow: "Empezar",
     downloadAppNotice: "Abre la APP ahora y disfruta de más",
-    download: "Descargar ahora"
+    download: "Descargar ahora",
   },
   gameInfo: {
     the: "número",
@@ -119,7 +119,7 @@ export default {
     theFirst: "campeón",
     second: "segundo lugar",
     third: "Tercer lugar",
-    loading: "Adquisidor"
+    loading: "Adquisidor",
   },
   gameTemplate: {
     hotAndCold: "Popularidad",
@@ -219,7 +219,7 @@ export default {
     thirdBall: "La tercera pelota",
     fouthBall: "La cuarta pelota",
     fivethBall: "Quinta bola",
-    dragonTiger: "Tigre dragón"
+    dragonTiger: "Tigre dragón",
   },
   oderList: {
     myNotes: "Apuesta de historia",
@@ -254,7 +254,7 @@ export default {
     Completed: "Terminado",
     UserTermination: "Abortar usuario",
     AdministratorTermination: "Administrador Abortar",
-    SystemTermination: "Aborto del sistema"
+    SystemTermination: "Aborto del sistema",
   },
   lotteryRecord: {
     bettingPage: "volver a la página de apuestas",
@@ -388,7 +388,7 @@ export default {
     shiGe: "cuarto y quinto desde la izquierda",
     saveLotteryNotice: "La lotería favorita ha llegado al máximo (8)",
     cleanNumberNotice:
-      "Se ha detectado un número duplicado o ilegal y se ha restablecido de acuerdo con el formato correcto"
+      "Se ha detectado un número duplicado o ilegal y se ha restablecido de acuerdo con el formato correcto",
   },
   gameRecord: {
     lotteryTypes: "tipo de lotería",
@@ -430,7 +430,7 @@ export default {
       "Nombre de usuario:<i>{username}</i> | Tiempo de apuestas:<i>{time}</i>",
     betPosition: "Posición de apuesta",
     betAmount: "Apuesta suma:<i>{currency}</i> <i>{amount}</i>",
-    betTime: "Tiempo de apuestas:<i>{time}</i>"
+    betTime: "Tiempo de apuestas:<i>{time}</i>",
   },
   alertComponent: {
     completeCounts: "conteos completos",
@@ -526,7 +526,7 @@ export default {
     SalesVolume: "Ventas",
     ProfitAndLoss: "Pérdida de beneficios",
     FundSource: "Fuente de fondos",
-    fundTarget: "Dónde buscar fondos"
+    fundTarget: "Dónde buscar fondos",
   },
   sideBar: {
     close: "Contraer menú",
@@ -534,7 +534,7 @@ export default {
     Add: "Agregar / editar",
     notYetOpen: "No abierto",
     MyCollection: "Mi loteria favorita",
-    LotteryChoice: "elegir lotería"
+    LotteryChoice: "elegir lotería",
   },
   popup: {
     title1: "Aviso del sistema",
@@ -548,7 +548,7 @@ export default {
     BeCareful:
       "El número de sorteo ha terminado, tenga en cuenta la actualización del período de premios.",
     bindBankCardNotice:
-      "No ha vinculado ninguna tarjeta bancaria, primero debe vincular la tarjeta bancaria"
+      "No ha vinculado ninguna tarjeta bancaria, primero debe vincular la tarjeta bancaria",
   },
   successMessage: {
     successMessage1: "Apuesta exitosa",
@@ -556,7 +556,7 @@ export default {
     successMessage3: "Ha iniciado con éxito una copia",
     successMessage4: "Apuesta de copia exitosa",
     successMessage5: "¡Guardado exitosamente!",
-    successMessage6: "Detener copia correctamente"
+    successMessage6: "Detener copia correctamente",
   },
   errorMessage: {
     errorMessage1: "Elija el número correcto y vuelva a intentarlo.",
@@ -577,16 +577,16 @@ export default {
     errorMessage13: "Este juego no está disponible actualmente",
     errorMessage14: "solo seleccione hasta 8 números",
     errorMessage15: "El juego actual ha sido cerrado",
-    errorMessage16: "Debe ser el formato de correo correcto"
+    errorMessage16: "Debe ser el formato de correo correcto",
   },
   recentAwards: {
     title: "Sorteos recientes",
     issue: "Periodo de precio",
-    wnNumber: "Numero ganador"
+    wnNumber: "Numero ganador",
   },
   pagination: {
     the: "No.",
-    page: "página"
+    page: "página",
   },
   recharge: {
     currentUser: "Usuario actual",
@@ -649,7 +649,7 @@ export default {
     exchangeNotice: "Equivalente a {amount} {currency_unit}",
     depositSuccessWhenVirtualCurrency:
       "Su solicitud de recarga ha sido enviada, espere pacientemente la revisión",
-    depositQRCode: "Recibiendo código QR"
+    depositQRCode: "Recibiendo código QR",
   },
   withdraw: {
     serialNumber: "Número de serie",
@@ -675,13 +675,12 @@ export default {
       "Número de cuenta de retiro: {bankName} ({cuenta}), monto del retiro: {amount}",
     confirmWithdraw: "Confirmar retiro",
     refuseReason: "Motivos de rechazo",
-    tips:
-      "<li> Recordatorio íntimo: </li> <li> 1.La cantidad máxima de retiro para una sola transacción es <i> {amount} </i> {currency_unit}. </li> <li> 2. <span class = '{css}'> Retiros gratuitos <i> {fee_times} </i> veces al día, a partir de las <i> {retiro_times} </i> veces, se le cobrará el <i> {rate}% < / i> Si se produce algún inconveniente, por favor comprenda, ¡gracias! </span> Cantidad de retiros realizados hoy: <i>{current_times}/{max_times}</i> </li> <li class = '{css_time}'> 3.El tiempo de retiro diario es <i> {retiro_allowed_time} </i>. </li>",
+    tips: "<li> Recordatorio íntimo: </li> <li> 1.La cantidad máxima de retiro para una sola transacción es <i> {amount} </i> {currency_unit}. </li> <li> 2. <span class = '{css}'> Retiros gratuitos <i> {fee_times} </i> veces al día, a partir de las <i> {retiro_times} </i> veces, se le cobrará el <i> {rate}% < / i> Si se produce algún inconveniente, por favor comprenda, ¡gracias! </span> Cantidad de retiros realizados hoy: <i>{current_times}/{max_times}</i> </li> <li class = '{css_time}'> 3.El tiempo de retiro diario es <i> {retiro_allowed_time} </i>. </li>",
     tips1:
       "<li> Recordatorio íntimo: </li> <li> 1. El monto máximo de retiro para una sola transacción es <i>{amount}</i>.</li> <li> 2. Puede retirar <i> {max_times} </i> veces al día. Los retiros por debajo de <i> {min_amount} </i> deducirán una tarifa de gestión de <i> {fixed_fee} </i> rupias, y los retiros por encima de <i> {min_amount} </i> deducirán un <i> { rate}% </i> tarifa de tramitación. </li>",
     tips2:
       "<li> Recordatorio íntimo: </li> <li> 1.La cantidad máxima de retiro para una sola transacción es <i>{amount}</i>。</li> <li> 2.Puede retirar <i> {max_times} </i> veces al día. Los retiros deducirán una tarifa de manejo de <i> {rate} ％ </i> y una tarifa de servicio de <i> {fixed_service_fee} </i> pesos. Su retiro llegará dentro de <i > {complete_hours} </i> horas. </li>",
-    noticeOfGettingU: "Equivalente a {amount} U"
+    noticeOfGettingU: "Equivalente a {amount} U",
   },
   personalCenter: {
     personalCenter: "Centro Personal",
@@ -800,7 +799,7 @@ export default {
     kindlyNotice: "Aviso íntimo:",
     transferLimit: "Transferencia única máxima",
     transferSubmitSuccess:
-      "La solicitud de transferencia se ha guardado, espere la revisión"
+      "La solicitud de transferencia se ha guardado, espere la revisión",
   },
   validateError: {
     PasswordLength:
@@ -830,12 +829,12 @@ export default {
     bankCardNumberMaxLength:
       "La longitud máxima del número de tarjeta bancaria está entre {min} y {max}",
     bankcardLengthMust: "La longitud de {field} debe ser {length} bits",
-    bankCardLengthIn: "La longitud de {field} debe ser una de {array}"
+    bankCardLengthIn: "La longitud de {field} debe ser una de {array}",
   },
   fundAlertComponents: {
     checkBankCard: "Verificar tarjeta bancaria",
     selectBoundBankCard: "Elija una tarjeta bancaria",
-    notTheSameCardNotice: "La tarjeta verificada es inconsistente"
+    notTheSameCardNotice: "La tarjeta verificada es inconsistente",
   },
   Notification: {
     OperationSuccess: "Operación exitosa",
@@ -845,7 +844,7 @@ export default {
     titlePrrorPage: "Página de error",
     loading: "Cargando...",
     noMoreData: "Todos cargados",
-    noResult: "No más registros "
+    noResult: "No más registros ",
   },
   accountInfo: {
     rememberPassword: "Recordar contraseña",
@@ -871,7 +870,7 @@ export default {
       "El nombre real y el nombre de la cuenta no coinciden, por favor confirme",
     gender: "Género",
     male: "Masculino",
-    female: "Mujer"
+    female: "Mujer",
   },
   teamRecord: {
     forefather: "Nivel",
@@ -952,7 +951,7 @@ export default {
     parent: "superiores",
     copy: "Copiar",
     copyNotice: "El contenido se ha copiado a la mesa de trabajo",
-    anyLevel: "Transferir a Otro"
+    anyLevel: "Transferir a Otro",
   },
   agentCenter: {
     agentCenter: "Centro de equipos",
@@ -991,7 +990,7 @@ export default {
     labelTransferOut: "Importe de transferencia",
     labelTransferIn: "Importe recibido",
     labelSendRedPacket: "Enviar cantidad de paquete rojo",
-    labelGetRedPacket: "Recibir cantidad de paquete rojo"
+    labelGetRedPacket: "Recibir cantidad de paquete rojo",
   },
   message: {
     title: "Mensaje del Sitio",
@@ -1012,11 +1011,11 @@ export default {
     sendMessageSuccess: "Enviado correctamente",
     unread: "No leído",
     readed: "leído",
-    readMessage: "Leer el mensaje"
+    readMessage: "Leer el mensaje",
   },
   announcement: {
     title: "Centro de Anuncio",
     detail: "Detalles del anuncio",
-    more: "más"
-  }
+    more: "más",
+  },
 };

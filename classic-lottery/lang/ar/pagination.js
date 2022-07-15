@@ -1,1 +1,1 @@
-export default {"the":"القسم","page":"صفحة"}
+export default { the: "القسم", page: "صفحة" };

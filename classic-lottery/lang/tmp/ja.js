@@ -49,7 +49,7 @@ export default {
     action: "イベント",
     lotteryHall: "宝くじホール",
     lotteryPrizeGroup: "宝くじリベート",
-    hotLottery: "人気のロト"
+    hotLottery: "人気のロト",
   },
   bottom: { home: "ホーム", play: "宝くじ", result: "抽選結果", my: "私の" },
   theme: { red: "ルージュ", blue: "青", orange: "オレンジ", violet: "紫の" },
@@ -61,7 +61,7 @@ export default {
     liveVideo: "ライブビデオ",
     sportsEvent: "スポーツの",
     eSports: "eスポーツ",
-    liveInteraction: "ライブインタラクション"
+    liveInteraction: "ライブインタラクション",
   },
   home: {
     day: "日々",
@@ -100,7 +100,7 @@ export default {
     labelCustomerService: "カスタマーサービス",
     labelHotLottery: "人気のロト",
     labelHotLotteryVote: "ポーリング入口",
-    labelTransfer: "送金"
+    labelTransfer: "送金",
   },
   gameInfo: {
     the: "セクション",
@@ -117,7 +117,7 @@ export default {
     theFirst: "第1位",
     second: "二番目に",
     third: "三番目に",
-    loading: "入る"
+    loading: "入る",
   },
   gameTemplate: {
     hotAndCold: "暑くて寒い",
@@ -217,7 +217,7 @@ export default {
     thirdBall: "サードボール",
     fouthBall: "四球",
     fivethBall: "フィフス・ボール",
-    dragonTiger: "龍虎"
+    dragonTiger: "龍虎",
   },
   oderList: {
     myNotes: "私のベッティングスリップ",
@@ -252,7 +252,7 @@ export default {
     Completed: "完成した",
     UserTermination: "ユーザーの終了",
     AdministratorTermination: "管理者終了",
-    SystemTermination: "システム終了"
+    SystemTermination: "システム終了",
   },
   lotteryRecord: {
     bettingPage: "ベッティングページに戻る",
@@ -385,7 +385,7 @@ export default {
     baiGe: "ハイロル",
     shiGe: "テン",
     saveLotteryNotice: "コレクションカラーが上限に達しました (8)",
-    cleanNumberNotice: "重複または不正な数字が検出され、正しい形式でリセット"
+    cleanNumberNotice: "重複または不正な数字が検出され、正しい形式でリセット",
   },
   gameRecord: {
     lotteryTypes: "プレイの種類",
@@ -426,7 +426,7 @@ export default {
     moreInfo: "ユーザー名:<i>{ユーザー名}</i> | ベット時間:<i>{時間}</i>",
     betPosition: "ベットポジション",
     betAmount: "注:<i>{通貨}</i> <i>{金額}</i>",
-    betTime: "ベット時間:<i>{time}</i>"
+    betTime: "ベット時間:<i>{time}</i>",
   },
   alertComponent: {
     completeCounts: "完了した期間",
@@ -522,7 +522,7 @@ export default {
     SalesVolume: "販売量",
     ProfitAndLoss: "損益",
     FundSource: "資金源",
-    fundTarget: "金融場所"
+    fundTarget: "金融場所",
   },
   sideBar: {
     close: "[衝突] メニュー",
@@ -530,7 +530,7 @@ export default {
     Add: "追加/編集",
     notYetOpen: "開いていない",
     MyCollection: "マイお気に入り",
-    LotteryChoice: "宝くじを選ぶ"
+    LotteryChoice: "宝くじを選ぶ",
   },
   popup: {
     title1: "システムのヒント",
@@ -544,7 +544,7 @@ export default {
     BeCareful:
       "賞品期間は終了しました。受賞期間は更新されますのでご注意ください",
     bindBankCardNotice:
-      "まだ銀行カードを追加していません。まず銀行カードをバインドしてください"
+      "まだ銀行カードを追加していません。まず銀行カードをバインドしてください",
   },
   successMessage: {
     successMessage1: "ベッティング成功",
@@ -552,7 +552,7 @@ export default {
     successMessage3: "コピーが正常に開始されました",
     successMessage4: "シングルベット成功",
     successMessage5: "成功を救え！",
-    successMessage6: "コピー成功を停止する"
+    successMessage6: "コピー成功を停止する",
   },
   errorMessage: {
     errorMessage1: "正しい番号を選択して、もう一度お試しください",
@@ -572,7 +572,7 @@ export default {
     errorMessage13: "ゲームは現在利用できません",
     errorMessage14: "8桁しか選択できない",
     errorMessage15: "現在のゲームプレイは終了しました",
-    errorMessage16: "正しいメールボックスの形式である必要があります"
+    errorMessage16: "正しいメールボックスの形式である必要があります",
   },
   recentAwards: { title: "最近の宝くじ", issue: "jiǎng", wnNumber: "ロト番号" },
   pagination: { the: "セクション", page: "ページ" },
@@ -641,7 +641,7 @@ export default {
     paymentWalletAddressNote1:
       "ウォレットアドレスの下6桁を入力するだけで済みます。",
     rechargeRefNoNote1: "取引番号の下6桁を入力するだけ",
-    fastAmount: "クイック金額"
+    fastAmount: "クイック金額",
   },
   withdraw: {
     serialNumber: "出金番号",
@@ -664,8 +664,7 @@ export default {
     withdrawNotice: "口座番号：{bankName}（{count}）、現金引き出し金額：{金額}",
     confirmWithdraw: "現金の確認",
     refuseReason: "拒否の理由",
-    tips:
-      "<h1>ヒント:</h1><li>1.<i>単一の最大金額 {金額}</i> {currency_unit}。</li><li>2.<span class='{css}'><i>{fee_times}</i> 1日あたりの無料出金、<i>{<i>rate}% は {dwrith_times} から請求されます</i></i>。ご迷惑をおかけして、ありがとう！</span>本日引き出しが行われました:<i>{current_times}/{max_times</i></li> <li class='{css_time}'><i>}</i> 3.</li>",
+    tips: "<h1>ヒント:</h1><li>1.<i>単一の最大金額 {金額}</i> {currency_unit}。</li><li>2.<span class='{css}'><i>{fee_times}</i> 1日あたりの無料出金、<i>{<i>rate}% は {dwrith_times} から請求されます</i></i>。ご迷惑をおかけして、ありがとう！</span>本日引き出しが行われました:<i>{current_times}/{max_times</i></li> <li class='{css_time}'><i>}</i> 3.</li>",
     tips1:
       "<h1>ヒント:</h1><li>1.1 つのトランザクションの最大出金額は <i>{ount}</i> です。</li><li>2.<i>{max_times} は1日2回出金できます</i>。<i>{min_alount}</i> を下回る引き出しは <i>{fixed_fee} ルピーの手数料から差し引かれ</i>、<i>{min_alount}</i> を超える引き出しは <i>{rate} ％の手数料から差し引かれます</i>。</li>",
     tips2:
@@ -683,7 +682,7 @@ export default {
     noticeOfGettingU:
       "{source_currency_unit},に相当{amount}{target_currency_unit}おう",
     tipType1: "カードの引出しには",
-    tipType2: "すべてのUSDT出金には"
+    tipType2: "すべてのUSDT出金には",
   },
   personalCenter: {
     personalCenter: "パーソナルセンター",
@@ -803,7 +802,7 @@ export default {
     transferLimit: "一筆で最大振替ができます",
     transferSubmitSuccess:
       "転送リクエストが保存されました。レビューをお待ちください",
-    labelBankCode: "店舗番号"
+    labelBankCode: "店舗番号",
   },
   validateError: {
     PasswordLength: "パスワードは 6 ～ 16 桁の英数字でなければなりません。",
@@ -829,12 +828,12 @@ export default {
       "IFSC 形式が正しくありません。長さは11桁で、4文字の後に0が続き、6桁で始まらなければなりません",
     bankCardNumberMaxLength: "カード番号の最大長は {min} から {max} の間です",
     bankcardLengthMust: "{field}の長さは{length}ビットでなければなりません",
-    bankCardLengthIn: "{field}の長さは{array}のいずれかである必要があります"
+    bankCardLengthIn: "{field}の長さは{array}のいずれかである必要があります",
   },
   fundAlertComponents: {
     checkBankCard: "銀行カードを確認する",
     selectBoundBankCard: "銀行カードを選択",
-    notTheSameCardNotice: "カードの不整合が検証されました"
+    notTheSameCardNotice: "カードの不整合が検証されました",
   },
   Notification: {
     OperationSuccess: "オペレーション成功",
@@ -844,7 +843,7 @@ export default {
     titlePrrorPage: "エラーページ",
     loading: "ロード中...。",
     noMoreData: "それ以上の記録はありません",
-    noResult: "それ以上の記録はありません"
+    noResult: "それ以上の記録はありません",
   },
   accountInfo: {
     rememberPassword: "パスワードを覚える",
@@ -870,7 +869,7 @@ export default {
     gender: "性別",
     male: "男性",
     female: "ニュ",
-    login: "ログイン"
+    login: "ログイン",
   },
   teamRecord: {
     forefather: "レベル",
@@ -951,7 +950,7 @@ export default {
     parent: "上級",
     copy: "コピー",
     copyNotice: "コンテンツがペーストボードにコピーされました",
-    anyLevel: "その他への振替"
+    anyLevel: "その他への振替",
   },
   agentCenter: {
     agentCenter: "チームセンター",
@@ -990,7 +989,7 @@ export default {
     labelTransferOut: "送金金額",
     labelTransferIn: "受取額",
     labelSendRedPacket: "赤い封筒を送る",
-    labelGetRedPacket: "ボーナス額を受け取る"
+    labelGetRedPacket: "ボーナス額を受け取る",
   },
   message: {
     title: "局からのお便り",
@@ -1011,11 +1010,11 @@ export default {
     sendMessageSuccess: "正常に送信されました",
     unread: "未読です",
     readed: "読む",
-    readMessage: "メッセージを読む"
+    readMessage: "メッセージを読む",
   },
   announcement: {
     title: "アナウンスセンター",
     detail: "アナウンスの詳細",
-    more: "もっと"
-  }
+    more: "もっと",
+  },
 };

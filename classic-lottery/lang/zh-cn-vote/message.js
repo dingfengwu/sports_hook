@@ -1,1 +1,21 @@
-export default {"title":"站内信","receiveBox":"收件箱","sendBox":"发件箱","sendMsg":"发站内信","receiver":"收件人","sender":"发件人","username":"收件人用户名","messageTitle":"标题","content":"内容","send":"发送","reset":"重置","errorMsg1":"请选择收件人","errorMsg2":"请选择收件人用户名","errorMsg3":"请输入信息标题","errorMsg4":"请输入信息内容","sendMessageSuccess":"发送成功","unread":"未读","readed":"已读","readMessage":"阅读消息"}
+export default {
+  title: "站内信",
+  receiveBox: "收件箱",
+  sendBox: "发件箱",
+  sendMsg: "发站内信",
+  receiver: "收件人",
+  sender: "发件人",
+  username: "收件人用户名",
+  messageTitle: "标题",
+  content: "内容",
+  send: "发送",
+  reset: "重置",
+  errorMsg1: "请选择收件人",
+  errorMsg2: "请选择收件人用户名",
+  errorMsg3: "请输入信息标题",
+  errorMsg4: "请输入信息内容",
+  sendMessageSuccess: "发送成功",
+  unread: "未读",
+  readed: "已读",
+  readMessage: "阅读消息",
+};

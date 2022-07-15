@@ -48,19 +48,19 @@ export default {
     transfer: "Transferts",
     action: "activité",
     lotteryHall: "Salle de loterie",
-    lotteryPrizeGroup: "Rabais de loterie"
+    lotteryPrizeGroup: "Rabais de loterie",
   },
   bottom: {
     home: "Page d'accueil",
     play: "loteries",
     result: "Résultats Lotto",
-    my: "mon"
+    my: "mon",
   },
   theme: {
     red: "Rouge",
     blue: "Bleu",
     orange: "Orange",
-    violet: "Violet"
+    violet: "Violet",
   },
   header: {
     digitalLottery: "Loterie numérique",
@@ -70,7 +70,7 @@ export default {
     liveVideo: "Vidéo en direct",
     sportsEvent: "SPORTS",
     eSports: "eSports",
-    liveInteraction: "Interaction en direct"
+    liveInteraction: "Interaction en direct",
   },
   home: {
     day: "jours",
@@ -102,7 +102,7 @@ export default {
     prize: "bonus",
     playNow: "commence",
     downloadAppNotice: "Ouvrez l'APP maintenant et profitez-en davantage",
-    download: "Télécharger maintenant"
+    download: "Télécharger maintenant",
   },
   gameInfo: {
     the: "Section",
@@ -119,7 +119,7 @@ export default {
     theFirst: "Première place",
     second: "Deuxième",
     third: "Troisième",
-    loading: "En arrivant"
+    loading: "En arrivant",
   },
   gameTemplate: {
     hotAndCold: "Chaud et froid",
@@ -219,7 +219,7 @@ export default {
     thirdBall: "Troisième balle",
     fouthBall: "Quatrième bal",
     fivethBall: "cinquième balle",
-    dragonTiger: "Tigre Dragon"
+    dragonTiger: "Tigre Dragon",
   },
   oderList: {
     myNotes: "Mes paris",
@@ -254,7 +254,7 @@ export default {
     Completed: "terminé",
     UserTermination: "Résiliation de l'utilisateur",
     AdministratorTermination: "Résiliation de",
-    SystemTermination: "Terminaison du système"
+    SystemTermination: "Terminaison du système",
   },
   lotteryRecord: {
     bettingPage: "Retour à la page des paris",
@@ -388,7 +388,7 @@ export default {
     shiGe: "Dix",
     saveLotteryNotice: "La couleur de la collection a atteint la limite (8)",
     cleanNumberNotice:
-      "Numéros en double ou illégaux détectés, réinitialisés au format correct"
+      "Numéros en double ou illégaux détectés, réinitialisés au format correct",
   },
   gameRecord: {
     lotteryTypes: "Graine de couleur",
@@ -430,7 +430,7 @@ export default {
       "Nom d'utilisateur : <i>{username}</i> | Heure du pari : <i>{heure}</i>",
     betPosition: "Position de mise",
     betAmount: "Remarque : <i>{currency}</i> <i>{amount}</i>",
-    betTime: "Heure du pari : <i>{heure}</i>"
+    betTime: "Heure du pari : <i>{heure}</i>",
   },
   alertComponent: {
     completeCounts: "Période terminée",
@@ -527,7 +527,7 @@ export default {
     SalesVolume: "Volume des ventes",
     ProfitAndLoss: "Yingkuei",
     FundSource: "Source de financement",
-    fundTarget: "Où chercher des fonds"
+    fundTarget: "Où chercher des fonds",
   },
   sideBar: {
     close: "Menu Collide",
@@ -535,7 +535,7 @@ export default {
     Add: "Ajouter/modifier",
     notYetOpen: "Non ouvert",
     MyCollection: "Mes favoris",
-    LotteryChoice: "Choisissez la loterie"
+    LotteryChoice: "Choisissez la loterie",
   },
   popup: {
     title1: "Conseils système",
@@ -549,7 +549,7 @@ export default {
     BeCareful:
       "La période du prix a été fermée. Veuillez noter que la période de remise est mise à jour",
     bindBankCardNotice:
-      "Vous ne liez aucune carte, veuillez d'abord lier la carte"
+      "Vous ne liez aucune carte, veuillez d'abord lier la carte",
   },
   successMessage: {
     successMessage1: "Succès des paris",
@@ -557,7 +557,7 @@ export default {
     successMessage3: "Copie initiée avec succès",
     successMessage4: "Les paris simples réussis",
     successMessage5: "Sauvez le succès !",
-    successMessage6: "Arrêter le succès de"
+    successMessage6: "Arrêter le succès de",
   },
   errorMessage: {
     errorMessage1: "Veuillez sélectionner le bon numéro et réessayer",
@@ -578,16 +578,16 @@ export default {
     errorMessage13: "Le jeu n'est actuellement pas disponible",
     errorMessage14: "Seuls 8 chiffres peuvent être sélectionnés",
     errorMessage15: "Le gameplay actuel a été fermé",
-    errorMessage16: "Doit être dans le bon format de boîte aux lettres"
+    errorMessage16: "Doit être dans le bon format de boîte aux lettres",
   },
   recentAwards: {
     title: "Loterie récente",
     issue: "jiăng",
-    wnNumber: "Numéro de loto"
+    wnNumber: "Numéro de loto",
   },
   pagination: {
     the: "Section",
-    page: "page"
+    page: "page",
   },
   recharge: {
     currentUser: "Utilisateur actuel",
@@ -620,8 +620,7 @@ export default {
     bank: "banques",
     accountName: "Toname",
     accountNumber: "Numéro de compte",
-    tips:
-      "<li>Conseils intimes :</li> <li>1. frais <span>{Changefee}</span>, une seule limite de recharge <span>{min} ~ {max}</span>, le montant total de recharge sans limite<i>, automatique, secondes pour le compte. </i></li><li>2. afin de ne pas vous causer de dommages inutiles, veuillez ne pas enregistrer votre carte bancaire pour transférer de l'argent, la carte de plateforme sera remplacée de temps en temps, veuillez recharger sur la page de la plateforme la carte bancaire prévaut, merci 3. le montant du transfert doit être le même que</li> <li>le montant de la commande, sinon le le dépôt ne peut pas être payé à temps. </li><li>4. N'utilisez pas Alipay, WeChat pour transférer de l'argent sur le compte de l'entreprise. </li><li>5. en cas de doute sur le dépôt de garantie, veuillez contacter le service client. </li><li>6. Recharger, veuillez en fonction de la plate-forme correspondre automatiquement à la quantité à recharger, telle que la quantité correspondant à la plate-forme 100,31, votre recharge nécessite également 100,31 recharge de transfert. Sinon, cela affectera votre temps de recharge. </li>",
+    tips: "<li>Conseils intimes :</li> <li>1. frais <span>{Changefee}</span>, une seule limite de recharge <span>{min} ~ {max}</span>, le montant total de recharge sans limite<i>, automatique, secondes pour le compte. </i></li><li>2. afin de ne pas vous causer de dommages inutiles, veuillez ne pas enregistrer votre carte bancaire pour transférer de l'argent, la carte de plateforme sera remplacée de temps en temps, veuillez recharger sur la page de la plateforme la carte bancaire prévaut, merci 3. le montant du transfert doit être le même que</li> <li>le montant de la commande, sinon le le dépôt ne peut pas être payé à temps. </li><li>4. N'utilisez pas Alipay, WeChat pour transférer de l'argent sur le compte de l'entreprise. </li><li>5. en cas de doute sur le dépôt de garantie, veuillez contacter le service client. </li><li>6. Recharger, veuillez en fonction de la plate-forme correspondre automatiquement à la quantité à recharger, telle que la quantité correspondant à la plate-forme 100,31, votre recharge nécessite également 100,31 recharge de transfert. Sinon, cela affectera votre temps de recharge. </li>",
     help: "Aide à la recharge",
     bankList: "Liste des cartes bancaires",
     noteBandcardRecharging:
@@ -641,7 +640,7 @@ export default {
     depositSuccessSubTitle: "Réussite du",
     depositSuccessNotice:
       "Le montant a été crédité avec succès sur votre compte",
-    exchangeNotice: "Équivalent à {amount} {currency_unit}"
+    exchangeNotice: "Équivalent à {amount} {currency_unit}",
   },
   withdraw: {
     serialNumber: "Numéro de retrait",
@@ -666,8 +665,7 @@ export default {
       "Numéro de compte : {BankName} ({account}), Montant du retrait en espèces : {amount}",
     confirmWithdraw: "Confirmation de l'argent",
     refuseReason: "Motif du rejet",
-    tips:
-      "<li>Conseil intime :</li> <li>1. Un <i>montant maximum unique {amount}</i> {currency_unit}. </li><li>2. <span class='{css}'>Les retraits gratuits <i>{fee_times}</i> par jour, <i>{<i>rate} % seront facturés à partir de {</i>draw_times</i>}. Pour les désagréments, merci ! </span>Les retraits ont été effectués aujourd'hui : <i>{current_times}/{max_times</i></li> <li class='{css_time}'><i>}</i> 3. </li>",
+    tips: "<li>Conseil intime :</li> <li>1. Un <i>montant maximum unique {amount}</i> {currency_unit}. </li><li>2. <span class='{css}'>Les retraits gratuits <i>{fee_times}</i> par jour, <i>{<i>rate} % seront facturés à partir de {</i>draw_times</i>}. Pour les désagréments, merci ! </span>Les retraits ont été effectués aujourd'hui : <i>{current_times}/{max_times</i></li> <li class='{css_time}'><i>}</i> 3. </li>",
     tips1:
       "<li>Conseil intime :</li> <li>1. Le montant maximum de retrait pour une seule transaction est de <i>{amount}</i>. </li><li>2. Vous pouvez effectuer un retrait <i>{max_times} fois</i> par jour. Les retraits inférieurs à <i>{min_amount}</i> seront déduits des frais de traitement des roupies <i>{fixed_fee}</i>, tandis que les retraits supérieurs à <i>{min_amount}</i> seront déduits des frais de <i>{rate} %</i>. </li>",
     tips2:
@@ -682,7 +680,7 @@ export default {
       "Les retraits supérieurs ou égaux à <i>{amount}</i> seront déduits des frais de <i>{value}</i> {value_unit}.",
     tipTmpl4:
       "Tous les retraits seront déduits des frais de traitement de <i>{value}</i> {value_unit}.",
-    noticeOfGettingU: "Équivalent à {amount} U"
+    noticeOfGettingU: "Équivalent à {amount} U",
   },
   personalCenter: {
     personalCenter: "Centre personnel",
@@ -802,7 +800,7 @@ export default {
     kindlyNotice: "Conseils intimes :",
     transferLimit: "Transfert maximum unique",
     transferSubmitSuccess:
-      "La demande de transfert a été enregistrée, veuillez patienter pour l'examen"
+      "La demande de transfert a été enregistrée, veuillez patienter pour l'examen",
   },
   validateError: {
     PasswordLength:
@@ -833,12 +831,12 @@ export default {
       "La longueur maximale du numéro de carte bancaire est comprise entre {min} et {max}",
     gender: "Genre",
     male: "Homme",
-    female: "Femme"
+    female: "Femme",
   },
   fundAlertComponents: {
     checkBankCard: "Vérifier la carte bancaire",
     selectBoundBankCard: "Sélectionner une carte bancaire",
-    notTheSameCardNotice: "Incohérences des cartes vérifiées"
+    notTheSameCardNotice: "Incohérences des cartes vérifiées",
   },
   Notification: {
     OperationSuccess: "Succès de",
@@ -849,7 +847,7 @@ export default {
     titlePrrorPage: "Page d'erreur",
     loading: "Chargement...",
     noMoreData: "A été entièrement chargé",
-    noResult: "Plus de disques "
+    noResult: "Plus de disques ",
   },
   accountInfo: {
     rememberPassword: "Se souvenir du mot de passe",
@@ -872,7 +870,7 @@ export default {
     updateRealNameNotice:
       "Le vrai nom ne peut être modifié qu'une seule fois, veuillez vérifier pour confirmer",
     realNameIsDiffenceAccountName:
-      "Le vrai nom et le nom du compte ne sont pas identiques, veuillez confirmer"
+      "Le vrai nom et le nom du compte ne sont pas identiques, veuillez confirmer",
   },
   teamRecord: {
     forefather: "Hiérarchie",
@@ -953,7 +951,7 @@ export default {
     parent: "supérieurs",
     copy: "reproduit",
     copyNotice: "Le contenu a été copié sur le panneau de pâte",
-    anyLevel: "Transfert vers un autre"
+    anyLevel: "Transfert vers un autre",
   },
   agentCenter: {
     agentCenter: "Team Center",
@@ -965,7 +963,7 @@ export default {
     teamManager: "Gestion d'équipe",
     linkManager: "Gestion des liens",
     agentCreateUser: "Ouverture manuelle du compte",
-    linkCreateUser: "Lien pour ouvrir un compte"
+    linkCreateUser: "Lien pour ouvrir un compte",
   },
   message: {
     title: "Lettre de la station",
@@ -986,11 +984,11 @@ export default {
     sendMessageSuccess: "Envoi réussi",
     unread: "non lu",
     readed: "Lire",
-    readMessage: "Lire le message"
+    readMessage: "Lire le message",
   },
   announcement: {
     title: "Centre d'annonces",
     detail: "Détails de l'annonce",
-    more: "plus"
-  }
+    more: "plus",
+  },
 };

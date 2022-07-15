@@ -49,19 +49,19 @@ export default {
     transfer: "Pemindahan",
     action: "kegiatan",
     lotteryHall: "Dewan Loteri",
-    lotteryPrizeGroup: "Rebat Loteri"
+    lotteryPrizeGroup: "Rebat Loteri",
   },
   bottom: {
     home: "FrontPage",
     play: "loteri",
     result: "Keputusan Loteri",
-    my: "aku"
+    my: "aku",
   },
   theme: {
     red: "merah",
     blue: "BIRU",
     orange: "oren",
-    violet: "Zi"
+    violet: "Zi",
   },
   header: {
     digitalLottery: "Loteri Digital",
@@ -71,7 +71,7 @@ export default {
     liveVideo: "Video secara langsung",
     sportsEvent: "Acara sukan",
     eSports: "Esports",
-    liveInteraction: "Interaksi Langsung"
+    liveInteraction: "Interaksi Langsung",
   },
   home: {
     day: "hari",
@@ -103,7 +103,7 @@ export default {
     prize: "bonus",
     playNow: "bermula",
     downloadAppNotice: "Buka apl sekarang dan nikmati lebih banyak lagi",
-    download: "MUAT TURUN"
+    download: "MUAT TURUN",
   },
   gameInfo: {
     the: "Ta",
@@ -120,7 +120,7 @@ export default {
     theFirst: "Tempat pertama",
     second: "Tempat kedua",
     third: "Ketiga",
-    loading: "Masuk"
+    loading: "Masuk",
   },
   gameTemplate: {
     hotAndCold: "Panas dan sejuk",
@@ -221,7 +221,7 @@ export default {
     thirdBall: "Bola ketiga",
     fouthBall: "Bola keempat",
     fivethBall: "Bola kelima",
-    dragonTiger: "naga harimau"
+    dragonTiger: "naga harimau",
   },
   oderList: {
     myNotes: "pertaruhan saya",
@@ -256,7 +256,7 @@ export default {
     Completed: "lengkap",
     UserTermination: "Penamatan Pengguna",
     AdministratorTermination: "Penamatan Pentadbir",
-    SystemTermination: "Penamatan Sistem"
+    SystemTermination: "Penamatan Sistem",
   },
   lotteryRecord: {
     bettingPage: "Kembali ke Halaman Pertaruhan",
@@ -390,7 +390,7 @@ export default {
     shiGe: "Sepuluh",
     saveLotteryNotice: "Jumlah maksimum favorit telah dicapai（8）",
     cleanNumberNotice:
-      "Nombor pendua atau haram telah dikesan dan telah ditetapkan semula dalam format yang betul"
+      "Nombor pendua atau haram telah dikesan dan telah ditetapkan semula dalam format yang betul",
   },
   gameRecord: {
     lotteryTypes: "ci",
@@ -431,7 +431,7 @@ export default {
     moreInfo: "Nama pengguna: <i>{username}</i> | <i>Waktu Taruhan: {time}</i>",
     betPosition: "Kedudukan pertaruhan",
     betAmount: "Nota: <i>{currency}</i> <i>{amount}</i>",
-    betTime: "Masa Bet: <i>{time}</i>"
+    betTime: "Masa Bet: <i>{time}</i>",
   },
   alertComponent: {
     completeCounts: "Bilangan tempoh yang telah selesai",
@@ -528,7 +528,7 @@ export default {
     SalesVolume: "Jumlah jualan",
     ProfitAndLoss: "P&L",
     FundSource: "Sumber pembiayaan",
-    fundTarget: "Tempat pembiayaan"
+    fundTarget: "Tempat pembiayaan",
   },
   sideBar: {
     close: "Menu Colt",
@@ -536,7 +536,7 @@ export default {
     Add: "Tambah/Sunting",
     notYetOpen: "Belum dibuka",
     MyCollection: "Koleksi saya",
-    LotteryChoice: "Memilih loteri"
+    LotteryChoice: "Memilih loteri",
   },
   popup: {
     title1: "PETUA SISTEM",
@@ -550,7 +550,7 @@ export default {
     BeCareful:
       "Tidak. Tempoh hadiah telah ditutup, sila beri perhatian kepada kemaskini tempoh anugerah",
     bindBankCardNotice:
-      "Anda tidak mengikat mana-mana kad bank, sila mengikat kad terlebih dahulu"
+      "Anda tidak mengikat mana-mana kad bank, sila mengikat kad terlebih dahulu",
   },
   successMessage: {
     successMessage1: "Bet Kejayaan",
@@ -558,7 +558,7 @@ export default {
     successMessage3: "Berjaya dimulakan",
     successMessage4: "Copy Bet Kejayaan",
     successMessage5: "SELAMATKAN KEJAYAAN!",
-    successMessage6: "Hentikan kejayaan dokumentari"
+    successMessage6: "Hentikan kejayaan dokumentari",
   },
   errorMessage: {
     errorMessage1: "Sila pilih nombor yang betul dan cuba lagi",
@@ -579,16 +579,16 @@ export default {
     errorMessage13: "Permainan ini kini tidak tersedia",
     errorMessage14: "Anda hanya boleh memilih sehingga 8 nombor",
     errorMessage15: "Main semasa telah ditutup",
-    errorMessage16: "Mesti berada dalam format peti mel yang betul"
+    errorMessage16: "Mesti berada dalam format peti mel yang betul",
   },
   recentAwards: {
     title: "Loteri Terkini",
     issue: "Tempoh hadiah",
-    wnNumber: "Nombor loteri"
+    wnNumber: "Nombor loteri",
   },
   pagination: {
     the: "Ta",
-    page: "halaman"
+    page: "halaman",
   },
   recharge: {
     currentUser: "Pengguna Semasa",
@@ -621,8 +621,7 @@ export default {
     bank: "bank",
     accountName: "To-nama-",
     accountNumber: "kisah",
-    tips:
-      "<li>Petua intim:<i class='iconfont icon-dian'></i></li> <li><span>yuran {ChangeFee}</span>, had cas semula tunggal<span>{min} ~ {max}</span>, cas semula jumlah tanpa had <font class='second'>Automatik sepenuhnya, saat ke akaun</font>. </li><li><i class='iconfont icon-dian'></i>Agar tidak menyebabkan kerugian yang tidak perlu, sila jangan simpan kad bank untuk pemindahan, kad bank platform akan diganti dari semasa ke semasa, cas semula sila rujuk kad bank halaman platform yang diguna pakai, terima kasih. </li><li><i class='iconfont icon-dian'></i>Agar tidak menyebabkan kerugian yang tidak perlu kepada anda, sila jangan simpan alamat dompet untuk pemindahan. Alamat dompet platform akan berubah dari semasa ke semasa. </li><i class='iconfont icon-dian'></i><li>Jumlah pemindahan mestilah sama dengan jumlah pesanan, jika tidak, deposit tidak boleh diterima dalam masa. </li><li><i class='iconfont icon-dian'></i>Jangan gunakan Alipay atau WeChat untuk memindahkan dana ke akaun syarikat anda. </li><li><i class='iconfont icon-dian'></i>Jika terdapat sebarang keraguan tentang deposit, sila hubungi khidmat pelanggan. </li><li><i class='iconfont icon-dian'></i>Sila cas semula mengikut jumlah padanan automatik platform, seperti: jumlah perlawanan platform {min} .31, caj semula anda juga memerlukan {min} .31 pemindahan cas semula. Kegagalan berbuat demikian akan menjejaskan masa cas semula anda. </li>",
+    tips: "<li>Petua intim:<i class='iconfont icon-dian'></i></li> <li><span>yuran {ChangeFee}</span>, had cas semula tunggal<span>{min} ~ {max}</span>, cas semula jumlah tanpa had <font class='second'>Automatik sepenuhnya, saat ke akaun</font>. </li><li><i class='iconfont icon-dian'></i>Agar tidak menyebabkan kerugian yang tidak perlu, sila jangan simpan kad bank untuk pemindahan, kad bank platform akan diganti dari semasa ke semasa, cas semula sila rujuk kad bank halaman platform yang diguna pakai, terima kasih. </li><li><i class='iconfont icon-dian'></i>Agar tidak menyebabkan kerugian yang tidak perlu kepada anda, sila jangan simpan alamat dompet untuk pemindahan. Alamat dompet platform akan berubah dari semasa ke semasa. </li><i class='iconfont icon-dian'></i><li>Jumlah pemindahan mestilah sama dengan jumlah pesanan, jika tidak, deposit tidak boleh diterima dalam masa. </li><li><i class='iconfont icon-dian'></i>Jangan gunakan Alipay atau WeChat untuk memindahkan dana ke akaun syarikat anda. </li><li><i class='iconfont icon-dian'></i>Jika terdapat sebarang keraguan tentang deposit, sila hubungi khidmat pelanggan. </li><li><i class='iconfont icon-dian'></i>Sila cas semula mengikut jumlah padanan automatik platform, seperti: jumlah perlawanan platform {min} .31, caj semula anda juga memerlukan {min} .31 pemindahan cas semula. Kegagalan berbuat demikian akan menjejaskan masa cas semula anda. </li>",
     help: "Bantuan Cas Semula",
     bankList: "Senarai kad bank",
     noteBandcardRecharging:
@@ -644,7 +643,7 @@ export default {
     fastAmount: "Jumlah Pantas",
     depositSuccessWhenVirtualCurrency:
       "Permohonan topup anda telah dikemukakan jadi sila bersabar dan tunggu semakan.",
-    depositQRCode: "Kod QR Resit"
+    depositQRCode: "Kod QR Resit",
   },
   withdraw: {
     serialNumber: "Nombor pengeluaran",
@@ -669,8 +668,7 @@ export default {
       "Nombor akaun pengeluaran tunai: {bankName} ({account}), jumlah pengeluaran: {amount}",
     confirmWithdraw: "Pengesahan Tunai",
     refuseReason: "Alasan penolakan",
-    tips:
-      "<li>Tips intim:</li> <li>1. tunai maksimum tunggal keluar <i>{amount}</i> {currency_unit}. </li><li>2. <span class='{css}'>Pengeluaran percuma <i>{fee_times} kali</i> sehari, <i>{rate}% akan dicaj bermula dari {withdraw_times</i> <i>}</i> kali. Terima kasih atas sebarang kesulitan yang ditimbulkan. </span></li> Bilangan <li class='{css_time}'><i>Pengeluaran Hari Ini:<i>{current_times}/{max_times</i>}</i>3. </li>",
+    tips: "<li>Tips intim:</li> <li>1. tunai maksimum tunggal keluar <i>{amount}</i> {currency_unit}. </li><li>2. <span class='{css}'>Pengeluaran percuma <i>{fee_times} kali</i> sehari, <i>{rate}% akan dicaj bermula dari {withdraw_times</i> <i>}</i> kali. Terima kasih atas sebarang kesulitan yang ditimbulkan. </span></li> Bilangan <li class='{css_time}'><i>Pengeluaran Hari Ini:<i>{current_times}/{max_times</i>}</i>3. </li>",
     tips1:
       "<li>Tips:</li> <li>1. jumlah pengeluaran maksimum untuk satu transaksi ialah <i>{amount}</i>. </li><li>2. Anda dapat menarik <i>{max_times} kali</i> per hari. Pengeluaran di bawah <i>{min_amount}</i> akan ditolak daripada <i>{fixed_fee}</i> rupee, manakala pengeluaran di atas <i>{min_amount}</i> akan ditolak <i>{rate}%</i> . </li>",
     tips2:
@@ -685,7 +683,7 @@ export default {
       "Pengeluaran lebih besar daripada atau sama dengan <i>{amount}</i> akan ditolak daripada yuran <i>{value}</i> {value_unit}.",
     tipTmpl4:
       "Semua pengeluaran akan dikenakan bayaran sebanyak <i>{value} {</i> value_unit}.",
-    noticeOfGettingU: "bersamaan dengan {amount} U"
+    noticeOfGettingU: "bersamaan dengan {amount} U",
   },
   personalCenter: {
     personalCenter: "Pusat Peribadi",
@@ -805,7 +803,7 @@ export default {
     kindlyNotice: "Petua intim:",
     transferLimit: "Maksimum Tunggal Boleh Dip",
     transferSubmitSuccess:
-      "Permintaan pemindahan disimpan, sila tunggu kelulusan"
+      "Permintaan pemindahan disimpan, sila tunggu kelulusan",
   },
   validateError: {
     PasswordLength: "Kata laluan mestilah antara 6 dan 16 nombor dan huruf",
@@ -833,12 +831,12 @@ export default {
     bankCardNumberMaxLength:
       "Panjang nombor kad maksimum antara {min} dan {max}",
     bankcardLengthMust: "Panjang {field} mestilah {length} bit",
-    bankCardLengthIn: "Panjang {field} mestilah salah satu {array}"
+    bankCardLengthIn: "Panjang {field} mestilah salah satu {array}",
   },
   fundAlertComponents: {
     checkBankCard: "Sahkan kad bank anda",
     selectBoundBankCard: "Pilih kad bank",
-    notTheSameCardNotice: "Kad yang disahkan tidak sepadan"
+    notTheSameCardNotice: "Kad yang disahkan tidak sepadan",
   },
   Notification: {
     OperationSuccess: "Operasi Berjaya",
@@ -848,7 +846,7 @@ export default {
     titlePrrorPage: "Halaman Ralat",
     loading: "Memuatkan...",
     noMoreData: "Semua Dimuatkan",
-    noResult: "Tiada lagi rekod "
+    noResult: "Tiada lagi rekod ",
   },
   accountInfo: {
     rememberPassword: "Ingat Kata Laluan",
@@ -874,7 +872,7 @@ export default {
       "Nama sebenar dan nama akaun tidak sepadan, sila sahkan",
     gender: "jantina",
     male: "jantan",
-    female: "Nu"
+    female: "Nu",
   },
   teamRecord: {
     forefather: "Hierarki",
@@ -955,7 +953,7 @@ export default {
     parent: "atasan",
     copy: "diterbitkan semula",
     copyNotice: "Kandungan telah disalin ke papan tampal",
-    anyLevel: "Pindahkan ke yang lain"
+    anyLevel: "Pindahkan ke yang lain",
   },
   agentCenter: {
     agentCenter: "Pusat Pasukan",
@@ -994,7 +992,7 @@ export default {
     labelTransferOut: "Amaun Pemindahan",
     labelTransferIn: "Amaun Resit",
     labelSendRedPacket: "Hantar jumlah sampul merah",
-    labelGetRedPacket: "Terima sampul merah"
+    labelGetRedPacket: "Terima sampul merah",
   },
   message: {
     title: "Surat stesen",
@@ -1015,11 +1013,11 @@ export default {
     sendMessageSuccess: "Berjaya Dihantar",
     unread: "belum dibaca",
     readed: "MEMBACA",
-    readMessage: "Baca mesej"
+    readMessage: "Baca mesej",
   },
   announcement: {
     title: "Pusat Pengumuman",
     detail: "Butiran Pengumuman",
-    more: "lebih lagi"
-  }
+    more: "lebih lagi",
+  },
 };

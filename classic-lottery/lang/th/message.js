@@ -1,1 +1,21 @@
-export default {"title":"จดหมายประจำสถานี","receiveBox":"กล่องจดหมาย","sendBox":"กล่องส่งข้อความ","sendMsg":"ส่งจดหมายประจำสถานี","receiver":"ผู้รับ","sender":"ผู้ส่ง","username":"ชื่อผู้ใช้ผู้รับ","messageTitle":"หัวข้อเรื่อง","content":"เนื้อหา","send":"ส่ง","reset":"การตั้งค่าใหม่","errorMsg1":"กรุณาเลือกผู้รับ","errorMsg2":"โปรดเลือกชื่อผู้ใช้ผู้รับ","errorMsg3":"กรุณากรอกชื่อข้อความ","errorMsg4":"กรุณากรอกเนื้อหาข้อมูล","sendMessageSuccess":"ส่งสำเร็จ","unread":"ไม่ได้อ่าน","readed":"อ่าน","readMessage":"อ่านข้อความ"}
+export default {
+  title: "จดหมายประจำสถานี",
+  receiveBox: "กล่องจดหมาย",
+  sendBox: "กล่องส่งข้อความ",
+  sendMsg: "ส่งจดหมายประจำสถานี",
+  receiver: "ผู้รับ",
+  sender: "ผู้ส่ง",
+  username: "ชื่อผู้ใช้ผู้รับ",
+  messageTitle: "หัวข้อเรื่อง",
+  content: "เนื้อหา",
+  send: "ส่ง",
+  reset: "การตั้งค่าใหม่",
+  errorMsg1: "กรุณาเลือกผู้รับ",
+  errorMsg2: "โปรดเลือกชื่อผู้ใช้ผู้รับ",
+  errorMsg3: "กรุณากรอกชื่อข้อความ",
+  errorMsg4: "กรุณากรอกเนื้อหาข้อมูล",
+  sendMessageSuccess: "ส่งสำเร็จ",
+  unread: "ไม่ได้อ่าน",
+  readed: "อ่าน",
+  readMessage: "อ่านข้อความ",
+};

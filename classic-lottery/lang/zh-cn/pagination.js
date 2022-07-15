@@ -1,1 +1,1 @@
-export default {"the":"第","page":"页"}
+export default { the: "第", page: "页" };

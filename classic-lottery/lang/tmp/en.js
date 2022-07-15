@@ -49,7 +49,7 @@ export default {
     action: "Promotion",
     lotteryHall: "Hall",
     lotteryPrizeGroup: "Rebate Class",
-    hotLottery: "Popular gameplay"
+    hotLottery: "Popular gameplay",
   },
   bottom: { home: "Home", play: "Lottery", result: "Lottery Result", my: "My" },
   theme: { red: "Red", blue: "Blue", orange: "Orange", violet: "Purple" },
@@ -61,7 +61,7 @@ export default {
     liveVideo: "Live Casino",
     sportsEvent: "Sports",
     eSports: "eSports",
-    liveInteraction: "Live Streaming"
+    liveInteraction: "Live Streaming",
   },
   home: {
     day: "Day",
@@ -100,7 +100,7 @@ export default {
     labelCustomerService: "customer service",
     labelHotLottery: "Popular gameplay",
     labelHotLotteryVote: "Vote Entrance",
-    labelTransfer: "Transfers"
+    labelTransfer: "Transfers",
   },
   gameInfo: {
     the: "No.",
@@ -117,7 +117,7 @@ export default {
     theFirst: "Champion",
     second: "2nd",
     third: "3rd",
-    loading: "Acquiring"
+    loading: "Acquiring",
   },
   gameTemplate: {
     hotAndCold: "Hot/Cold",
@@ -217,7 +217,7 @@ export default {
     thirdBall: "3rd Ball",
     fouthBall: "4th Ball",
     fivethBall: "5th Ball",
-    dragonTiger: "Dragon/Tiger"
+    dragonTiger: "Dragon/Tiger",
   },
   oderList: {
     myNotes: "Bet History",
@@ -252,7 +252,7 @@ export default {
     Completed: "Finished",
     UserTermination: "User Stop",
     AdministratorTermination: "Admin Stop",
-    SystemTermination: "System Stop"
+    SystemTermination: "System Stop",
   },
   lotteryRecord: {
     bettingPage: "Back to Bet",
@@ -386,7 +386,7 @@ export default {
     shiGe: "4th & 5th Digits",
     saveLotteryNotice: "You can only have 8 favorite games",
     cleanNumberNotice:
-      "Duplicate or illegal numbers have been detected. All numbers are converted to the correct format."
+      "Duplicate or illegal numbers have been detected. All numbers are converted to the correct format.",
   },
   gameRecord: {
     lotteryTypes: "Game",
@@ -427,7 +427,7 @@ export default {
     moreInfo: "Username: <i>{username}</i> | Betting time: <i>{time}</i>",
     betPosition: "Bet position",
     betAmount: "Bet amount: <i>{currency}</i> <i>{amount}</i>",
-    betTime: "Betting time: <i>{time}</i>"
+    betTime: "Betting time: <i>{time}</i>",
   },
   alertComponent: {
     completeCounts: "Draws Finished",
@@ -522,7 +522,7 @@ export default {
     SalesVolume: "Volume",
     ProfitAndLoss: "Profit/Loss",
     FundSource: "Fund Source",
-    fundTarget: "Where to go for funds"
+    fundTarget: "Where to go for funds",
   },
   sideBar: {
     close: "Collapse Menu",
@@ -530,7 +530,7 @@ export default {
     Add: "Add/Edit",
     notYetOpen: "Not Available",
     MyCollection: "Favorite",
-    LotteryChoice: "Choose Game"
+    LotteryChoice: "Choose Game",
   },
   popup: {
     title1: "System Message",
@@ -542,7 +542,7 @@ export default {
     EndOfAwardPeriod: "Draw Finish",
     the: "No.",
     BeCareful: "No more bets for this draw",
-    bindBankCardNotice: "Please register your bank account first."
+    bindBankCardNotice: "Please register your bank account first.",
   },
   successMessage: {
     successMessage1: "Success!",
@@ -550,7 +550,7 @@ export default {
     successMessage3: "Success!",
     successMessage4: "Success!",
     successMessage5: "Saved!",
-    successMessage6: "Password Updated!"
+    successMessage6: "Password Updated!",
   },
   errorMessage: {
     errorMessage1: "Please choose the correct numbers and try again.",
@@ -569,12 +569,12 @@ export default {
     errorMessage13: "Unavailable",
     errorMessage14: "Only select up to 8 numbers",
     errorMessage15: "Please enter the correct email address",
-    errorMessage16: "Must be the correct mail format"
+    errorMessage16: "Must be the correct mail format",
   },
   recentAwards: {
     title: "Latest Results",
     issue: "Draw No.",
-    wnNumber: "Results"
+    wnNumber: "Results",
   },
   pagination: { the: "No.", page: "Page" },
   recharge: {
@@ -607,8 +607,7 @@ export default {
     accountName: "Account Name",
     accountNumber: "Account Number",
     accountNumber1: "FPS Number",
-    tips:
-      "<li>Individual tips:</li><li><i class='iconfont icon-dian'></i><span>{changeFee}</span> Transaction fee. Single transaction limit from <span>{min}~{max}</span>. No limit of transactions. <font class='second'>Fully automated, fast credit.</font></li><li><i class='iconfont icon-dian'></i>The bank card on lottery platform will change time to time. To avoid unnecessary lost, please do not save the bank card for convenience. Please refer to the current bank card for deposit.</li><li><i class='iconfont icon-dian'></i>The wallet address on lottery platform will change time to time. To avoid unnecessary lost, please do not save the address for convenience. Please refer to the current wallet address for deposit.</li><li><i class='iconfont icon-dian'></i>Transaction amount and order amount must be consistent. Or else the deposit will be delay.</li><li><i class='iconfont icon-dian'></i>Do not use Alipay or WeChat to transfer funds to company accounts.</li><li><i class='iconfont icon-dian'></i>If there are problem encounter during deposit, please contact customer service immediately.</li><li><i class='iconfont icon-dian'></i>To recharge, please recharge according to the platform's automatic matching amount, for example: the platform matching amount is {min}.31, and your recharge also needs {min}.31 transfer to recharge. Otherwise, it will affect your recharge time.</li>",
+    tips: "<li>Individual tips:</li><li><i class='iconfont icon-dian'></i><span>{changeFee}</span> Transaction fee. Single transaction limit from <span>{min}~{max}</span>. No limit of transactions. <font class='second'>Fully automated, fast credit.</font></li><li><i class='iconfont icon-dian'></i>The bank card on lottery platform will change time to time. To avoid unnecessary lost, please do not save the bank card for convenience. Please refer to the current bank card for deposit.</li><li><i class='iconfont icon-dian'></i>The wallet address on lottery platform will change time to time. To avoid unnecessary lost, please do not save the address for convenience. Please refer to the current wallet address for deposit.</li><li><i class='iconfont icon-dian'></i>Transaction amount and order amount must be consistent. Or else the deposit will be delay.</li><li><i class='iconfont icon-dian'></i>Do not use Alipay or WeChat to transfer funds to company accounts.</li><li><i class='iconfont icon-dian'></i>If there are problem encounter during deposit, please contact customer service immediately.</li><li><i class='iconfont icon-dian'></i>To recharge, please recharge according to the platform's automatic matching amount, for example: the platform matching amount is {min}.31, and your recharge also needs {min}.31 transfer to recharge. Otherwise, it will affect your recharge time.</li>",
     help: "Help",
     bankList: "Bank List",
     noteBandcardRecharging:
@@ -634,7 +633,7 @@ export default {
     fastAmount: "Quick Amount",
     depositSuccessWhenVirtualCurrency:
       "Your recharge application has been submitted, please wait patiently for review.",
-    depositQRCode: "Receiving QR code"
+    depositQRCode: "Receiving QR code",
   },
   withdraw: {
     serialNumber: "Serial Number",
@@ -659,8 +658,7 @@ export default {
       "Withdrawal account number: {bankName}({account}), withdrawal amount: {amount}",
     confirmWithdraw: "Confirm withdrawal",
     refuseReason: "Reason for rejection",
-    tips:
-      "<h1>Intimate reminder:</h1><li>The minimum withdrawal amount for a single transaction is <i>{withdraw_min_amount}</i> {currency_unit},The maximum withdrawal amount is <i>{withdraw_max_amount}</i> {currency_unit}. </li><li><span class='{css}'>Free withdrawals <i>{fee_times}</i> times every day, starting from the <i>{withdraw_times}</i> times, you will be charged <i>{rate}%</i> If any inconvenience is caused, please understand, thank you!</span> Number of withdrawals made today: <i>{current_times}/{max_times}</i></li><li class='{css_time}'>Daily withdrawal time is <i>{withdraw_allowed_time}</i>.</li>",
+    tips: "<h1>Intimate reminder:</h1><li>The minimum withdrawal amount for a single transaction is <i>{withdraw_min_amount}</i> {currency_unit},The maximum withdrawal amount is <i>{withdraw_max_amount}</i> {currency_unit}. </li><li><span class='{css}'>Free withdrawals <i>{fee_times}</i> times every day, starting from the <i>{withdraw_times}</i> times, you will be charged <i>{rate}%</i> If any inconvenience is caused, please understand, thank you!</span> Number of withdrawals made today: <i>{current_times}/{max_times}</i></li><li class='{css_time}'>Daily withdrawal time is <i>{withdraw_allowed_time}</i>.</li>",
     tips1:
       "<h1>Intimate reminder:</h1><li>The maximum withdrawal amount for a single transaction is <i>{amount}</i>. </li><li>You can withdraw <i>{max_times}</i> times a day. Withdrawals below <i>{min_amount}</i> will deduct a handling fee of <i>{fixed_fee}</i> rupees, and withdrawals above <i>{min_amount}</i> will deduct a <i>{rate}%</i> handling fee.</li>",
     tips2:
@@ -679,7 +677,7 @@ export default {
       "{source_currency_unit},Equivalent to {amount} {target_currency_unit}",
     tipTmpl5: "<li>Withdrawal arrival time: within 24 hours</li>",
     tipType1: "Bank Card",
-    tipType2: "USDT"
+    tipType2: "USDT",
   },
   personalCenter: {
     personalCenter: "Personal Center",
@@ -800,7 +798,7 @@ export default {
     transferLimit: "Maximum single transfer",
     transferSubmitSuccess:
       "The transfer request has been saved, please wait for review",
-    labelBankCode: "Bank Code"
+    labelBankCode: "Bank Code",
   },
   validateError: {
     PasswordLength:
@@ -828,12 +826,12 @@ export default {
     bankCardNumberMaxLength:
       "The maximum length of the bank card number is between {min} and {max}",
     bankcardLengthMust: "The length of {field} must be {length} bits",
-    bankCardLengthIn: "The length of {field} must be one of {array}"
+    bankCardLengthIn: "The length of {field} must be one of {array}",
   },
   fundAlertComponents: {
     checkBankCard: "Verify bank card",
     selectBoundBankCard: "Choose a bank card",
-    notTheSameCardNotice: "The verified card is inconsistent"
+    notTheSameCardNotice: "The verified card is inconsistent",
   },
   Notification: {
     OperationSuccess: "Operation successfully",
@@ -843,7 +841,7 @@ export default {
     titlePrrorPage: "Error Page",
     loading: "Loading...",
     noMoreData: "Loading Finished",
-    noResult: "No Result"
+    noResult: "No Result",
   },
   accountInfo: {
     rememberPassword: "Remember Password",
@@ -870,7 +868,7 @@ export default {
     gender: "Gender",
     male: "Male",
     female: "Female",
-    login: "Landing"
+    login: "Landing",
   },
   teamRecord: {
     forefather: "Level",
@@ -951,7 +949,7 @@ export default {
     parent: "Superior",
     copy: "copy",
     copyNotice: "The content has been copied to the pasteboard",
-    anyLevel: "Transfer to others"
+    anyLevel: "Transfer to others",
   },
   agentCenter: {
     agentCenter: "Affiliate Center",
@@ -990,7 +988,7 @@ export default {
     labelTransferOut: "Transfer Amount",
     labelTransferIn: "Received Amount",
     labelSendRedPacket: "Send Red Packet Amount",
-    labelGetRedPacket: "Receive Red Packet Amount"
+    labelGetRedPacket: "Receive Red Packet Amount",
   },
   message: {
     title: "Title",
@@ -1011,11 +1009,11 @@ export default {
     sendMessageSuccess: "Message sent successfully",
     unread: "unread",
     readed: "Have read",
-    readMessage: "Read Message"
+    readMessage: "Read Message",
   },
   announcement: {
     title: "Announcement",
     detail: "Announcement Details",
-    more: "More"
-  }
+    more: "More",
+  },
 };

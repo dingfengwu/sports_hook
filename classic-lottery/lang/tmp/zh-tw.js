@@ -49,7 +49,7 @@ export default {
     action: "活動",
     lotteryHall: "彩票大廳",
     lotteryPrizeGroup: "彩票返點",
-    hotLottery: "熱門彩票"
+    hotLottery: "熱門彩票",
   },
   bottom: { home: "首頁", play: "彩票", result: "開獎結果", my: "我的" },
   theme: { red: "紅", blue: "藍", orange: "橙", violet: "紫" },
@@ -61,7 +61,7 @@ export default {
     liveVideo: "真人視訊",
     sportsEvent: "體育賽事",
     eSports: "電子競技",
-    liveInteraction: "直播互動"
+    liveInteraction: "直播互動",
   },
   home: {
     day: "天",
@@ -100,7 +100,7 @@ export default {
     labelCustomerService: "客户服務",
     labelHotLottery: "熱門彩票",
     labelHotLotteryVote: "投票入口",
-    labelTransfer: "轉移"
+    labelTransfer: "轉移",
   },
   gameInfo: {
     the: "第",
@@ -117,7 +117,7 @@ export default {
     theFirst: "第一名",
     second: "第二名",
     third: "第叁名",
-    loading: "獲取中"
+    loading: "獲取中",
   },
   gameTemplate: {
     hotAndCold: "冷熱",
@@ -217,7 +217,7 @@ export default {
     thirdBall: "第叁球",
     fouthBall: "第四球",
     fivethBall: "第五球",
-    dragonTiger: "龍虎"
+    dragonTiger: "龍虎",
   },
   oderList: {
     myNotes: "我的注單",
@@ -252,7 +252,7 @@ export default {
     Completed: "已完成",
     UserTermination: "用戶終止",
     AdministratorTermination: "管理員終止",
-    SystemTermination: "系統終止"
+    SystemTermination: "系統終止",
   },
   lotteryRecord: {
     bettingPage: "返回投注頁",
@@ -385,7 +385,7 @@ export default {
     baiGe: "百個",
     shiGe: "十個",
     saveLotteryNotice: "收藏彩種已達到上限（8）",
-    cleanNumberNotice: "檢測到有重複或不合法的號碼, 已按照正確格式重置"
+    cleanNumberNotice: "檢測到有重複或不合法的號碼, 已按照正確格式重置",
   },
   gameRecord: {
     lotteryTypes: "彩種",
@@ -426,7 +426,7 @@ export default {
     moreInfo: "用戶名：<i>{username}</i> | 投注時間：<i>{time}</i>",
     betPosition: "投注位置",
     betAmount: "注額：<i>{currency}</i> <i>{amount}</i>",
-    betTime: "投注時間：<i>{time}</i>"
+    betTime: "投注時間：<i>{time}</i>",
   },
   alertComponent: {
     completeCounts: "完成期數",
@@ -520,7 +520,7 @@ export default {
     SalesVolume: "銷量",
     ProfitAndLoss: "盈虧",
     FundSource: "資金來源",
-    fundTarget: "資金去處"
+    fundTarget: "資金去處",
   },
   sideBar: {
     close: "收起菜單",
@@ -528,7 +528,7 @@ export default {
     Add: "添加/編輯",
     notYetOpen: "暫未開放",
     MyCollection: "我的收藏",
-    LotteryChoice: "選擇彩票"
+    LotteryChoice: "選擇彩票",
   },
   popup: {
     title1: "系統提示",
@@ -540,7 +540,7 @@ export default {
     EndOfAwardPeriod: "獎期結束",
     the: "第",
     BeCareful: "號獎期已截單, 請注意獎期更新",
-    bindBankCardNotice: "您未綁定任何銀行卡，請先綁定銀行卡"
+    bindBankCardNotice: "您未綁定任何銀行卡，請先綁定銀行卡",
   },
   successMessage: {
     successMessage1: "投注成功",
@@ -548,7 +548,7 @@ export default {
     successMessage3: "發起跟單成功",
     successMessage4: "跟單注單成功",
     successMessage5: "保存成功!",
-    successMessage6: "停止跟單成功"
+    successMessage6: "停止跟單成功",
   },
   errorMessage: {
     errorMessage1: "請選擇正確的號碼後重試",
@@ -566,7 +566,7 @@ export default {
     errorMessage13: "該遊戲當前不可用",
     errorMessage14: "最多只能選擇8個數字",
     errorMessage15: "當前玩法已經關閉",
-    errorMessage16: "必須爲正確的郵箱格式"
+    errorMessage16: "必須爲正確的郵箱格式",
   },
   recentAwards: { title: "近期開獎", issue: "獎期", wnNumber: "開獎號碼" },
   pagination: { the: "第", page: "頁" },
@@ -600,8 +600,7 @@ export default {
     accountName: "戶名",
     accountNumber: "賬號",
     accountNumber1: "快速識別碼",
-    tips:
-      "<li>貼心提示：</li><li><i class='iconfont icon-dian'></i>手續費<span>{changeFee}</span>，單筆充值限額<span>{min}~{max}</span>，充值總額無上限<font class='second'>，全自動，秒到賬。</font></li><li><i class='iconfont icon-dian'></i>為了不給您造成不必要的損失，請不要私自保存銀行卡進行轉賬，平台銀行卡是不定時會更換，充值請以平台頁面銀行卡為準，謝謝。</li><li><i class='iconfont icon-dian'></i>為了不給您造成不必要的損失，請不要私自保存錢包地址進行轉賬，平台錢包地址是不定時會更換，充值請以平台頁面錢包地址為準，謝謝。</li><li><i class='iconfont icon-dian'></i>轉賬金額須與訂單金額一致，否則存款無法及時到賬。</li><li><i class='iconfont icon-dian'></i>請勿使用支付寶、微信轉賬至公司賬號。</li><li><i class='iconfont icon-dian'></i>若存款存在疑問，請及時聯繫客服。</li><li><i class='iconfont icon-dian'></i>充值請按平台自動匹配金額進行充值，比如：平台匹配金額{min}.31，您的充值也需要{min}.31轉賬充值。否則會影響您的充值到賬時間。</li>",
+    tips: "<li>貼心提示：</li><li><i class='iconfont icon-dian'></i>手續費<span>{changeFee}</span>，單筆充值限額<span>{min}~{max}</span>，充值總額無上限<font class='second'>，全自動，秒到賬。</font></li><li><i class='iconfont icon-dian'></i>為了不給您造成不必要的損失，請不要私自保存銀行卡進行轉賬，平台銀行卡是不定時會更換，充值請以平台頁面銀行卡為準，謝謝。</li><li><i class='iconfont icon-dian'></i>為了不給您造成不必要的損失，請不要私自保存錢包地址進行轉賬，平台錢包地址是不定時會更換，充值請以平台頁面錢包地址為準，謝謝。</li><li><i class='iconfont icon-dian'></i>轉賬金額須與訂單金額一致，否則存款無法及時到賬。</li><li><i class='iconfont icon-dian'></i>請勿使用支付寶、微信轉賬至公司賬號。</li><li><i class='iconfont icon-dian'></i>若存款存在疑問，請及時聯繫客服。</li><li><i class='iconfont icon-dian'></i>充值請按平台自動匹配金額進行充值，比如：平台匹配金額{min}.31，您的充值也需要{min}.31轉賬充值。否則會影響您的充值到賬時間。</li>",
     help: "充值幫助",
     bankList: "銀行卡列表",
     noteBandcardRecharging:
@@ -624,7 +623,7 @@ export default {
     depositSuccessWhenVirtualCurrency: "您的充值申請已提交，請耐心等待審核.",
     depositQRCode: "收款二維碼",
     paymentWalletAddressNote1: "您只需輸入錢包地址的最後六位數",
-    rechargeRefNoNote1: "只需輸入txid的最後6位"
+    rechargeRefNoNote1: "只需輸入txid的最後6位",
   },
   withdraw: {
     serialNumber: "取款流水號",
@@ -646,8 +645,7 @@ export default {
     withdrawNotice: "提現賬號: {bankName}({account}}, 提現金額: {amount}",
     confirmWithdraw: "確認提現",
     refuseReason: "拒絕理由",
-    tips:
-      "<h1>貼心提示：</h1><li>單筆最高可提現<i>{amount}</i>{currency_unit}。</li><li><span class='{css}'>每天免費取款<i>{fee_times}</i>次，第<i>{withdraw_times}</i>次起將收取<i>{rate}%</i>的費用，如有造成不便，敬請諒解，謝謝！</span>今日已提現次數：<i>{current_times}/{max_times}</i></li><li class='{css_time}'>每天提現時間爲<i>{withdraw_allowed_time}</i>.</li>",
+    tips: "<h1>貼心提示：</h1><li>單筆最高可提現<i>{amount}</i>{currency_unit}。</li><li><span class='{css}'>每天免費取款<i>{fee_times}</i>次，第<i>{withdraw_times}</i>次起將收取<i>{rate}%</i>的費用，如有造成不便，敬請諒解，謝謝！</span>今日已提現次數：<i>{current_times}/{max_times}</i></li><li class='{css_time}'>每天提現時間爲<i>{withdraw_allowed_time}</i>.</li>",
     tips1:
       "<h1>貼心提示：</h1><li>單筆交易的最大提款金額爲<i>{amount}</i>。</li><li>您每天可以提款<i>{max_times}</i>次。低于<i>{min_amount}</i>的提款將扣除<i>{fixed_fee}</i>盧比的手續費，而高于<i>{min_amount}</i>的提款將扣除<i>{rate}％</i>的手續費。</li>",
     tips2:
@@ -665,7 +663,7 @@ export default {
     noticeOfGettingU:
       "{source_currency_unit},等於{amount}{target_currency_unit}",
     tipType1: "銀行卡",
-    tipType2: "USDT"
+    tipType2: "USDT",
   },
   personalCenter: {
     personalCenter: "個人中心",
@@ -782,7 +780,7 @@ export default {
     kindlyNotice: "貼心提示：",
     transferLimit: "單筆最高可轉賬",
     transferSubmitSuccess: "轉賬請求已保存，請等待審核",
-    labelBankCode: "店番号"
+    labelBankCode: "店番号",
   },
   validateError: {
     PasswordLength: "密碼長度必須在6到16之間的數字與字母",
@@ -807,12 +805,12 @@ export default {
       "IFSC格式不正確，長度爲11位，必須以4個字母開頭，接著是0，然後是6個數字結尾",
     bankCardNumberMaxLength: "銀行卡卡號的最大長度在{min}與{max}之間",
     bankcardLengthMust: "{field}的長度必須為{length}位",
-    bankCardLengthIn: "{field}的長度必須為{array}中的一個"
+    bankCardLengthIn: "{field}的長度必須為{array}中的一個",
   },
   fundAlertComponents: {
     checkBankCard: "驗證銀行卡",
     selectBoundBankCard: "選擇銀行卡",
-    notTheSameCardNotice: "驗證的卡不一致"
+    notTheSameCardNotice: "驗證的卡不一致",
   },
   Notification: {
     OperationSuccess: "操作成功",
@@ -822,7 +820,7 @@ export default {
     titlePrrorPage: "錯誤頁",
     loading: "加載中...",
     noMoreData: "已經全部加載完",
-    noResult: "沒有更多記錄 "
+    noResult: "沒有更多記錄 ",
   },
   accountInfo: {
     rememberPassword: "記住密碼",
@@ -846,7 +844,7 @@ export default {
     gender: "性別",
     male: "男",
     female: "女",
-    login: "着陸"
+    login: "着陸",
   },
   teamRecord: {
     forefather: "層級",
@@ -924,7 +922,7 @@ export default {
     parent: "上級",
     copy: "複制",
     copyNotice: "內容已經複制到粘貼板",
-    anyLevel: "轉給其他"
+    anyLevel: "轉給其他",
   },
   agentCenter: {
     agentCenter: "團隊中心",
@@ -963,7 +961,7 @@ export default {
     labelTransferOut: "轉賬金額",
     labelTransferIn: "收款金額",
     labelSendRedPacket: "發送紅包金額",
-    labelGetRedPacket: "接收紅包金額"
+    labelGetRedPacket: "接收紅包金額",
   },
   message: {
     title: "站內信",
@@ -984,7 +982,7 @@ export default {
     sendMessageSuccess: "發送成功",
     unread: "未讀",
     readed: "已讀",
-    readMessage: "閱讀消息"
+    readMessage: "閱讀消息",
   },
-  announcement: { title: "公告中心", detail: "公告詳情", more: "更多" }
+  announcement: { title: "公告中心", detail: "公告詳情", more: "更多" },
 };

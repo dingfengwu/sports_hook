@@ -1,1 +1,25 @@
-export default {"PasswordLength":"密码长度必须在6到16之间的数字与字母","PasswordDiff":"两次输入的密码不一致","ContentLength":"用户名长度是5到16个字符","mustEmailStyle":"必须是Email格式","isNotEmpty":"{msg}不能为空","invalidMobile":"无效手机号","invalidEmail":"无效的邮箱地址","invalidBank":"请选择银行","invalidProvince":"请选择省份","invalidCity":"请选择城市","invalidAccountName":"请输入户名","cardNumberIsEmpty":"卡号不能为空","fundPasswordIsEmpty":"资金密码不能为空","branchBankIsEmpty":"支行地址不能为空","invalidAmount":"请检查金额，必须在{min}到{max}之间","noEmpty":"{msg}不能为空","mustAcceptTeamCondition":"必须同意团队协议才能注册","invitationCodeLengthWrong":"邀请码的长度必须大于等于8位","ifscFormatIncrrect":"IFSC格式不正确，长度为11位，必须以4个字母开头，接着是0，然后是6个数字结尾","bankCardNumberMaxLength":"银行卡卡号的最大长度在{min}与{max}之间","bankcardLengthMust":"{field}的长度必须为{length}位","bankCardLengthIn":"{field}的长度必须为{array}中的一个"}
+export default {
+  PasswordLength: "密码长度必须在6到16之间的数字与字母",
+  PasswordDiff: "两次输入的密码不一致",
+  ContentLength: "用户名长度是5到16个字符",
+  mustEmailStyle: "必须是Email格式",
+  isNotEmpty: "{msg}不能为空",
+  invalidMobile: "无效手机号",
+  invalidEmail: "无效的邮箱地址",
+  invalidBank: "请选择银行",
+  invalidProvince: "请选择省份",
+  invalidCity: "请选择城市",
+  invalidAccountName: "请输入户名",
+  cardNumberIsEmpty: "卡号不能为空",
+  fundPasswordIsEmpty: "资金密码不能为空",
+  branchBankIsEmpty: "支行地址不能为空",
+  invalidAmount: "请检查金额，必须在{min}到{max}之间",
+  noEmpty: "{msg}不能为空",
+  mustAcceptTeamCondition: "必须同意团队协议才能注册",
+  invitationCodeLengthWrong: "邀请码的长度必须大于等于8位",
+  ifscFormatIncrrect:
+    "IFSC格式不正确，长度为11位，必须以4个字母开头，接着是0，然后是6个数字结尾",
+  bankCardNumberMaxLength: "银行卡卡号的最大长度在{min}与{max}之间",
+  bankcardLengthMust: "{field}的长度必须为{length}位",
+  bankCardLengthIn: "{field}的长度必须为{array}中的一个",
+};

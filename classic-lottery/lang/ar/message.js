@@ -1,1 +1,21 @@
-export default {"title":"رسالة المحطة","receiveBox":"صندوق الوارد","sendBox":"علبة الوارد","sendMsg":"رسالة من المحطة","receiver":"المستلمين","sender":"المرسلين","username":"اسم مستخدم المست","messageTitle":"العناوين","content":"محتوى","send":"يرسل","reset":"إعادة تعيين","errorMsg1":"الرجاء تحديد مستلم","errorMsg2":"الرجاء تحديد اسم مستخدم المستلم","errorMsg3":"الرجاء إدخال عنوان الرسالة","errorMsg4":"الرجاء إدخال المعلومات","sendMessageSuccess":"تم إرسالها بنجاح","unread":"غير مقروء","readed":"قراءة","readMessage":"اقرأ الرسالة"}
+export default {
+  title: "رسالة المحطة",
+  receiveBox: "صندوق الوارد",
+  sendBox: "علبة الوارد",
+  sendMsg: "رسالة من المحطة",
+  receiver: "المستلمين",
+  sender: "المرسلين",
+  username: "اسم مستخدم المست",
+  messageTitle: "العناوين",
+  content: "محتوى",
+  send: "يرسل",
+  reset: "إعادة تعيين",
+  errorMsg1: "الرجاء تحديد مستلم",
+  errorMsg2: "الرجاء تحديد اسم مستخدم المستلم",
+  errorMsg3: "الرجاء إدخال عنوان الرسالة",
+  errorMsg4: "الرجاء إدخال المعلومات",
+  sendMessageSuccess: "تم إرسالها بنجاح",
+  unread: "غير مقروء",
+  readed: "قراءة",
+  readMessage: "اقرأ الرسالة",
+};

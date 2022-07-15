@@ -1,1 +1,1 @@
-export default {"the":"セクション","page":"ページ"}
+export default { the: "セクション", page: "ページ" };

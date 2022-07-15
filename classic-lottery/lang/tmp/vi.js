@@ -48,19 +48,19 @@ export default {
     transfer: "Chuyển khoản",
     action: "Hoạt động",
     lotteryHall: "Sảnh xổ số",
-    lotteryPrizeGroup: "Hoàn trả"
+    lotteryPrizeGroup: "Hoàn trả",
   },
   bottom: {
     home: "Trang chủ",
     play: "xổ số",
     result: "Kết quả xổ số",
-    my: "của tôi"
+    my: "của tôi",
   },
   theme: {
     red: "Đỏ",
     blue: "Màu xanh da trời",
     orange: "trái cam",
-    violet: "Tử"
+    violet: "Tử",
   },
   header: {
     digitalLottery: "Xổ số kỹ thuật số",
@@ -70,7 +70,7 @@ export default {
     liveVideo: "Video trực tiếp",
     sportsEvent: "CÁC MÔN THỂ THAO",
     eSports: "eSports",
-    liveInteraction: "Tương tác trực tiếp"
+    liveInteraction: "Tương tác trực tiếp",
   },
   home: {
     day: "ngày",
@@ -102,7 +102,7 @@ export default {
     prize: "tiền thưởng",
     playNow: "bắt đầu",
     downloadAppNotice: "Mở APP ngay bây giờ và tận hưởng Số lần hơn",
-    download: "Tải xuống ngay"
+    download: "Tải xuống ngay",
   },
   gameInfo: {
     the: "Các",
@@ -119,7 +119,7 @@ export default {
     theFirst: "Vị trí đầu tiên",
     second: "Thứ hai",
     third: "Thứ ba",
-    loading: "Vào đi"
+    loading: "Vào đi",
   },
   gameTemplate: {
     hotAndCold: "Nóng và lạnh",
@@ -219,7 +219,7 @@ export default {
     thirdBall: "Quả bóng thứ ba",
     fouthBall: "Quả bóng thứ tư",
     fivethBall: "Bóng thứ năm",
-    dragonTiger: "Long Hổ"
+    dragonTiger: "Long Hổ",
   },
   oderList: {
     myNotes: "Lịch sử cược",
@@ -254,7 +254,7 @@ export default {
     Completed: "hoàn thành",
     UserTermination: "Chấm dứt người dùng",
     AdministratorTermination: "Chấm dứt quản trị viên",
-    SystemTermination: "Chấm dứt hệ thống"
+    SystemTermination: "Chấm dứt hệ thống",
   },
   lotteryRecord: {
     bettingPage: "Quay lại trang cá cược",
@@ -388,7 +388,7 @@ export default {
     shiGe: "Mười",
     saveLotteryNotice: "Thu màu đã đạt đến giới hạn (8)",
     cleanNumberNotice:
-      "Số trùng lặp hoặc bất hợp pháp được phát hiện, đặt lại thành định dạng chính xác"
+      "Số trùng lặp hoặc bất hợp pháp được phát hiện, đặt lại thành định dạng chính xác",
   },
   gameRecord: {
     lotteryTypes: "Loại xổ số",
@@ -430,7 +430,7 @@ export default {
       "Tên người dùng: <i> {username} </i> | Thời gian đặt cược: <i> {time} </i>",
     betPosition: "Vị trí đặt cược",
     betAmount: "Cược: <i> {currency} </i> <i> {amount} </i>",
-    betTime: "Thời gian đặt cược: <i> {time} </i>"
+    betTime: "Thời gian đặt cược: <i> {time} </i>",
   },
   alertComponent: {
     completeCounts: "Số giai đoạn đã hoàn thành",
@@ -525,7 +525,7 @@ export default {
     SalesVolume: "Khối lượng bán hàng",
     ProfitAndLoss: "P&L",
     FundSource: "Nguồn tài trợ",
-    fundTarget: "Đi đâu để có tiền"
+    fundTarget: "Đi đâu để có tiền",
   },
   sideBar: {
     close: "Menu Colddown",
@@ -533,7 +533,7 @@ export default {
     Add: "Thêm/Chỉnh sửa",
     notYetOpen: "Không mở",
     MyCollection: "Mục yêu thích của tôi",
-    LotteryChoice: "Chọn xổ số"
+    LotteryChoice: "Chọn xổ số",
   },
   popup: {
     title1: "Mẹo hệ thống",
@@ -547,7 +547,7 @@ export default {
     BeCareful:
       "Không. Thời gian giải thưởng đã đóng, vui lòng chú ý cập nhật thời gian giải thưởng",
     bindBankCardNotice:
-      "Bạn chưa ràng buộc bất kỳ thẻ ngân hàng nào, vui lòng ràng buộc thẻ ngân hàng trước"
+      "Bạn chưa ràng buộc bất kỳ thẻ ngân hàng nào, vui lòng ràng buộc thẻ ngân hàng trước",
   },
   successMessage: {
     successMessage1: "Cược Thành Công",
@@ -555,7 +555,7 @@ export default {
     successMessage3: "Khởi tạo thành công",
     successMessage4: "Sao chép thành công đơn hàng",
     successMessage5: "Lưu thành công!",
-    successMessage6: "Dừng sao chép thành công"
+    successMessage6: "Dừng sao chép thành công",
   },
   errorMessage: {
     errorMessage1: "Vui lòng chọn đúng số và thử lại",
@@ -575,16 +575,16 @@ export default {
     errorMessage13: "Trò chơi này hiện không khả dụng",
     errorMessage14: "Chỉ có 8 chữ số có thể được chọn",
     errorMessage15: "Cách chơi hiện tại đã được đóng",
-    errorMessage16: "Phải ở định dạng hộp thư chính xác"
+    errorMessage16: "Phải ở định dạng hộp thư chính xác",
   },
   recentAwards: {
     title: "Mở thưởng gần đây",
     issue: "Kì mở thưởng",
-    wnNumber: "Số xổ số"
+    wnNumber: "Số xổ số",
   },
   pagination: {
     the: "Các",
-    page: "trang"
+    page: "trang",
   },
   recharge: {
     currentUser: "Người dùng hiện tại",
@@ -616,8 +616,7 @@ export default {
     bank: "ngân hàng",
     accountName: "Toname",
     accountNumber: "Số tài khoản",
-    tips:
-      "<li>Lời khuyên thân mật: </li> <li> 1. Phí <span> {changefee} </span>, giới hạn nạp đơn <span> {min} ~ {max} </span> <i>, tổng số tiền nạp là không giới hạn, hoàn toàn tự động, giây đến tài khoản </i> </li> <li> 2. Lưu thẻ ngân hàng để chuyển khoản, nền tảng thẻ ngân hàng sẽ được thay thế theo thời gian, nạp tiền vào nền tảng trang thẻ ngân hàng chiếm ưu thế, cảm ơn bạn! </li> <li>3. nạp tiền xin vui lòng theo nền tảng tự động phù hợp với số tiền để nạp tiền, như nền tảng phù hợp với số tiền 100.31, nạp tiền của bạn cũng cần 100.31 chuyển nạp tiền. Nếu không nó sẽ ảnh hưởng đến thời gian nạp tiền của bạn. </li>",
+    tips: "<li>Lời khuyên thân mật: </li> <li> 1. Phí <span> {changefee} </span>, giới hạn nạp đơn <span> {min} ~ {max} </span> <i>, tổng số tiền nạp là không giới hạn, hoàn toàn tự động, giây đến tài khoản </i> </li> <li> 2. Lưu thẻ ngân hàng để chuyển khoản, nền tảng thẻ ngân hàng sẽ được thay thế theo thời gian, nạp tiền vào nền tảng trang thẻ ngân hàng chiếm ưu thế, cảm ơn bạn! </li> <li>3. nạp tiền xin vui lòng theo nền tảng tự động phù hợp với số tiền để nạp tiền, như nền tảng phù hợp với số tiền 100.31, nạp tiền của bạn cũng cần 100.31 chuyển nạp tiền. Nếu không nó sẽ ảnh hưởng đến thời gian nạp tiền của bạn. </li>",
     help: "Sạc lại trợ giúp",
     bankList: "Danh sách thẻ ngân hàng",
     noteBandcardRecharging:
@@ -638,7 +637,7 @@ export default {
     exchangeNotice: "Tương đương với {amount} {currency_unit}",
     depositSuccessWhenVirtualCurrency:
       "Đơn đăng ký nạp tiền của bạn đã được gửi, vui lòng kiên nhẫn chờ xem xét",
-    depositQRCode: "Nhận mã QR"
+    depositQRCode: "Nhận mã QR",
   },
   withdraw: {
     serialNumber: "Đơn rút tiề",
@@ -664,8 +663,7 @@ export default {
       "Số tài khoản: {BankName} ({account}), số tiền rút: {amount}",
     confirmWithdraw: "Xác nhận tiền mặt",
     refuseReason: "Căn cứ từ chối",
-    tips:
-      "<li>Lời nhắc nhở ấm áp: </li><li> 1. Số tiền cao nhất có thể rút trong 1 lần là <i>{withdraw_min_amount}</i> {currency_unit},và tối đa là <i>{withdraw_max_amount}</i> {currency_unit}.</li> <li>2. <span class='{css}'>Mỗi ngày <i>{fee_times}</i> lần rút tiền (không tính phí), lần thứ <i>{draw_times}</i> trở đi sẽ tính <i>{rate}%</i> phí rút. Nếu như có sự bất tiện,mong quý khách vui lòng thông cảm, Xin cám ơn quý khách.</span></li><li class='{css_time}'>3. Thời gian rút tiền hàng ngày là <i>{withdraw_allowed_time}</i>.</li>",
+    tips: "<li>Lời nhắc nhở ấm áp: </li><li> 1. Số tiền cao nhất có thể rút trong 1 lần là <i>{withdraw_min_amount}</i> {currency_unit},và tối đa là <i>{withdraw_max_amount}</i> {currency_unit}.</li> <li>2. <span class='{css}'>Mỗi ngày <i>{fee_times}</i> lần rút tiền (không tính phí), lần thứ <i>{draw_times}</i> trở đi sẽ tính <i>{rate}%</i> phí rút. Nếu như có sự bất tiện,mong quý khách vui lòng thông cảm, Xin cám ơn quý khách.</span></li><li class='{css_time}'>3. Thời gian rút tiền hàng ngày là <i>{withdraw_allowed_time}</i>.</li>",
     tips1:
       "<li>Mẹo thân mật: </li> <li> 1. Số tiền rút tối đa cho một giao dịch duy nhất là <i> {amount} </i>. </li> <li>2. Bạn có thể Đăng xuất <i> {max_times} lần </i> mỗi ngày. Các khoản Đăng xuất dưới <i> {min_amount} </i> sẽ được khấu trừ từ <i> Rs {fixed_fee} </i>, trong khi các khoản Đăng xuất trên <i> {min_amount} </i> sẽ được khấu trừ từ <i> {rate}% </i>. </li>",
     tips2:
@@ -680,7 +678,7 @@ export default {
       "Withdrawals greater than or equal to <i>{amount}</i> will deduct the handling fee of <i>{value}</i>{value_unit}.",
     tipTmpl4:
       "<i>{value}</i>{value_unit} handling fee will be deducted for all withdrawals.",
-    noticeOfGettingU: "Tương đương với {amount} U"
+    noticeOfGettingU: "Tương đương với {amount} U",
   },
   personalCenter: {
     personalCenter: "Trung tâm cá nhân",
@@ -798,7 +796,7 @@ export default {
       "Kính gửi <i> {username} </i>, thông tin số dư của bạn như sau: Số dư chuyển tiền <br /> có sẵn là: <i> {amount} </i> {currency_unit} <br /> không thể chuyển nhượng là: <i> {ProhibitAmount} </i> {currency_unit}.",
     kindlyNotice: "Lời khuyên thân mật:",
     transferLimit: "Đơn có thể chuyển nhượng tối đa",
-    transferSubmitSuccess: "Yêu cầu chuyển đã lưu, vui lòng chờ phê duyệt"
+    transferSubmitSuccess: "Yêu cầu chuyển đã lưu, vui lòng chờ phê duyệt",
   },
   validateError: {
     PasswordLength: "Mật khẩu phải có từ 6 đến 16 chữ số và chữ cái",
@@ -823,12 +821,12 @@ export default {
     ifscFormatIncrrect:
       "IFSC không được định dạng đúng, dài 11 bit, phải bắt đầu bằng 4 chữ cái, sau đó 0, sau đó 6 số kết thúc",
     bankCardNumberMaxLength:
-      "Độ dài tối đa của số thẻ ngân hàng là từ {min} đến {max}"
+      "Độ dài tối đa của số thẻ ngân hàng là từ {min} đến {max}",
   },
   fundAlertComponents: {
     checkBankCard: "Xác thực thẻ ngân hàng",
     selectBoundBankCard: "Chọn thẻ ngân hàng",
-    notTheSameCardNotice: "Thẻ đã được xác minh không phù hợp"
+    notTheSameCardNotice: "Thẻ đã được xác minh không phù hợp",
   },
   Notification: {
     OperationSuccess: "Hoạt động thành công",
@@ -838,7 +836,7 @@ export default {
     titlePrrorPage: "Trang lỗi",
     loading: "Đang tải...",
     noMoreData: "Tất cả nạp",
-    noResult: "Không có thêm hồ sơ "
+    noResult: "Không có thêm hồ sơ ",
   },
   accountInfo: {
     rememberPassword: "Nhớ mật khẩu",
@@ -863,7 +861,7 @@ export default {
       "Tên thật và tên tài khoản không khớp, xin hãy xác nhận",
     gender: "Giới tính",
     male: "Nam",
-    female: "Giống cái"
+    female: "Giống cái",
   },
   teamRecord: {
     forefather: "Hệ thống phân cấp",
@@ -944,7 +942,7 @@ export default {
     parent: "cấp trên",
     copy: "tái sản xuất",
     copyNotice: "Nội dung đã được sao chép vào bảng quảng cáo",
-    anyLevel: "Chuyển sang Khác"
+    anyLevel: "Chuyển sang Khác",
   },
   agentCenter: {
     agentCenter: "Trung tâm đại lý",
@@ -956,7 +954,7 @@ export default {
     teamManager: "Quản lý hội viên",
     linkManager: "Quản lý tài khoản",
     agentCreateUser: "Mở tài khoản bằng tay",
-    linkCreateUser: "Liên kết mở tài khoản"
+    linkCreateUser: "Liên kết mở tài khoản",
   },
   message: {
     title: "Ký tự trạm",
@@ -977,11 +975,11 @@ export default {
     sendMessageSuccess: "Gửi thành công",
     unread: "chưa đọc",
     readed: "đọc",
-    readMessage: "Đọc tin nhắn"
+    readMessage: "Đọc tin nhắn",
   },
   announcement: {
     title: "Trung tâm Thông báo",
     detail: "Thông báo chi tiết",
-    more: "hơn"
-  }
+    more: "hơn",
+  },
 };

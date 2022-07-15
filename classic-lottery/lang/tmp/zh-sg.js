@@ -44,7 +44,7 @@ export default {
     number: "數",
     invitationCode: "邀請代碼",
     customerService: "線上客戶服務",
-    tryPlay: "試試"
+    tryPlay: "試試",
   },
   bottom: { home: "首頁", play: "彩券", result: "彩票結果", my: "我的" },
   theme: { red: "胭脂", blue: "藍色", orange: "橙子", violet: "紫色" },
@@ -56,7 +56,7 @@ export default {
     liveVideo: "重溫視訊",
     sportsEvent: "運動",
     eSports: "電子競技",
-    liveInteraction: "即時互動"
+    liveInteraction: "即時互動",
   },
   home: {
     day: "天",
@@ -88,7 +88,7 @@ export default {
     prize: "獎金",
     playNow: "開始",
     downloadAppNotice: "立即開啟 APP，享受更多",
-    download: "立即下載"
+    download: "立即下載",
   },
   gameInfo: {
     the: "di",
@@ -105,7 +105,7 @@ export default {
     theFirst: "第一名",
     second: "第二名",
     third: "第三名",
-    loading: "進入"
+    loading: "進入",
   },
   gameTemplate: {
     hotAndCold: "冷熱",
@@ -205,7 +205,7 @@ export default {
     thirdBall: "第三球",
     fouthBall: "4 號球",
     fivethBall: "第五球",
-    dragonTiger: "龍湖"
+    dragonTiger: "龍湖",
   },
   oderList: {
     myNotes: "我的賭注",
@@ -240,7 +240,7 @@ export default {
     Completed: "完成",
     UserTermination: "使用者終止",
     AdministratorTermination: "管理員終止",
-    SystemTermination: "系統終止"
+    SystemTermination: "系統終止",
   },
   lotteryRecord: {
     bettingPage: "返回投注頁面",
@@ -373,7 +373,7 @@ export default {
     baiGe: "100",
     shiGe: "10",
     saveLotteryNotice: "收藏顏色已達到上限 (8)",
-    cleanNumberNotice: "偵測到重複或不合法的數字，以正確的格式重設"
+    cleanNumberNotice: "偵測到重複或不合法的數字，以正確的格式重設",
   },
   gameRecord: {
     lotteryTypes: "Ci",
@@ -414,7 +414,7 @@ export default {
     moreInfo: "用戶名：<i> {用戶名} </i> | 投注 <i> 時間：{時間} </i>",
     betPosition: "投注位置",
     betAmount: "注意：<i> {貨幣} </i> <i> {金額} </i>",
-    betTime: "投注時間：<i> {時間} </i>"
+    betTime: "投注時間：<i> {時間} </i>",
   },
   alertComponent: {
     completeCounts: "完成期間",
@@ -508,7 +508,7 @@ export default {
     time: "時間",
     SalesVolume: "銷售",
     ProfitAndLoss: "盈虧",
-    FundSource: "资金来源"
+    FundSource: "资金来源",
   },
   sideBar: {
     close: "彈出菜單",
@@ -516,7 +516,7 @@ export default {
     Add: "新增/編輯",
     notYetOpen: "未開啟",
     MyCollection: "我的收藏",
-    LotteryChoice: "選擇彩票"
+    LotteryChoice: "選擇彩票",
   },
   popup: {
     title1: "系統提示",
@@ -527,7 +527,7 @@ export default {
     no: "沒有",
     EndOfAwardPeriod: "獎賞期結束",
     the: "di",
-    BeCareful: "沒有獎勵期間已經結束，請注意獎賞期間更新"
+    BeCareful: "沒有獎勵期間已經結束，請注意獎賞期間更新",
   },
   successMessage: {
     successMessage1: "投注成功",
@@ -535,7 +535,7 @@ export default {
     successMessage3: "成功推出以下內容",
     successMessage4: "只要一個音符就能成功",
     successMessage5: "節省成功！",
-    successMessage6: "成功停止跟隨"
+    successMessage6: "成功停止跟隨",
   },
   errorMessage: {
     errorMessage1: "請在選擇正確的號碼後再試一次",
@@ -552,12 +552,12 @@ export default {
     errorMessage12: "開啟顏色",
     errorMessage13: "此遊戲目前無法使用",
     errorMessage14: "最多只能選擇 8 個號碼",
-    errorMessage15: "目前播放已關閉"
+    errorMessage15: "目前播放已關閉",
   },
   recentAwards: {
     title: "最近的彩票",
     issue: "獎勵期間",
-    wnNumber: "彩票號碼"
+    wnNumber: "彩票號碼",
   },
   pagination: { the: "di", page: "頁面" },
   recharge: {
@@ -589,9 +589,8 @@ export default {
     bank: "銀行",
     accountName: "家庭名稱",
     accountNumber: "帳戶",
-    tips:
-      "<li>提示：</li> <li> 1.收費 <span> {變更費} </span>，單次增值限制 <span> {min} ~ {max} </span>，總增值不會被收費 <i>，全自動，秒計入 </i> </li> <li> 2。請勿保留舊的銀行帳戶號碼，因為我們已不再使用舊的銀行帳戶，所以我們無法處理您的存款。謝謝。</li>",
-    help: "更新說明"
+    tips: "<li>提示：</li> <li> 1.收費 <span> {變更費} </span>，單次增值限制 <span> {min} ~ {max} </span>，總增值不會被收費 <i>，全自動，秒計入 </i> </li> <li> 2。請勿保留舊的銀行帳戶號碼，因為我們已不再使用舊的銀行帳戶，所以我們無法處理您的存款。謝謝。</li>",
+    help: "更新說明",
   },
   withdraw: {
     serialNumber: "提款流量",
@@ -613,8 +612,7 @@ export default {
     withdrawNotice: "含帳戶：{銀行名稱} ({帳戶})，代扣金額：{}",
     confirmWithdraw: "確認撤銷",
     refuseReason: "拒絕原因",
-    tips:
-      "<li>親密提示：</li> <li> 1.單一單人可以提高到 <i> {量} </i> 元。</li> <li>2.每天免費提款 <i> {費 _ 次} </i>，由於 <i> {充電時間} </i> 將收取 <i> {充電時間} </i>。如果造成不便，請理解，謝謝！今天提及的次數：<i> {當前 _ 次}/{最大 _ 次} </i> </li>"
+    tips: "<li>親密提示：</li> <li> 1.單一單人可以提高到 <i> {量} </i> 元。</li> <li>2.每天免費提款 <i> {費 _ 次} </i>，由於 <i> {充電時間} </i> 將收取 <i> {充電時間} </i>。如果造成不便，請理解，謝謝！今天提及的次數：<i> {當前 _ 次}/{最大 _ 次} </i> </li>",
   },
   personalCenter: {
     personalCenter: "個人中心",
@@ -728,7 +726,7 @@ export default {
     prohibitAmountNotice:
       "親愛的 <i> {用戶名} </i>，您的餘額資料如下：<br /> 可用轉賬餘額為：<i> {金額} </i> 人民幣 <br /> 不可轉讓餘額為：<i> {ProbitValue} </i>。",
     kindlyNotice: "貼心提示：",
-    transferLimit: "單次最多可轉讓"
+    transferLimit: "單次最多可轉讓",
   },
   validateError: {
     PasswordLength: "密碼長度必須介於 6 至 16 個數字和字母",
@@ -748,12 +746,12 @@ export default {
     invalidAmount: "請檢查金額，必須介於 {min} 和 {max}",
     noEmpty: "{msg}不能為空",
     mustAcceptTeamCondition: "必須同意團隊協議才能註冊",
-    invitationCodeLengthWrong: "邀請碼的長度必須大於 8 位元"
+    invitationCodeLengthWrong: "邀請碼的長度必須大於 8 位元",
   },
   fundAlertComponents: {
     checkBankCard: "驗證銀行卡",
     selectBoundBankCard: "選擇銀行卡",
-    notTheSameCardNotice: "卡片驗證不一致"
+    notTheSameCardNotice: "卡片驗證不一致",
   },
   Notification: {
     OperationSuccess: "作業成功",
@@ -763,7 +761,7 @@ export default {
     titlePrrorPage: "錯誤頁面",
     loading: "正在載入中...",
     noMoreData: "全部載入",
-    noResult: "沒有更多的記錄"
+    noResult: "沒有更多的記錄",
   },
   accountInfo: {
     rememberPassword: "記住密碼",
@@ -778,7 +776,7 @@ export default {
     noAccount: "還沒有帳戶嗎？",
     createOne: "建立",
     contact: "您也可以聯絡",
-    balanceNotEnough: "餘額不足"
+    balanceNotEnough: "餘額不足",
   },
   teamRecord: {
     forefather: "階層",
@@ -850,7 +848,7 @@ export default {
     children: "子標記",
     parent: "上級",
     copy: "複製",
-    copyNotice: "內容已複製到作業範圍"
+    copyNotice: "內容已複製到作業範圍",
   },
   agentCenter: {
     agentCenter: "代理中心",
@@ -862,7 +860,7 @@ export default {
     teamManager: "團隊管理",
     linkManager: "連結管理",
     agentCreateUser: "手動開戶",
-    linkCreateUser: "連結帳戶開戶"
+    linkCreateUser: "連結帳戶開戶",
   },
   message: {
     title: "樁號字母",
@@ -883,7 +881,7 @@ export default {
     sendMessageSuccess: "傳送成功",
     unread: "未讀",
     readed: "閱讀",
-    readMessage: "閱讀訊息"
+    readMessage: "閱讀訊息",
   },
-  announcement: { title: "公告", detail: "公告詳細資料", more: "更多" }
+  announcement: { title: "公告", detail: "公告詳細資料", more: "更多" },
 };

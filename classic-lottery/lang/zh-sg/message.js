@@ -1,1 +1,21 @@
-export default {"title":"樁號字母","receiveBox":"收件箱","sendBox":"收件匣","sendMsg":"郵寄站信","receiver":"收件人","sender":"發件人","username":"Rpient 使用者名稱","messageTitle":"標題","content":"內容","send":"發送","reset":"重放","errorMsg1":"請選擇收件人","errorMsg2":"請選擇收件者使用者名稱","errorMsg3":"請輸入資訊標題","errorMsg4":"請輸入資料","sendMessageSuccess":"傳送成功","unread":"未讀","readed":"閱讀","readMessage":"閱讀訊息"}
+export default {
+  title: "樁號字母",
+  receiveBox: "收件箱",
+  sendBox: "收件匣",
+  sendMsg: "郵寄站信",
+  receiver: "收件人",
+  sender: "發件人",
+  username: "Rpient 使用者名稱",
+  messageTitle: "標題",
+  content: "內容",
+  send: "發送",
+  reset: "重放",
+  errorMsg1: "請選擇收件人",
+  errorMsg2: "請選擇收件者使用者名稱",
+  errorMsg3: "請輸入資訊標題",
+  errorMsg4: "請輸入資料",
+  sendMessageSuccess: "傳送成功",
+  unread: "未讀",
+  readed: "閱讀",
+  readMessage: "閱讀訊息",
+};

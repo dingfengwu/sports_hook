@@ -1,1 +1,6 @@
-export default {"red":"أحمر","blue":"أزرق","orange":"شركة أورانج","violet":"أرجواني"}
+export default {
+  red: "أحمر",
+  blue: "أزرق",
+  orange: "شركة أورانج",
+  violet: "أرجواني",
+};

@@ -48,19 +48,19 @@ export default {
     transfer: "การโอนเงิน",
     action: "กิจกรรม",
     lotteryHall: "หอรับสลาก",
-    lotteryPrizeGroup: "เงินคืนสลากกินแบ่ง"
+    lotteryPrizeGroup: "เงินคืนสลากกินแบ่ง",
   },
   bottom: {
     home: "หน้าแรก",
     play: "สลากกินแบ่ง",
     result: "ผลล็อตโต้",
-    my: "ของฉัน"
+    my: "ของฉัน",
   },
   theme: {
     red: "สีแดง",
     blue: "สีน้ำเงิน",
     orange: "สีส้ม",
-    violet: "จือ"
+    violet: "จือ",
   },
   header: {
     digitalLottery: "สลากกินแบ่งดิจิตอล",
@@ -70,7 +70,7 @@ export default {
     liveVideo: "วิดีโอสด",
     sportsEvent: "กีฬา",
     eSports: "อีสปอร์ต",
-    liveInteraction: "ปฏิสัมพันธ์สด"
+    liveInteraction: "ปฏิสัมพันธ์สด",
   },
   home: {
     day: "วัน",
@@ -102,7 +102,7 @@ export default {
     prize: "โบนัส",
     playNow: "เริ่มต้น",
     downloadAppNotice: "เปิด APP เดี๋ยวนี้และเพลิดเพลินไปกับการเพิ่มมากขึ้น",
-    download: "ดาวน์โหลดเดี๋ยวนี้"
+    download: "ดาวน์โหลดเดี๋ยวนี้",
   },
   gameInfo: {
     the: "การ",
@@ -119,7 +119,7 @@ export default {
     theFirst: "อันดับแรก",
     second: "ข้อที่สอง",
     third: "สาม",
-    loading: "เข้าไป"
+    loading: "เข้าไป",
   },
   gameTemplate: {
     hotAndCold: "ร้อนและเย็น",
@@ -220,7 +220,7 @@ export default {
     thirdBall: "ลูกที่สาม",
     fouthBall: "ลูกที่สี่",
     fivethBall: "ลูกที่ห้า",
-    dragonTiger: "เสือมังกร"
+    dragonTiger: "เสือมังกร",
   },
   oderList: {
     myNotes: "เดิมพันของฉัน",
@@ -255,7 +255,7 @@ export default {
     Completed: "สมบูรณ์",
     UserTermination: "การสิ้นสุดของผู้ใช้",
     AdministratorTermination: "การสิ้นสุดของผู้ดูแลระบบ",
-    SystemTermination: "การสิ้นสุดของระบบ"
+    SystemTermination: "การสิ้นสุดของระบบ",
   },
   lotteryRecord: {
     bettingPage: "กลับไปที่หน้าการเดิมพัน",
@@ -389,7 +389,7 @@ export default {
     shiGe: "สิบ",
     saveLotteryNotice: "สีสะสมได้ถึงขีดจำกัด (8)",
     cleanNumberNotice:
-      "ตัวเลขที่ซ้ำกันหรือผิดกฎหมายตรวจพบรีเซ็ตเป็นรูปแบบที่ถูกต้อง"
+      "ตัวเลขที่ซ้ำกันหรือผิดกฎหมายตรวจพบรีเซ็ตเป็นรูปแบบที่ถูกต้อง",
   },
   gameRecord: {
     lotteryTypes: "ลงสี",
@@ -430,7 +430,7 @@ export default {
     moreInfo: "ชื่อผู้ใช้:<i>{username}</i> | เวลาเดิมพัน:<i>{time}</i>",
     betPosition: "ตำแหน่งเดิมพัน",
     betAmount: "เดิมพัน:<i>{currency}</i> <i>{amount}</i>",
-    betTime: "เวลาเดิมพัน:<i>{time}</i>"
+    betTime: "เวลาเดิมพัน:<i>{time}</i>",
   },
   alertComponent: {
     completeCounts: "จำนวนรอบระยะเวลาที่เสร็จสมบูรณ์",
@@ -525,7 +525,7 @@ export default {
     time: "เวลา",
     SalesVolume: "ปริมาณการขาย",
     ProfitAndLoss: "พีแอนด์ลิตร",
-    FundSource: "แหล่งที่มาของเงินทุน"
+    FundSource: "แหล่งที่มาของเงินทุน",
   },
   sideBar: {
     close: "เมนูอาหารเย็น",
@@ -533,7 +533,7 @@ export default {
     Add: "เพิ่ม/แก้ไข",
     notYetOpen: "ไม่เปิด",
     MyCollection: "รายการโปรดของฉัน",
-    LotteryChoice: "เลือกหวยรางวัล"
+    LotteryChoice: "เลือกหวยรางวัล",
   },
   popup: {
     title1: "เคล็ดลับของระบบ",
@@ -545,7 +545,7 @@ export default {
     EndOfAwardPeriod: "สิ้นสุดระยะเวลารางวัล",
     the: "การ",
     BeCareful:
-      "ไม่ระยะเวลาของรางวัลได้ถูกปิดโปรดใส่ใจกับการปรับปรุงระยะเวลาของรางวัล"
+      "ไม่ระยะเวลาของรางวัลได้ถูกปิดโปรดใส่ใจกับการปรับปรุงระยะเวลาของรางวัล",
   },
   successMessage: {
     successMessage1: "ความสำเร็จในการเดิมพัน",
@@ -553,7 +553,7 @@ export default {
     successMessage3: "เริ่มต้นเรียบร้อยแล้ว",
     successMessage4: "ความสำเร็จในการคัดลอกคำสั่งซื้อ",
     successMessage5: "บันทึกสำเร็จ!",
-    successMessage6: "หยุดการคัดลอกสำเร็จ"
+    successMessage6: "หยุดการคัดลอกสำเร็จ",
   },
   errorMessage: {
     errorMessage1: "โปรดเลือกหมายเลขที่ถูกต้องและลองอีกครั้ง",
@@ -572,16 +572,16 @@ export default {
     errorMessage13: "เกมนี้ยังไม่พร้อมให้บริการในขณะนี้",
     errorMessage14: "สามารถเลือกได้เพียง 8 หลักเท่านั้น",
     errorMessage15: "เกมเพลย์ปัจจุบันได้ปิดแล้ว",
-    errorMessage16: "ต้องอยู่ในรูปแบบกล่องจดหมายที่ถูกต้อง"
+    errorMessage16: "ต้องอยู่ในรูปแบบกล่องจดหมายที่ถูกต้อง",
   },
   recentAwards: {
     title: "การจับสลากล่าสุด",
     issue: "จิ๋ง",
-    wnNumber: "หมายเลขล็อตโต้"
+    wnNumber: "หมายเลขล็อตโต้",
   },
   pagination: {
     the: "การ",
-    page: "หน้า"
+    page: "หน้า",
   },
   recharge: {
     currentUser: "ผู้ใช้ปัจจุบัน",
@@ -613,8 +613,7 @@ export default {
     bank: "ตลิ่ง",
     accountName: "โทนาเมะ",
     accountNumber: "หมายเลขบัญชี",
-    tips:
-      "<li>เคล็ดลับที่สนิทสนม:</li><li>1<span>{changeFee}</span>, การชาร์จเพียงครั้งเดียว<span>{min} ~ {max}</span><i>, จำนวนเงินทั้งหมดของการเติมเงินไม่ จำกัด, อัตโนมัติเต็มรูปแบบวินาทีไปยังบัญชี</i></li><li>2บันทึกบัตรธนาคารสำหรับการโอนบัตรธนาคารแพลตฟอร์มจะถูกแทนที่เป็นครั้งคราวเติมเงินไปยังบัตรธนาคารหน้าแพลตฟอร์มเหนือกว่าขอขอบคุณ!</li><li>3 เติมเงินกรุณาตามแพลตฟอร์มที่ตรงกับจำนวนเงินที่ชาร์จโดยอัตโนมัติเช่นแพลตฟอร์มที่ตรงกัน 100.31 และเติมเงินของคุณยังต้องการ 100.31 การถ่ายโอนมิฉะนั้นจะส่งผลต่อเวลาในการเติมเงินของคุณ</li>",
+    tips: "<li>เคล็ดลับที่สนิทสนม:</li><li>1<span>{changeFee}</span>, การชาร์จเพียงครั้งเดียว<span>{min} ~ {max}</span><i>, จำนวนเงินทั้งหมดของการเติมเงินไม่ จำกัด, อัตโนมัติเต็มรูปแบบวินาทีไปยังบัญชี</i></li><li>2บันทึกบัตรธนาคารสำหรับการโอนบัตรธนาคารแพลตฟอร์มจะถูกแทนที่เป็นครั้งคราวเติมเงินไปยังบัตรธนาคารหน้าแพลตฟอร์มเหนือกว่าขอขอบคุณ!</li><li>3 เติมเงินกรุณาตามแพลตฟอร์มที่ตรงกับจำนวนเงินที่ชาร์จโดยอัตโนมัติเช่นแพลตฟอร์มที่ตรงกัน 100.31 และเติมเงินของคุณยังต้องการ 100.31 การถ่ายโอนมิฉะนั้นจะส่งผลต่อเวลาในการเติมเงินของคุณ</li>",
     help: "วิธีชาร์จไฟใหม่",
     bankList: "รายชื่อบัตรธนาคาร",
     noteBandcardRecharging:
@@ -631,7 +630,7 @@ export default {
     depositSuccessTitle: "การยืนยันแบบชาร์จไฟได้",
     depositSuccessSubTitle: "ความสำเร็จในการชำระเงิน",
     depositSuccessNotice:
-      "จำนวนเงินที่ได้รับเครดิตไปยังบัญชีของคุณเรียบร้อยแล้ว"
+      "จำนวนเงินที่ได้รับเครดิตไปยังบัญชีของคุณเรียบร้อยแล้ว",
   },
   withdraw: {
     serialNumber: "หมายเลขการถอน",
@@ -655,12 +654,11 @@ export default {
       "หมายเลขบัญชี: {bankName} ({account}) จำนวนเงินที่ถอน: {amount}",
     confirmWithdraw: "การยืนยันเงินสด",
     refuseReason: "เหตุการปฏิเสธ",
-    tips:
-      "<li>เคล็ดลับ:</li><li>1 เดียวสูงสุดสามารถจ่าย<i>{amount}</i>หยวน</li><li>2.<span class='{css}'>ถอนฟรี<i>{fee_times} ครั้ง</i>ต่อวัน,<i>{withdrawal _times}</i>เป็นต้นไปจะถูกเรียกเก็บค่าธรรมเนียม<i>{rate}%</i>หากเกิดความไม่สะดวกใด ๆ ขอขอบคุณ!</span>จำนวนการถอนเงินวันนี้:<i>{current_times}/{max_times</i></li><li class='{css_time}'><i>}</i>3.เวลาถอนเงินทุกวันคือ<i>{withdraw_allowed_time}</i></li>",
+    tips: "<li>เคล็ดลับ:</li><li>1 เดียวสูงสุดสามารถจ่าย<i>{amount}</i>หยวน</li><li>2.<span class='{css}'>ถอนฟรี<i>{fee_times} ครั้ง</i>ต่อวัน,<i>{withdrawal _times}</i>เป็นต้นไปจะถูกเรียกเก็บค่าธรรมเนียม<i>{rate}%</i>หากเกิดความไม่สะดวกใด ๆ ขอขอบคุณ!</span>จำนวนการถอนเงินวันนี้:<i>{current_times}/{max_times</i></li><li class='{css_time}'><i>}</i>3.เวลาถอนเงินทุกวันคือ<i>{withdraw_allowed_time}</i></li>",
     tips1:
       "<li>เคล็ดลับที่ใกล้ชิด:</li><li>1.จำนวนเงินถอนสูงสุดสำหรับการทำธุรกรรมเดียวคือ<i>{amount}</i></li><li>2.คุณสามารถถอนเงิน<i>{max_times} ครั้ง</i>ต่อวันการถอนเงินด้านล่าง<i>{min_amount}</i>จะถูกหักออกจาก<i>อาร์เอส {fixed_fee}</i>ในขณะที่การถอนเงินดังกล่าวข้างต้น<i>{min_amount}</i>จะถูกหักออกจาก<i>{rate}%</i></li>",
     tips2:
-      "<li>เคล็ดลับที่ใกล้ชิด:</li><li>1.จำนวนเงินถอนสูงสุดสำหรับการทำธุรกรรมเดียวคือ<i>{amount}</i></li><li>2.คุณสามารถถอนเงิน<i>{max_times} ครั้ง</i>ต่อวันการถอนเงินจะถูกหักออกจาก<i>{rate}%</i>ค่าธรรมเนียมการจัดการบวก<i>อาร์เอส {fixed_service_fee}</i>ค่าธรรมเนียมการถอนเงินของคุณจะมาถึงภายใน<i>{complete_hours}</i>ชั่วโมง</li>"
+      "<li>เคล็ดลับที่ใกล้ชิด:</li><li>1.จำนวนเงินถอนสูงสุดสำหรับการทำธุรกรรมเดียวคือ<i>{amount}</i></li><li>2.คุณสามารถถอนเงิน<i>{max_times} ครั้ง</i>ต่อวันการถอนเงินจะถูกหักออกจาก<i>{rate}%</i>ค่าธรรมเนียมการจัดการบวก<i>อาร์เอส {fixed_service_fee}</i>ค่าธรรมเนียมการถอนเงินของคุณจะมาถึงภายใน<i>{complete_hours}</i>ชั่วโมง</li>",
   },
   personalCenter: {
     personalCenter: "ศูนย์ส่วนบุคคล",
@@ -777,7 +775,7 @@ export default {
       "เรียน<i>{username}</i>ข้อมูลยอดคงเหลือของท่านมีดังต่อไปนี้: ยอดคงเหลือ<br />ที่ใช้ได้คือ:<i>{amount}</i>$ ยอดคงเหลือ<br />ที่ไม่สามารถโอนได้คือ:<i>{prohibitAmount}</i>",
     kindlyNotice: "เคล็ดลับที่ใกล้ชิด:",
     transferLimit: "จำนวนคนสูงสุดที่สามารถโอนย้ายได้",
-    transferSubmitSuccess: "บันทึกคำขอโอนเงิน โปรดรอการอนุมัติ"
+    transferSubmitSuccess: "บันทึกคำขอโอนเงิน โปรดรอการอนุมัติ",
   },
   validateError: {
     PasswordLength: "รหัสผ่านต้องอยู่ระหว่าง 6 ถึง 16 หลักและตัวอักษร",
@@ -800,12 +798,12 @@ export default {
     invitationCodeLengthWrong:
       "ความยาวของรหัสเชิญต้องมากกว่าหรือเท่ากับ 8 หลัก",
     ifscFormatIncrrect:
-      "IFSC ไม่ได้จัดรูปแบบอย่างถูกต้องยาว 11 บิตต้องขึ้นต้นด้วย 4 ตัวอักษรแล้ว 0 จากนั้น 6 ตัวเลขสิ้นสุด"
+      "IFSC ไม่ได้จัดรูปแบบอย่างถูกต้องยาว 11 บิตต้องขึ้นต้นด้วย 4 ตัวอักษรแล้ว 0 จากนั้น 6 ตัวเลขสิ้นสุด",
   },
   fundAlertComponents: {
     checkBankCard: "ตรวจสอบบัตรธนาคาร",
     selectBoundBankCard: "เลือกบัตรธนาคาร",
-    notTheSameCardNotice: "การ์ดที่ได้รับการยืนยันไม่สอดคล้องกัน"
+    notTheSameCardNotice: "การ์ดที่ได้รับการยืนยันไม่สอดคล้องกัน",
   },
   Notification: {
     OperationSuccess: "ความสำเร็จในการดำเนินงาน",
@@ -815,7 +813,7 @@ export default {
     titlePrrorPage: "หน้าข้อผิดพลาด",
     loading: "กำลังโหลด...",
     noMoreData: "โหลดทั้งหมด",
-    noResult: "ไม่มีบันทึกเพิ่มเติม "
+    noResult: "ไม่มีบันทึกเพิ่มเติม ",
   },
   accountInfo: {
     rememberPassword: "จำรหัสผ่าน",
@@ -835,7 +833,7 @@ export default {
     prohibitUpdateRealName: "ชื่อจริงไม่สามารถแก้ไขได้หลังจากลงทะเบียนแล้ว",
     updateRealNameNotice:
       "ชื่อจริงสามารถแก้ไขได้เพียงครั้งเดียวโปรดตรวจสอบเพื่อยืนยัน",
-    realNameIsDiffenceAccountName: "ชื่อจริงและชื่อบัญชีไม่ตรงกับกรุณายืนยัน"
+    realNameIsDiffenceAccountName: "ชื่อจริงและชื่อบัญชีไม่ตรงกับกรุณายืนยัน",
   },
   teamRecord: {
     forefather: "ลำดับชั้น",
@@ -911,7 +909,7 @@ export default {
     parent: "ผู้ที่เหนือกว่า",
     copy: "ทำซ้ำ",
     copyNotice: "เนื้อหาถูกคัดลอกไปยังแผ่นพาสเจอร์บอร์ด",
-    anyLevel: "โอนไปยังอื่น"
+    anyLevel: "โอนไปยังอื่น",
   },
   agentCenter: {
     agentCenter: "ทีมเซ็นเตอร์",
@@ -923,7 +921,7 @@ export default {
     teamManager: "ฝ่ายบริหารทีม",
     linkManager: "การจัดการการเชื่อมโยง",
     agentCreateUser: "การเปิดบัญชีด้วยตนเอง",
-    linkCreateUser: "เปิดบัญชีเชื่อมโยง"
+    linkCreateUser: "เปิดบัญชีเชื่อมโยง",
   },
   message: {
     title: "จดหมายประจำสถานี",
@@ -944,11 +942,11 @@ export default {
     sendMessageSuccess: "ส่งสำเร็จ",
     unread: "ไม่ได้อ่าน",
     readed: "อ่าน",
-    readMessage: "อ่านข้อความ"
+    readMessage: "อ่านข้อความ",
   },
   announcement: {
     title: "ศูนย์ประกาศ",
     detail: "รายละเอียดประกาศ",
-    more: "มากกว่า"
-  }
+    more: "มากกว่า",
+  },
 };

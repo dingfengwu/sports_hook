@@ -1,1 +1,5 @@
-export default {"title":"Announcement","detail":"Detail Pengumuman","more":"Lainnya"}
+export default {
+  title: "Announcement",
+  detail: "Detail Pengumuman",
+  more: "Lainnya",
+};

@@ -1,1 +1,5 @@
-export default {"title":"Penghargaan Terbaru","issue":"masalah","wnNumber":"WinNum"}
+export default {
+  title: "Penghargaan Terbaru",
+  issue: "masalah",
+  wnNumber: "WinNum",
+};

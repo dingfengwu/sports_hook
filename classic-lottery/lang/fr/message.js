@@ -1,1 +1,21 @@
-export default {"title":"Lettre de la station","receiveBox":"boîte de réception","sendBox":"Boîte de réception","sendMsg":"Lettre de la station","receiver":"destinataires","sender":"expéditeurs","username":"Nom d'utilisateur du","messageTitle":"titres","content":"contenu","send":"envoie","reset":"restaurer","errorMsg1":"Veuillez sélectionner un destinataire","errorMsg2":"Sélectionnez le nom d'utilisateur du destinataire","errorMsg3":"Veuillez entrer le titre du message","errorMsg4":"Veuillez saisir les informations","sendMessageSuccess":"Envoi réussi","unread":"non lu","readed":"Lire","readMessage":"Lire le message"}
+export default {
+  title: "Lettre de la station",
+  receiveBox: "boîte de réception",
+  sendBox: "Boîte de réception",
+  sendMsg: "Lettre de la station",
+  receiver: "destinataires",
+  sender: "expéditeurs",
+  username: "Nom d'utilisateur du",
+  messageTitle: "titres",
+  content: "contenu",
+  send: "envoie",
+  reset: "restaurer",
+  errorMsg1: "Veuillez sélectionner un destinataire",
+  errorMsg2: "Sélectionnez le nom d'utilisateur du destinataire",
+  errorMsg3: "Veuillez entrer le titre du message",
+  errorMsg4: "Veuillez saisir les informations",
+  sendMessageSuccess: "Envoi réussi",
+  unread: "non lu",
+  readed: "Lire",
+  readMessage: "Lire le message",
+};

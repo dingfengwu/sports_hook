@@ -1,1 +1,20 @@
-export default {"PasswordLength":"비밀번호 길이는 6~16자의 숫자와 문자 사이여야 합니다.","PasswordDiff":"일치하지 않는 암호를 두 번 입력했습니다.","ContentLength":"사용자 이름 길이는 5 ~ 16 자입니다.","mustEmailStyle":"이메일 형식이어야 합니다.","isNotEmpty":"{msg} 는 비워 둘 수 없습니다","invalidMobile":"잘못된 휴대폰 번호","invalidEmail":"잘못된 이메일 주소","invalidBank":"은행을 선택하십시오","invalidProvince":"지역을 선택하십시오.","invalidCity":"도시를 선택하십시오.","invalidAccountName":"계정 이름을 입력하십시오.","cardNumberIsEmpty":"카드 번호는 비워 둘 수 없습니다.","fundPasswordIsEmpty":"자금 암호는 비워 둘 수 없습니다","branchBankIsEmpty":"지점 주소는 비워 둘 수 없습니다.","invalidAmount":"금액을 확인하십시오. {min} ~ {max} 사이여야 합니다.","noEmpty":"내용은 비워 둘 수 없습니다","mustAcceptTeamCondition":"등록하려면 팀 계약에 동의해야 합니다.","invitationCodeLengthWrong":"초대 코드의 길이는 8비트보다 커야 합니다."}
+export default {
+  PasswordLength: "비밀번호 길이는 6~16자의 숫자와 문자 사이여야 합니다.",
+  PasswordDiff: "일치하지 않는 암호를 두 번 입력했습니다.",
+  ContentLength: "사용자 이름 길이는 5 ~ 16 자입니다.",
+  mustEmailStyle: "이메일 형식이어야 합니다.",
+  isNotEmpty: "{msg} 는 비워 둘 수 없습니다",
+  invalidMobile: "잘못된 휴대폰 번호",
+  invalidEmail: "잘못된 이메일 주소",
+  invalidBank: "은행을 선택하십시오",
+  invalidProvince: "지역을 선택하십시오.",
+  invalidCity: "도시를 선택하십시오.",
+  invalidAccountName: "계정 이름을 입력하십시오.",
+  cardNumberIsEmpty: "카드 번호는 비워 둘 수 없습니다.",
+  fundPasswordIsEmpty: "자금 암호는 비워 둘 수 없습니다",
+  branchBankIsEmpty: "지점 주소는 비워 둘 수 없습니다.",
+  invalidAmount: "금액을 확인하십시오. {min} ~ {max} 사이여야 합니다.",
+  noEmpty: "내용은 비워 둘 수 없습니다",
+  mustAcceptTeamCondition: "등록하려면 팀 계약에 동의해야 합니다.",
+  invitationCodeLengthWrong: "초대 코드의 길이는 8비트보다 커야 합니다.",
+};

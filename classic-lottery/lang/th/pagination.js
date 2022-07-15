@@ -1,1 +1,1 @@
-export default {"the":"การ","page":"หน้า"}
+export default { the: "การ", page: "หน้า" };

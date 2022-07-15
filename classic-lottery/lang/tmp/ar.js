@@ -48,19 +48,19 @@ export default {
     transfer: "عمليات التحويل",
     action: "نشاط",
     lotteryHall: "قاعة اليانصيب",
-    lotteryPrizeGroup: "خصم اليانصيب"
+    lotteryPrizeGroup: "خصم اليانصيب",
   },
   bottom: {
     home: "الصفحة الأولى",
     play: "اليانصيب",
     result: "نتائج لوتو",
-    my: "حسابي"
+    my: "حسابي",
   },
   theme: {
     red: "أحمر",
     blue: "أزرق",
     orange: "شركة أورانج",
-    violet: "أرجواني"
+    violet: "أرجواني",
   },
   header: {
     digitalLottery: "اليانصيب الرقمي",
@@ -70,7 +70,7 @@ export default {
     liveVideo: "فيديو مباشر",
     sportsEvent: "رياضات",
     eSports: "الرياضات الإلكترونية",
-    liveInteraction: "التفاعل المباشر"
+    liveInteraction: "التفاعل المباشر",
   },
   home: {
     day: "أيام",
@@ -102,7 +102,7 @@ export default {
     prize: "مكافآت",
     playNow: "يبدأ",
     downloadAppNotice: "افتح APP الآن واستمتع بالمزيد",
-    download: "تحميل الآن"
+    download: "تحميل الآن",
   },
   gameInfo: {
     the: "القسم",
@@ -119,7 +119,7 @@ export default {
     theFirst: "المركز الأول",
     second: "الثانية",
     third: "ثالث",
-    loading: "الدخول"
+    loading: "الدخول",
   },
   gameTemplate: {
     hotAndCold: "حار وبارد",
@@ -219,7 +219,7 @@ export default {
     thirdBall: "الكرة الثالثة",
     fouthBall: "الكرة الرابعة",
     fivethBall: "الكرة الخامسة",
-    dragonTiger: "التنين تايجر"
+    dragonTiger: "التنين تايجر",
   },
   oderList: {
     myNotes: "رهاني",
@@ -254,7 +254,7 @@ export default {
     Completed: "تم إنجازه",
     UserTermination: "إنهاء المستخدم",
     AdministratorTermination: "إنهاء المسؤول",
-    SystemTermination: "إنهاء النظام"
+    SystemTermination: "إنهاء النظام",
   },
   lotteryRecord: {
     bettingPage: "العودة إلى صفحة الرهان",
@@ -388,7 +388,7 @@ export default {
     shiGe: "عشرة",
     saveLotteryNotice: "وصل لون المجموعة إلى الحد الأقصى (8)",
     cleanNumberNotice:
-      "تم الكشف عن أرقام مكررة أو غير قانونية، إعادة تعيينها بالتنسيق الصحيح"
+      "تم الكشف عن أرقام مكررة أو غير قانونية، إعادة تعيينها بالتنسيق الصحيح",
   },
   gameRecord: {
     lotteryTypes: "بذور اللون",
@@ -429,7 +429,7 @@ export default {
     moreInfo: "اسم المستخدم: <i>{username}</i> | وقت الرهان: <i>{time}</i>",
     betPosition: "موقف الرهان",
     betAmount: "ملاحظة: <i>{عملة}</i> <i>{المبلغ}</i>",
-    betTime: "وقت الرهان: <i>{الوقت}</i>"
+    betTime: "وقت الرهان: <i>{الوقت}</i>",
   },
   alertComponent: {
     completeCounts: "الفترة المكتملة",
@@ -525,7 +525,7 @@ export default {
     SalesVolume: "حجم المبيعات",
     ProfitAndLoss: "ينغكوي",
     FundSource: "مصدر التمويل",
-    fundTarget: "المكان المالي"
+    fundTarget: "المكان المالي",
   },
   sideBar: {
     close: "قائمة التصادم",
@@ -533,7 +533,7 @@ export default {
     Add: "إضافة/تحرير",
     notYetOpen: "غير مفتوح",
     MyCollection: "مفضلاتي",
-    LotteryChoice: "اختر اليانصيب"
+    LotteryChoice: "اختر اليانصيب",
   },
   popup: {
     title1: "نصائح النظام",
@@ -545,7 +545,7 @@ export default {
     EndOfAwardPeriod: "نهاية فترة الجائزة",
     the: "القسم",
     BeCareful: "تم إغلاق فترة الجائزة، يرجى ملاحظة أنه تم تحديث فترة الجائزة",
-    bindBankCardNotice: "لا يوجد بطاقة بعد,يرجى ربط واحدة اول"
+    bindBankCardNotice: "لا يوجد بطاقة بعد,يرجى ربط واحدة اول",
   },
   successMessage: {
     successMessage1: "نجاح الرهان",
@@ -553,7 +553,7 @@ export default {
     successMessage3: "نسخة تم البدء بها بنجاح",
     successMessage4: "رهانات واحدة ناجحة",
     successMessage5: "وفر النجاح!",
-    successMessage6: "إيقاف نجاح النسخ"
+    successMessage6: "إيقاف نجاح النسخ",
   },
   errorMessage: {
     errorMessage1: "الرجاء تحديد الرقم الصحيح والمحاولة مرة أخرى",
@@ -572,16 +572,16 @@ export default {
     errorMessage13: "اللعبة غير متوفرة حاليًا",
     errorMessage14: "يمكن اختيار 8 أرقام فقط",
     errorMessage15: "تم إغلاق طريقة اللعب الحالية",
-    errorMessage16: "يجب أن يكون بتنسيق صندوق البريد الصحيح"
+    errorMessage16: "يجب أن يكون بتنسيق صندوق البريد الصحيح",
   },
   recentAwards: {
     title: "اليانصيب الأخير",
     issue: "جينغ",
-    wnNumber: "رقم لوتو"
+    wnNumber: "رقم لوتو",
   },
   pagination: {
     the: "القسم",
-    page: "صفحة"
+    page: "صفحة",
   },
   recharge: {
     currentUser: "المستخدم الحالي",
@@ -613,8 +613,7 @@ export default {
     bank: "العملة",
     accountName: "تونام",
     accountNumber: "رقم الحساب",
-    tips:
-      "<li>ملاحظات :</li><li><i class='iconfont icon-dian'></i><span>{min} ~ {max}</span> لا يوجد حدود للمعاملات اليومية وهي مجانية من </li><li><i class='iconfont icon-dian'></i>رقم المحفظة الالكترونية يتغير من وقت. لتجنب أي خسارة لا تحفظ رقم المحفظة في الموقع.</li><li><i class='iconfont icon-dian'></i>لا تستخدم  ALIPAY/WECHAT في ارسال الأموال الى الشركة.</li><li><i class='iconfont icon-dian'></i> تأكد انا المبلغ الذي تريد شحنه في الموقع متوافق مع المبلغ المتوفر في محفظتك الالكترونية لتجنب ضياع الوقت.</li>",
+    tips: "<li>ملاحظات :</li><li><i class='iconfont icon-dian'></i><span>{min} ~ {max}</span> لا يوجد حدود للمعاملات اليومية وهي مجانية من </li><li><i class='iconfont icon-dian'></i>رقم المحفظة الالكترونية يتغير من وقت. لتجنب أي خسارة لا تحفظ رقم المحفظة في الموقع.</li><li><i class='iconfont icon-dian'></i>لا تستخدم  ALIPAY/WECHAT في ارسال الأموال الى الشركة.</li><li><i class='iconfont icon-dian'></i> تأكد انا المبلغ الذي تريد شحنه في الموقع متوافق مع المبلغ المتوفر في محفظتك الالكترونية لتجنب ضياع الوقت.</li>",
     help: "تعليمات إعادة الشحن",
     bankList: "قائمة البطاقات المصرفية",
     noteBandcardRecharging:
@@ -637,7 +636,7 @@ export default {
     fastAmount: "المبلغ السريع",
     depositSuccessWhenVirtualCurrency:
       "تم تقديم طلب إعادة الشحن الخاص بك ، يرجى الانتظار بصبر للمراجعة",
-    depositQRCode: "استلام رمز الاستجابة السريعة"
+    depositQRCode: "استلام رمز الاستجابة السريعة",
   },
   withdraw: {
     serialNumber: "رقم السحب",
@@ -660,8 +659,7 @@ export default {
       "رقم الحساب: {BankName} ({account})، مبلغ السحب النقدي: {المبلغ}",
     confirmWithdraw: "تأكيد النقد",
     refuseReason: "سبب الرفض",
-    tips:
-      "<li>ملاحظات :</li><li>1.يمكن سحب أعلى معاملة فردية <i>{amount}</i> {currency_unit}.</li><li>2.<span class='{css}'>عمليات سحب مجانية كل يوم <i>{fee_times}</i> مرات ، بدءًا من <i>{pull_times}</i> مرات يتحمل <i>تكلفة {rate}٪</i> ، في حالة حدوث أي إزعاج ، يرجى تفهم ذلك ، شكرًا لك! </span> عدد عمليات السحب التي تمت اليوم:<i>{current_times}/{max_times}</i></li><li class='{css_time}'>3.وقت السحب اليومي هو <i>{withdraw_allowed_time}</i>.</li>",
+    tips: "<li>ملاحظات :</li><li>1.يمكن سحب أعلى معاملة فردية <i>{amount}</i> {currency_unit}.</li><li>2.<span class='{css}'>عمليات سحب مجانية كل يوم <i>{fee_times}</i> مرات ، بدءًا من <i>{pull_times}</i> مرات يتحمل <i>تكلفة {rate}٪</i> ، في حالة حدوث أي إزعاج ، يرجى تفهم ذلك ، شكرًا لك! </span> عدد عمليات السحب التي تمت اليوم:<i>{current_times}/{max_times}</i></li><li class='{css_time}'>3.وقت السحب اليومي هو <i>{withdraw_allowed_time}</i>.</li>",
     tips1:
       "<li>ملاحظات :</li><li>1.الحد الأقصى لمبلغ السحب لمعاملة واحدة هو <i>{amount}</i>.</li><li>2.يمكنك سحب الأموال <i>{max_times}</i> مرات في اليوم. عمليات السحب التي تقل عن <i>{min_amount}</i>سيتم خصمها<i>{fixed_fee}</i> روبية ، بينما عمليات السحب التي تزيد عن <i>{min_amount}</i> سيتم خصمها <i>{rate}٪</i> رسوم المناولة.</li>",
     tips2:
@@ -675,7 +673,7 @@ export default {
     tipTmpl3:
       "عمليات السحب التي تزيد عن <i>{amount}</i> أو تساويها ستخصم رسوم المناولة التي تبلغ <i>{value}</i> {value_unit}.",
     tipTmpl4: "سيتم خصم <i>{value}</i>{value_unit} عمولة عند كل عملية سحب.",
-    noticeOfGettingU: "يعادل {amount} يو"
+    noticeOfGettingU: "يعادل {amount} يو",
   },
   personalCenter: {
     personalCenter: "المركز الشخصي",
@@ -792,7 +790,7 @@ export default {
       "عزيزي <i>{username}</i>، معلومات الرصيد الخاصة بك هي كما يلي: {مبلغ} {currency_unit} الرصيد<br /> المتاح هو <i>{مبلغ}</i> {currency_unit} الرصيد<br /> غير القابل للتحويل: <i>{المحظور} {currency_unit</i>}.",
     kindlyNotice: "نصائح حميمة:",
     transferLimit: "نقل واحد كحد أقصى",
-    transferSubmitSuccess: "تم حفظ طلب النقل، يرجى الانتظار للمراجعة"
+    transferSubmitSuccess: "تم حفظ طلب النقل، يرجى الانتظار للمراجعة",
   },
   validateError: {
     PasswordLength: "يجب أن تكون كلمة المرور بين 6 و 16 رقمًا وحروف",
@@ -818,12 +816,12 @@ export default {
       "تنسيق IFSC غير صحيح، 11 رقمًا في الطول، يجب أن يبدأ بـ 4 أحرف متبوعة بـ 0، ثم 6 أرقام",
     bankCardNumberMaxLength: "الحد الأقصى لطول رقم البطاقة بين {min} و {max}",
     bankcardLengthMust: "يجب أن يكون طول {field} {length} بت",
-    bankCardLengthIn: "يجب أن يكون طول {field} واحدًا من {array}"
+    bankCardLengthIn: "يجب أن يكون طول {field} واحدًا من {array}",
   },
   fundAlertComponents: {
     checkBankCard: "التحقق من البطاقة المصرفية",
     selectBoundBankCard: "حدد بطاقة مصرفية",
-    notTheSameCardNotice: "تم التحقق من تناقضات البطاقة"
+    notTheSameCardNotice: "تم التحقق من تناقضات البطاقة",
   },
   Notification: {
     OperationSuccess: "نجاح العملية",
@@ -833,7 +831,7 @@ export default {
     titlePrrorPage: "صفحة الخطأ",
     loading: "تحميل...",
     noMoreData: "تم تحميله بالكامل",
-    noResult: "لا مزيد من السجلات "
+    noResult: "لا مزيد من السجلات ",
   },
   accountInfo: {
     rememberPassword: "تذكر كلمة المرور",
@@ -858,7 +856,7 @@ export default {
       "الاسم الحقيقي واسم الحساب ليسا متماثلين، يرجى التأكيد",
     gender: "الجنسين",
     male: "ذكر",
-    female: "نو"
+    female: "نو",
   },
   teamRecord: {
     forefather: "التسلسل الهرمي",
@@ -939,7 +937,7 @@ export default {
     parent: "الرؤساء",
     copy: "مستنسخة",
     copyNotice: "تم نسخ المحتوى إلى لوحة اللصق",
-    anyLevel: "نقل إلى أخرى"
+    anyLevel: "نقل إلى أخرى",
   },
   agentCenter: {
     agentCenter: "مركز فريق",
@@ -951,7 +949,7 @@ export default {
     teamManager: "إدارة الفريق",
     linkManager: "إدارة الروابط",
     agentCreateUser: "فتح الحساب اليدوي",
-    linkCreateUser: "رابط لفتح حساب"
+    linkCreateUser: "رابط لفتح حساب",
   },
   message: {
     title: "رسالة المحطة",
@@ -972,11 +970,11 @@ export default {
     sendMessageSuccess: "تم إرسالها بنجاح",
     unread: "غير مقروء",
     readed: "قراءة",
-    readMessage: "اقرأ الرسالة"
+    readMessage: "اقرأ الرسالة",
   },
   announcement: {
     title: "مركز الإعلان",
     detail: "تفاصيل الإعلان",
-    more: "أكثر"
-  }
+    more: "أكثر",
+  },
 };

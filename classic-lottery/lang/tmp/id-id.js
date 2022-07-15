@@ -43,7 +43,7 @@ export default {
     endTime: "Waktu",
     number: "Nomor",
     invitationCode: "Kode Undangan",
-    customerService: "Layanan Pelanggan Online"
+    customerService: "Layanan Pelanggan Online",
   },
   bottom: { home: "Rumah", play: "Lotre", result: "Hasil Undian", my: "saya" },
   theme: { red: "Merah", blue: "Biru", orange: "Jeruk", violet: "voilet" },
@@ -55,7 +55,7 @@ export default {
     liveVideo: "Kasino Langsung",
     sportsEvent: "Olahraga",
     eSports: "eSports",
-    liveInteraction: "Streaming"
+    liveInteraction: "Streaming",
   },
   home: {
     day: "Hari",
@@ -87,7 +87,7 @@ export default {
     prize: "Hadiah",
     playNow: "Main sekarang",
     downloadAppNotice: "Buka APP sekarang untuk menikmati lebih seru",
-    download: "Unduh sekarang"
+    download: "Unduh sekarang",
   },
   gameInfo: {
     the: "nomor",
@@ -104,7 +104,7 @@ export default {
     theFirst: "juara",
     second: "tempat kedua",
     third: "Tempat ketiga",
-    loading: "Mengakuisisi"
+    loading: "Mengakuisisi",
   },
   gameTemplate: {
     hotAndCold: "panas",
@@ -206,7 +206,7 @@ export default {
     thirdBall: "Bola Ketiga",
     fouthBall: "Bola Ketiga",
     fivethBall: "Fifth Ball",
-    dragonTiger: "Dragon Tiger"
+    dragonTiger: "Dragon Tiger",
   },
   oderList: {
     myNotes: "Pesanan",
@@ -241,7 +241,7 @@ export default {
     Completed: "Selesai",
     UserTermination: "Batalkan Pengguna",
     AdministratorTermination: "Administrator Batalkan",
-    SystemTermination: "Sistem Abort"
+    SystemTermination: "Sistem Abort",
   },
   lotteryRecord: {
     bettingPage: "kembali ke halaman taruhan",
@@ -375,7 +375,7 @@ export default {
     shiGe: "keempat dan kelima dari kiri",
     saveLotteryNotice: "Pengumpulan warna sudah mencapai batas atas (8)",
     cleanNumberNotice:
-      "Nomor duplikat atau ilegal telah terdeteksi dan telah diatur ulang sesuai dengan format yang benar"
+      "Nomor duplikat atau ilegal telah terdeteksi dan telah diatur ulang sesuai dengan format yang benar",
   },
   gameRecord: {
     lotteryTypes: "jenis lotre",
@@ -417,7 +417,7 @@ export default {
       "Nama pengguna: <i> {username} </i> | Waktu taruhan: <i> {waktu} </i>",
     betPosition: "Taruhan posisi",
     betAmount: "Monto de la apuesta: <i> {moneda} </i> <i> {monto} </i>",
-    betTime: "Tiempo de apuesta: <i> {time} </i>"
+    betTime: "Tiempo de apuesta: <i> {time} </i>",
   },
   alertComponent: {
     completeCounts: "jumlah lengkap",
@@ -513,7 +513,7 @@ export default {
     SalesVolume: "Penjualan",
     ProfitAndLoss: "Profitloss",
     FundSource: "Sumber dana",
-    fundTarget: "Ke mana harus mencari dana"
+    fundTarget: "Ke mana harus mencari dana",
   },
   sideBar: {
     close: "isi peregangan",
@@ -521,7 +521,7 @@ export default {
     Add: "mengedit",
     notYetOpen: "Tidak dibuka",
     MyCollection: "Saya mengumpulkan jenis lotere",
-    LotteryChoice: "pilih undian"
+    LotteryChoice: "pilih undian",
   },
   popup: {
     title1: "Prompt",
@@ -534,7 +534,7 @@ export default {
     the: "Gambar No.",
     BeCareful: " selesai, harap dicatat undian No diperbarui",
     bindBankCardNotice:
-      "Anda belum mengikat kartu bank apa pun, harap ikat kartu bank tersebut terlebih dahulu"
+      "Anda belum mengikat kartu bank apa pun, harap ikat kartu bank tersebut terlebih dahulu",
   },
   successMessage: {
     successMessage1: "Taruhan sukses",
@@ -543,7 +543,7 @@ export default {
       "Tiket yang dikeluarkan memungkinkan orang lain dapat mengikuti dengan sukses",
     successMessage4: "ikuti tiket lain yang berhasil",
     successMessage5: "Simpan dengan sukses!",
-    successMessage6: "Berhasil berhenti menyalin"
+    successMessage6: "Berhasil berhenti menyalin",
   },
   errorMessage: {
     errorMessage1: "Silakan pilih nomor yang benar dan coba lagi.",
@@ -563,12 +563,12 @@ export default {
     errorMessage13: "Permainan ini tidak dibuka.",
     errorMessage14: "hanya pilih hingga 8 angka",
     errorMessage15: "Cara bermain ini telah dekat",
-    errorMessage16: "Harus dalam format kotak surat yang benar"
+    errorMessage16: "Harus dalam format kotak surat yang benar",
   },
   recentAwards: {
     title: "Penghargaan Terbaru",
     issue: "masalah",
-    wnNumber: "WinNum"
+    wnNumber: "WinNum",
   },
   pagination: { the: "", page: "halaman" },
   recharge: {
@@ -601,8 +601,7 @@ export default {
     bank: "Bank",
     accountName: "Nama Akun",
     accountNumber: "Akun",
-    tips:
-      "<li> Pengingat intim: </li> <li> 1. Biaya penanganan <span> {changeFee} </span>, batas isi ulang tunggal <span> {min} ~ {max} </span>, total isi ulang tidak Batas atas adalah <i>, otomatis sepenuhnya, dalam hitungan detik </i></li> <li> 2. Jangan menyimpan nomor tujuan rekening bank yang lama, karena kami tidak menggunakan rekening yang lama lagi sehingga kami tidak bisa memproses deposit anda. Terima kasih.</li><li>3.Untuk isi ulang, harap isi ulang sesuai dengan jumlah pencocokan otomatis platform.Misalnya, jumlah pencocokan platform adalah 100,31, dan isi ulang Anda juga perlu ditransfer dan diisi ulang oleh 100,31. Jika tidak, itu akan mempengaruhi waktu kedatangan isi ulang Anda</li>",
+    tips: "<li> Pengingat intim: </li> <li> 1. Biaya penanganan <span> {changeFee} </span>, batas isi ulang tunggal <span> {min} ~ {max} </span>, total isi ulang tidak Batas atas adalah <i>, otomatis sepenuhnya, dalam hitungan detik </i></li> <li> 2. Jangan menyimpan nomor tujuan rekening bank yang lama, karena kami tidak menggunakan rekening yang lama lagi sehingga kami tidak bisa memproses deposit anda. Terima kasih.</li><li>3.Untuk isi ulang, harap isi ulang sesuai dengan jumlah pencocokan otomatis platform.Misalnya, jumlah pencocokan platform adalah 100,31, dan isi ulang Anda juga perlu ditransfer dan diisi ulang oleh 100,31. Jika tidak, itu akan mempengaruhi waktu kedatangan isi ulang Anda</li>",
     help: "Bantuan isi ulang",
     bankList: "Daftar kartu bank",
     noteBandcardRecharging:
@@ -624,7 +623,7 @@ export default {
     exchangeNotice: "Setara dengan {amount} {currency_unit}",
     depositSuccessWhenVirtualCurrency:
       "Aplikasi isi ulang Anda telah dikirimkan, harap tunggu dengan sabar untuk ditinjau.",
-    depositQRCode: "Menerima kode QR"
+    depositQRCode: "Menerima kode QR",
   },
   withdraw: {
     serialNumber: "Referensi No.",
@@ -650,8 +649,7 @@ export default {
       "Nomor rekening penarikan: {bankName} ({account}), jumlah penarikan: {jumlah}",
     confirmWithdraw: "Konfirmasi penarikan",
     refuseReason: "Alasan penolakan",
-    tips:
-      "<li>Pengingat intim:</li><li>1.Jumlah penarikan maksimum untuk satu transaksi adalah <i> {amount} </i> {currency_unit}.</li><li>2.<span class='{css}'>Penarikan gratis <i> {fee_times} </i> kali setiap hari, mulai dari waktu <i> {withdraw_times} </i>, Anda akan dikenakan biaya <i> {rate}% </i> Jika terjadi ketidaknyamanan, harap dipahami, terima kasih! </span>Jumlah penarikan yang dilakukan hari ini: <i>{current_times}/{max_times}</i></li><li class='{css_time}'>3.Waktu penarikan harian adalah <i>{withdraw_allowed_time}</i>.</li>",
+    tips: "<li>Pengingat intim:</li><li>1.Jumlah penarikan maksimum untuk satu transaksi adalah <i> {amount} </i> {currency_unit}.</li><li>2.<span class='{css}'>Penarikan gratis <i> {fee_times} </i> kali setiap hari, mulai dari waktu <i> {withdraw_times} </i>, Anda akan dikenakan biaya <i> {rate}% </i> Jika terjadi ketidaknyamanan, harap dipahami, terima kasih! </span>Jumlah penarikan yang dilakukan hari ini: <i>{current_times}/{max_times}</i></li><li class='{css_time}'>3.Waktu penarikan harian adalah <i>{withdraw_allowed_time}</i>.</li>",
     tips1:
       "<li>Pengingat intim:</li><li>1.Jumlah penarikan maksimum untuk satu transaksi adalah <i>{amount}</i>.</li><li>2.Anda dapat penarikan dana <i> {max_times} </i> kali sehari. Penarikan di bawah <i> {min_amount} </i> akan memotong biaya penanganan sebesar <i> {fixed_fee} </i> rupee, dan penarikan di atas <i> {min_amount} </i> akan memotong biaya penanganan <i> {rate}% </i>.</li>",
     tips2:
@@ -666,7 +664,7 @@ export default {
       "Withdrawals greater than or equal to <i>{amount}</i> will deduct the handling fee of <i>{value}</i>{value_unit}.",
     tipTmpl4:
       "<i>{value}</i>{value_unit} handling fee will be deducted for all withdrawals.",
-    noticeOfGettingU: "Setara dengan {amount} U"
+    noticeOfGettingU: "Setara dengan {amount} U",
   },
   personalCenter: {
     personalCenter: "Pusat pribadi",
@@ -786,7 +784,7 @@ export default {
     kindlyNotice: "Pemberitahuan intim:",
     transferLimit: "Transfer tunggal tertinggi yang dapat dilakukan",
     transferSubmitSuccess:
-      "Permintaan transfer telah disimpan, harap tunggu tinjauan"
+      "Permintaan transfer telah disimpan, harap tunggu tinjauan",
   },
   validateError: {
     PasswordLength: "Panjang kata sandi harus antara 6 dan 16 angka dan huruf",
@@ -813,13 +811,13 @@ export default {
       "Panjang maksimum nomor kartu bank adalah antara {min} dan {max}",
     gender: "Jenis Kelamin",
     male: "Laki-laki",
-    female: "Perempuan"
+    female: "Perempuan",
   },
   fundAlertComponents: {
     checkBankCard: "Validasi Bank",
     selectBoundBankCard: "Pilih Bank",
     notTheSameCardNotice:
-      "Dua kartu yang dipilih dan diperiksa bukan kartu yang sama"
+      "Dua kartu yang dipilih dan diperiksa bukan kartu yang sama",
   },
   Notification: {
     OperationSuccess: "Operasi berhasil",
@@ -830,7 +828,7 @@ export default {
     titlePrrorPage: "Halaman Galat",
     loading: "Memuat...",
     noMoreData: "Memuat Selesai",
-    noResult: "Tidak ada hasil"
+    noResult: "Tidak ada hasil",
   },
   accountInfo: {
     rememberPassword: "Ingat Sandi",
@@ -852,7 +850,7 @@ export default {
     updateRealNameNotice:
       "Nama asli hanya dapat diubah satu kali, silakan periksa dan konfirmasi",
     realNameIsDiffenceAccountName:
-      "Nama asli tidak sesuai dengan nama akun, harap konfirmasi"
+      "Nama asli tidak sesuai dengan nama akun, harap konfirmasi",
   },
   teamRecord: {
     forefather: "Tingkat",
@@ -933,7 +931,7 @@ export default {
     parent: "Unggul",
     copy: "menyalin",
     copyNotice: "Konten telah disalin ke papan tempel",
-    anyLevel: "transfer ke orang lain"
+    anyLevel: "transfer ke orang lain",
   },
   agentCenter: {
     agentCenter: "Pusat Agen",
@@ -945,7 +943,7 @@ export default {
     teamManager: "Manajemen Tim",
     linkManager: "Manajemen Tautan",
     agentCreateUser: "Pengguna Buat Akun",
-    linkCreateUser: "Tautan Buat Akun"
+    linkCreateUser: "Tautan Buat Akun",
   },
   message: {
     title: "Surat stasiun",
@@ -966,11 +964,11 @@ export default {
     sendMessageSuccess: "Berhasil dikirim",
     unread: "belum dibaca",
     readed: "Telah membaca",
-    readMessage: "Baca pesannya"
+    readMessage: "Baca pesannya",
   },
   announcement: {
     title: "Announcement",
     detail: "Detail Pengumuman",
-    more: "Lainnya"
-  }
+    more: "Lainnya",
+  },
 };

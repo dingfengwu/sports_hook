@@ -1,1 +1,5 @@
-export default {"title":"アナウンスセンター","detail":"アナウンスの詳細","more":"もっと"}
+export default {
+  title: "アナウンスセンター",
+  detail: "アナウンスの詳細",
+  more: "もっと",
+};

@@ -44,19 +44,19 @@ export default {
     number: "번호",
     invitationCode: "초대장 코드",
     customerService: "온라인 고객 서비스",
-    tryPlay: "그것을 시도"
+    tryPlay: "그것을 시도",
   },
   bottom: {
     home: "프론트페이지",
     play: "복권",
     result: "추첨 결과",
-    my: "내"
+    my: "내",
   },
   theme: {
     red: "루즈",
     blue: "푸른",
     orange: "주황색",
-    violet: "보라색"
+    violet: "보라색",
   },
   header: {
     digitalLottery: "디지털 복권",
@@ -66,7 +66,7 @@ export default {
     liveVideo: "비디오 재현",
     sportsEvent: "스포츠",
     eSports: "이스포츠",
-    liveInteraction: "실시간 상호작용"
+    liveInteraction: "실시간 상호작용",
   },
   home: {
     day: "일",
@@ -98,7 +98,7 @@ export default {
     prize: "보너스",
     playNow: "가 시작됩니다",
     downloadAppNotice: "지금 앱을 열고 더 많은 것을 즐기십시오",
-    download: "지금 다운로드"
+    download: "지금 다운로드",
   },
   gameInfo: {
     the: "디",
@@ -115,7 +115,7 @@ export default {
     theFirst: "1 위",
     second: "2 위",
     third: "3 위",
-    loading: "들어오세요"
+    loading: "들어오세요",
   },
   gameTemplate: {
     hotAndCold: "뜨겁고 차가운",
@@ -216,7 +216,7 @@ export default {
     thirdBall: "제 3 공",
     fouthBall: "공 4",
     fivethBall: "다섯 번째 공",
-    dragonTiger: "롱후"
+    dragonTiger: "롱후",
   },
   oderList: {
     myNotes: "내 베팅",
@@ -251,7 +251,7 @@ export default {
     Completed: "완료",
     UserTermination: "사용자 종료",
     AdministratorTermination: "관리자 종료",
-    SystemTermination: "시스템 종료"
+    SystemTermination: "시스템 종료",
   },
   lotteryRecord: {
     bettingPage: "베팅 페이지로 돌아가기",
@@ -385,7 +385,7 @@ export default {
     shiGe: "10",
     saveLotteryNotice: "수집용 색상이 상한에 도달했습니다 (8)",
     cleanNumberNotice:
-      "중복되거나 잘못된 번호가 감지되었습니다. 올바른 형식으로 재설정"
+      "중복되거나 잘못된 번호가 감지되었습니다. 올바른 형식으로 재설정",
   },
   gameRecord: {
     lotteryTypes: "Ci",
@@ -426,7 +426,7 @@ export default {
     moreInfo: "사용자 이름:<i>{사용자 이름}</i> | 베팅<i>시간: {time}</i>",
     betPosition: "베팅 포지션",
     betAmount: "참고:<i>{통화}</i> <i>{금액}</i>",
-    betTime: "베팅 시간:<i>{time}</i>"
+    betTime: "베팅 시간:<i>{time}</i>",
   },
   alertComponent: {
     completeCounts: "완료 기간",
@@ -520,7 +520,7 @@ export default {
     time: "시각",
     SalesVolume: "판매",
     ProfitAndLoss: "잉로스",
-    FundSource: "자금 조달 출처"
+    FundSource: "자금 조달 출처",
   },
   sideBar: {
     close: "메뉴 팝오버",
@@ -528,7 +528,7 @@ export default {
     Add: "추가/편집",
     notYetOpen: "열리지 않음",
     MyCollection: "내 컬렉션",
-    LotteryChoice: "추첨 선택"
+    LotteryChoice: "추첨 선택",
   },
   popup: {
     title1: "시스템 팁",
@@ -540,7 +540,7 @@ export default {
     EndOfAwardPeriod: "포상 기간 종료",
     the: "디",
     BeCareful:
-      "안 돼어워드 기간이 마감되었습니다. 어워드 기간 업데이트에 유의하십시오."
+      "안 돼어워드 기간이 마감되었습니다. 어워드 기간 업데이트에 유의하십시오.",
   },
   successMessage: {
     successMessage1: "베팅 성공",
@@ -548,7 +548,7 @@ export default {
     successMessage3: "성공적인 후속 출시",
     successMessage4: "단일 메모로 성공",
     successMessage5: "성공을 구하십시오!",
-    successMessage6: "후속 작업을 성공적으로 중지합니다."
+    successMessage6: "후속 작업을 성공적으로 중지합니다.",
   },
   errorMessage: {
     errorMessage1: "올바른 번호를 선택한 후 다시 시도하십시오.",
@@ -567,16 +567,16 @@ export default {
     errorMessage12: "오픈 컬러",
     errorMessage13: "현재 게임을 사용할 수 없습니다.",
     errorMessage14: "최대 8 개의 숫자만 선택할 수 있습니다.",
-    errorMessage15: "현재 재생이 꺼져 있음"
+    errorMessage15: "현재 재생이 꺼져 있음",
   },
   recentAwards: {
     title: "최근 복권",
     issue: "포상 기간",
-    wnNumber: "복권 번호"
+    wnNumber: "복권 번호",
   },
   pagination: {
     the: "디",
-    page: "페이지"
+    page: "페이지",
   },
   recharge: {
     currentUser: "현재 사용자",
@@ -608,11 +608,10 @@ export default {
     bank: "은행",
     accountName: "가계 이름",
     accountNumber: "계정",
-    tips:
-      "<li>팁:</li><li>1.<span>{ changeFee}</span>, 단일 탑업 한도<span>{min} ~ {max} 를</span>청구합니다. 총 충전이 해제되고 <i>완전 자동 초가 계정 2에</i></li><li>포함됩니다.이전 은행 계좌의 계좌를 더 이상 사용하지 않으므로 기존 은행 계좌 번호를 보관하지 마십시오. 예금을 처리할 수 없습니다.</li>",
+    tips: "<li>팁:</li><li>1.<span>{ changeFee}</span>, 단일 탑업 한도<span>{min} ~ {max} 를</span>청구합니다. 총 충전이 해제되고 <i>완전 자동 초가 계정 2에</i></li><li>포함됩니다.이전 은행 계좌의 계좌를 더 이상 사용하지 않으므로 기존 은행 계좌 번호를 보관하지 마십시오. 예금을 처리할 수 없습니다.</li>",
     depositSuccessWhenVirtualCurrency:
       "재충전 신청서가 제출되었습니다. 검토를 위해 참을성 있게 기다려 주십시오.",
-    depositQRCode: "QR 코드 수신"
+    depositQRCode: "QR 코드 수신",
   },
   withdraw: {
     serialNumber: "출금 플로우 번호",
@@ -636,8 +635,7 @@ export default {
     withdrawNotice: "계정: {은행 이름} ({계정}), 출금 금액: {}",
     confirmWithdraw: "해지 확인",
     refuseReason: "거부 사유",
-    tips:
-      "<li>친밀한 팁:</li><li>1.하나의 단일<i>{amount}</i>위안까지 올릴 수 있습니다.</li><li>2.<i>무료 인출은<i>{충전 시간}</i>부터 매일<i>{충전 시간}</i>이 (가) 청구됩니다.</i>만약 불편을 끼쳐 드려, 양해해 주십시오, 감사합니다!오늘의 언급 수:<i>{현재 시간}/{최대 시간}</i></li>"
+    tips: "<li>친밀한 팁:</li><li>1.하나의 단일<i>{amount}</i>위안까지 올릴 수 있습니다.</li><li>2.<i>무료 인출은<i>{충전 시간}</i>부터 매일<i>{충전 시간}</i>이 (가) 청구됩니다.</i>만약 불편을 끼쳐 드려, 양해해 주십시오, 감사합니다!오늘의 언급 수:<i>{현재 시간}/{최대 시간}</i></li>",
   },
   personalCenter: {
     personalCenter: "개인 센터",
@@ -751,7 +749,7 @@ export default {
     prohibitAmountNotice:
       "<i>{ username}</i>님, 귀하의 잔액 정보는 다음과 같습니다.<br />사용 가능한 이체 잔액은<i>{금액}</i>위안<br />양도 불가 잔액은<i>{ProbitValue}</i>입니다.",
     kindlyNotice: "친밀한 팁:",
-    transferLimit: "싱글 최대 양도 가능"
+    transferLimit: "싱글 최대 양도 가능",
   },
   validateError: {
     PasswordLength: "비밀번호 길이는 6~16자의 숫자와 문자 사이여야 합니다.",
@@ -771,12 +769,12 @@ export default {
     invalidAmount: "금액을 확인하십시오. {min} ~ {max} 사이여야 합니다.",
     noEmpty: "내용은 비워 둘 수 없습니다",
     mustAcceptTeamCondition: "등록하려면 팀 계약에 동의해야 합니다.",
-    invitationCodeLengthWrong: "초대 코드의 길이는 8비트보다 커야 합니다."
+    invitationCodeLengthWrong: "초대 코드의 길이는 8비트보다 커야 합니다.",
   },
   fundAlertComponents: {
     checkBankCard: "은행 카드 유효성 검사",
     selectBoundBankCard: "은행 카드 선택",
-    notTheSameCardNotice: "일관성 없는 카드 인증"
+    notTheSameCardNotice: "일관성 없는 카드 인증",
   },
   Notification: {
     OperationSuccess: "작업이 성공했습니다.",
@@ -786,7 +784,7 @@ export default {
     titlePrrorPage: "오류 페이지",
     loading: "로드 중...",
     noMoreData: "모두 로드됨",
-    noResult: "더 이상 기록 없음"
+    noResult: "더 이상 기록 없음",
   },
   accountInfo: {
     rememberPassword: "암호 기억",
@@ -801,7 +799,7 @@ export default {
     noAccount: "아직 계정이 없으신가요?",
     createOne: "생성",
     contact: "당신은 또한 문의 할 수 있습니다",
-    balanceNotEnough: "불충분 한 균형"
+    balanceNotEnough: "불충분 한 균형",
   },
   teamRecord: {
     forefather: "계층 구조",
@@ -876,7 +874,7 @@ export default {
     children: "서브 레디",
     parent: "상사",
     copy: "재현",
-    copyNotice: "컨텐트가 대지판에 복사되었습니다."
+    copyNotice: "컨텐트가 대지판에 복사되었습니다.",
   },
   agentCenter: {
     agentCenter: "에이전트 센터",
@@ -888,7 +886,7 @@ export default {
     teamManager: "팀 관리",
     linkManager: "링크 관리",
     agentCreateUser: "수동 계좌 개설",
-    linkCreateUser: "계좌 개설 연결"
+    linkCreateUser: "계좌 개설 연결",
   },
   message: {
     title: "역 문자",
@@ -909,11 +907,11 @@ export default {
     sendMessageSuccess: "성공적으로 전송됨",
     unread: "읽히지 않는",
     readed: "읽기",
-    readMessage: "메시지 읽기"
+    readMessage: "메시지 읽기",
   },
   announcement: {
     title: "게시판",
     detail: "발표 세부 정보",
-    more: "더"
-  }
+    more: "더",
+  },
 };

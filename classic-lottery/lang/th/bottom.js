@@ -1,1 +1,6 @@
-export default {"home":"หน้าแรก","play":"สลากกินแบ่ง","result":"ผลล็อตโต้","my":"ของฉัน"}
+export default {
+  home: "หน้าแรก",
+  play: "สลากกินแบ่ง",
+  result: "ผลล็อตโต้",
+  my: "ของฉัน",
+};

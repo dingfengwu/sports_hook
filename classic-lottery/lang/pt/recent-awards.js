@@ -1,1 +1,5 @@
-export default {"title":"Loteria recente","issue":"jiǎng","wnNumber":"Número da loteria"}
+export default {
+  title: "Loteria recente",
+  issue: "jiǎng",
+  wnNumber: "Número da loteria",
+};

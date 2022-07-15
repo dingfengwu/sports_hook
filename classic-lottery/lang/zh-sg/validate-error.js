@@ -1,1 +1,20 @@
-export default {"PasswordLength":"密碼長度必須介於 6 至 16 個數字和字母","PasswordDiff":"輸入兩次密碼不一致","ContentLength":"使用者名稱長度為 5 至 16 個字元","mustEmailStyle":"必須是電子郵件格式","isNotEmpty":"{味精} 不能為空","invalidMobile":"無效的手機號碼","invalidEmail":"電子郵件地址無效","invalidBank":"請選擇銀行","invalidProvince":"請選擇省","invalidCity":"請選擇城市","invalidAccountName":"請輸入帳戶名稱","cardNumberIsEmpty":"信用卡號碼不可為空白","fundPasswordIsEmpty":"資金密碼不可為空","branchBankIsEmpty":"分支地址不能為空","invalidAmount":"請檢查金額，必須介於 {min} 和 {max}","noEmpty":"{msg}不能為空","mustAcceptTeamCondition":"必須同意團隊協議才能註冊","invitationCodeLengthWrong":"邀請碼的長度必須大於 8 位元"}
+export default {
+  PasswordLength: "密碼長度必須介於 6 至 16 個數字和字母",
+  PasswordDiff: "輸入兩次密碼不一致",
+  ContentLength: "使用者名稱長度為 5 至 16 個字元",
+  mustEmailStyle: "必須是電子郵件格式",
+  isNotEmpty: "{味精} 不能為空",
+  invalidMobile: "無效的手機號碼",
+  invalidEmail: "電子郵件地址無效",
+  invalidBank: "請選擇銀行",
+  invalidProvince: "請選擇省",
+  invalidCity: "請選擇城市",
+  invalidAccountName: "請輸入帳戶名稱",
+  cardNumberIsEmpty: "信用卡號碼不可為空白",
+  fundPasswordIsEmpty: "資金密碼不可為空",
+  branchBankIsEmpty: "分支地址不能為空",
+  invalidAmount: "請檢查金額，必須介於 {min} 和 {max}",
+  noEmpty: "{msg}不能為空",
+  mustAcceptTeamCondition: "必須同意團隊協議才能註冊",
+  invitationCodeLengthWrong: "邀請碼的長度必須大於 8 位元",
+};

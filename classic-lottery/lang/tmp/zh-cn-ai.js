@@ -49,19 +49,19 @@ export default {
     action: "活动",
     lotteryHall: "投票大厅",
     lotteryPrizeGroup: "投票返点",
-    hotLottery: "热门投票"
+    hotLottery: "热门投票",
   },
   bottom: {
     home: "首页",
     play: "投票",
     result: "投票结果",
-    my: "钱包"
+    my: "钱包",
   },
   theme: {
     red: "红",
     blue: "蓝",
     orange: "橙",
-    violet: "紫"
+    violet: "紫",
   },
   header: {
     digitalLottery: "数字投票",
@@ -71,7 +71,7 @@ export default {
     liveVideo: "真人视讯",
     sportsEvent: "体育赛事",
     eSports: "电子竞技",
-    liveInteraction: "直播互动"
+    liveInteraction: "直播互动",
   },
   home: {
     day: "天",
@@ -111,7 +111,7 @@ export default {
     labelHotLottery: "热门投票",
     labelHotLotteryVote: "投票入口",
     labelTransfer: "转账",
-    enterMatchPath: "进入赛道"
+    enterMatchPath: "进入赛道",
   },
   gameInfo: {
     the: "第",
@@ -148,7 +148,7 @@ export default {
     labelNoteCount: "积数",
     labelNoteTotal: "总积分量",
     labelDrawData: "积分数据",
-    labelHistoryData: "历史数据"
+    labelHistoryData: "历史数据",
   },
   gameTemplate: {
     hotAndCold: "冷热",
@@ -248,7 +248,7 @@ export default {
     thirdBall: "第三球",
     fouthBall: "第四球",
     fivethBall: "第五球",
-    dragonTiger: "龙虎"
+    dragonTiger: "龙虎",
   },
   oderList: {
     myNotes: "比赛记录",
@@ -283,7 +283,7 @@ export default {
     Completed: "已完成",
     UserTermination: "用户终止",
     AdministratorTermination: "管理员终止",
-    SystemTermination: "系统终止"
+    SystemTermination: "系统终止",
   },
   lotteryRecord: {
     bettingPage: "返回积分页",
@@ -416,7 +416,7 @@ export default {
     baiGe: "百个",
     shiGe: "十个",
     saveLotteryNotice: "收藏赛区已达到上限（8）",
-    cleanNumberNotice: "检测到有重复或不合法的号码, 已按照正确格式重置"
+    cleanNumberNotice: "检测到有重复或不合法的号码, 已按照正确格式重置",
   },
   gameRecord: {
     lotteryTypes: "赛区",
@@ -457,7 +457,7 @@ export default {
     moreInfo: "用户名：<i>{username}</i> | 积分时间：<i>{time}</i>",
     betPosition: "积分位置",
     betAmount: "注额：<i>{currency}</i> <i>{amount}</i>",
-    betTime: "积分时间：<i>{time}</i>"
+    betTime: "积分时间：<i>{time}</i>",
   },
   alertComponent: {
     completeCounts: "完成期数",
@@ -551,7 +551,7 @@ export default {
     SalesVolume: "销量",
     ProfitAndLoss: "积分盈亏",
     FundSource: "资金来源",
-    fundTarget: "资金去处"
+    fundTarget: "资金去处",
   },
   sideBar: {
     close: "收起菜单",
@@ -559,7 +559,7 @@ export default {
     Add: "添加/编辑",
     notYetOpen: "暂未开放",
     MyCollection: "我的收藏",
-    LotteryChoice: "选择投票"
+    LotteryChoice: "选择投票",
   },
   popup: {
     title1: "系统提示",
@@ -571,7 +571,7 @@ export default {
     EndOfAwardPeriod: "奖期结束",
     the: "第",
     BeCareful: "号奖期已截单, 请注意奖期更新",
-    bindBankCardNotice: "您未绑定任何银行卡，请先绑定银行卡"
+    bindBankCardNotice: "您未绑定任何银行卡，请先绑定银行卡",
   },
   successMessage: {
     successMessage1: "积分成功",
@@ -579,7 +579,7 @@ export default {
     successMessage3: "发起跟单成功",
     successMessage4: "跟单订单成功",
     successMessage5: "保存成功!",
-    successMessage6: "停止跟单成功"
+    successMessage6: "停止跟单成功",
   },
   errorMessage: {
     errorMessage1: "请选择正确的号码后重试",
@@ -597,16 +597,16 @@ export default {
     errorMessage13: "该游戏当前不可用",
     errorMessage14: "最多只能选择8个数字",
     errorMessage15: "当前赛道已经关闭",
-    errorMessage16: "必须为正确的邮箱格式"
+    errorMessage16: "必须为正确的邮箱格式",
   },
   recentAwards: {
     title: "近期投票",
     issue: "期号",
-    wnNumber: "有效验算"
+    wnNumber: "有效验算",
   },
   pagination: {
     the: "第",
-    page: "页"
+    page: "页",
   },
   recharge: {
     currentUser: "当前用户",
@@ -669,7 +669,7 @@ export default {
     documentId: "证件ID",
     fastAmount: "快捷金额",
     depositSuccessWhenVirtualCurrency: "您的充值申请已提交，请耐心等待审核.",
-    depositQRCode: "收款二维码"
+    depositQRCode: "收款二维码",
   },
   withdraw: {
     serialNumber: "取款流水号",
@@ -692,8 +692,7 @@ export default {
     withdrawNotice: "提现账号: {bankName}({account}), 提现金额: {amount}",
     confirmWithdraw: "确认提现",
     refuseReason: "拒绝理由",
-    tips:
-      "<h1>贴心提示：</h1><li>单笔最高可提现<i>{amount}</i>{currency_unit}。</li><li><span class='{css}'>每天免费取款<i>{fee_times}</i>次，第<i>{withdraw_times}</i>次起将收取<i>{rate}%</i>的费用，如有造成不便，敬请谅解，谢谢！</span>今日已提现次数：<i>{current_times}/{max_times}</i></li><li class='{css_time}'>每天提现时间为<i>{withdraw_allowed_time}</i>.</li>",
+    tips: "<h1>贴心提示：</h1><li>单笔最高可提现<i>{amount}</i>{currency_unit}。</li><li><span class='{css}'>每天免费取款<i>{fee_times}</i>次，第<i>{withdraw_times}</i>次起将收取<i>{rate}%</i>的费用，如有造成不便，敬请谅解，谢谢！</span>今日已提现次数：<i>{current_times}/{max_times}</i></li><li class='{css_time}'>每天提现时间为<i>{withdraw_allowed_time}</i>.</li>",
     tips1:
       "<h1>贴心提示：</h1><li>单笔交易的最大提款金额为<i>{amount}</i>。</li><li>您每天可以提款<i>{max_times}</i>次。低于<i>{min_amount}</i>的提款将扣除<i>{fixed_fee}</i>卢比的手续费，而高于<i>{min_amount}</i>的提款将扣除<i>{rate}％</i>的手续费。</li>",
     tips2:
@@ -710,7 +709,7 @@ export default {
       "所有{channel_type}提款将扣除<i>{value}</i>{value_unit}的手续费。",
     noticeOfGettingU: "等于{amount}U",
     tipType1: "银行卡",
-    tipType2: "USDT"
+    tipType2: "USDT",
   },
   personalCenter: {
     personalCenter: "个人中心",
@@ -826,7 +825,7 @@ export default {
       "尊敬的<i>{username}</i>，您的数字人民币余额信息如下:<br />可用转账数字人民币余额为：<i>{amount}</i>{currency_unit}<br />不可转账数字人民币余额为：<i>{prohibitAmount}</i>{currency_unit}.",
     kindlyNotice: "贴心提示：",
     transferLimit: "单笔最高可转账",
-    transferSubmitSuccess: "转账请求已保存，请等待审核"
+    transferSubmitSuccess: "转账请求已保存，请等待审核",
   },
   validateError: {
     PasswordLength: "密码长度必须在6到16之间的数字与字母",
@@ -852,12 +851,12 @@ export default {
     bankCardNumberMaxLength: "银行卡卡号的最大长度在{min}与{max}之间",
 
     bankcardLengthMust: "{field}的长度必须为{length}位",
-    bankCardLengthIn: "{field}的长度必须为{array}中的一个"
+    bankCardLengthIn: "{field}的长度必须为{array}中的一个",
   },
   fundAlertComponents: {
     checkBankCard: "验证银行卡",
     selectBoundBankCard: "选择银行卡",
-    notTheSameCardNotice: "验证的卡不一致"
+    notTheSameCardNotice: "验证的卡不一致",
   },
   Notification: {
     OperationSuccess: "操作成功",
@@ -867,7 +866,7 @@ export default {
     titlePrrorPage: "错误页",
     loading: "加载中...",
     noMoreData: "已经全部加载完",
-    noResult: "没有更多记录 "
+    noResult: "没有更多记录 ",
   },
   accountInfo: {
     rememberPassword: "记住密码",
@@ -891,7 +890,7 @@ export default {
     gender: "性别",
     male: "男",
     female: "女",
-    login: "登陆"
+    login: "登陆",
   },
   teamRecord: {
     forefather: "层级",
@@ -969,7 +968,7 @@ export default {
     parent: "上级",
     copy: "复制",
     copyNotice: "内容已经复制到粘贴板",
-    anyLevel: "转给其他"
+    anyLevel: "转给其他",
   },
   agentCenter: {
     agentCenter: "团队中心",
@@ -1008,7 +1007,7 @@ export default {
     labelTransferOut: "转账金额",
     labelTransferIn: "收款金额",
     labelSendRedPacket: "发送红包金额",
-    labelGetRedPacket: "接收红包金额"
+    labelGetRedPacket: "接收红包金额",
   },
   message: {
     title: "站内信",
@@ -1029,18 +1028,18 @@ export default {
     sendMessageSuccess: "发送成功",
     unread: "未读",
     readed: "已读",
-    readMessage: "阅读消息"
+    readMessage: "阅读消息",
   },
   announcement: {
     title: "公告中心",
     detail: "公告详情",
-    more: "更多"
+    more: "更多",
   },
   match: {
     matchRule: "赛制",
     matchTitle: "大赛赛制及流程",
     matchSubTitle: "大赛规则",
     matchStatus: "赛事动态",
-    matchOfficialMedia: "官媒"
-  }
+    matchOfficialMedia: "官媒",
+  },
 };
