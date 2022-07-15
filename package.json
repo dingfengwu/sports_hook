@@ -1,33 +1,60 @@
 {
-  "name": "sports-hook",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "dependencies": {
-    "axios": "^0.21.4",
-    "blueimp-md5": "^2.18.0",
-    "crypto-js": "^4.1.1",
-    "es6-promise": "^4.2.8",
-    "mockjs": "^1.1.0",
-    "promise-polyfill": "^8.2.0",
-    "qrcode": "^1.4.4",
-    "qs": "^6.10.1",
-    "uni-read-pages": "^1.0.5",
-    "uni-simple-router": "^2.0.7",
-    "vue-clipboard2": "^0.3.3"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dingfengwu/sports_hook.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dingfengwu/sports_hook/issues"
-  },
-  "homepage": "https://github.com/dingfengwu/sports_hook#readme"
+	"name": "sports-hook",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"dependencies": {
+		"axios": "^0.21.4",
+		"blueimp-md5": "^2.18.0",
+		"crypto-js": "^4.1.1",
+		"es6-promise": "^4.2.8",
+		"mockjs": "^1.1.0",
+		"promise-polyfill": "^8.2.0",
+		"qrcode": "^1.4.4",
+		"qs": "^6.10.1",
+		"uni-read-pages": "^1.0.5",
+		"uni-simple-router": "^2.0.7",
+		"vue-clipboard2": "^0.3.3"
+	},
+	"devDependencies": {
+		"@vue/eslint-config-prettier": "^7.0.0",
+		"aws-translate-json": "0.0.3",
+		"opencc-js": "^1.0.4",
+		"@vue/cli-plugin-eslint": "^5.0.8"
+	},
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"lint": "vue-cli-service lint",
+		"lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue ./",
+		"translate": "vue-cli-service translate"
+	},
+	"vuePlugins": {
+		"service": [
+			"./command/vue-cli-plugin-translate"
+		]
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/essential",
+			"eslint:recommended",
+			"@vue/prettier"
+		],
+		"parserOptions": {
+			"parser": "@babel/eslint-parser",
+			"ecmaVersion": 8,
+			"requireConfigFile": false
+		},
+		"rules": {
+			"vue/no-use-v-if-with-v-for": "off",
+			"vue/no-unused-components": "off",
+			"no-unused-vars": "off",
+			"no-prototype-builtins": "off",
+			"vue/return-in-computed-property": "off"
+		}
+	}
 }

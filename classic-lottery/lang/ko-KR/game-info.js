@@ -1,0 +1,1 @@
+export default {"the":"디","stage":"미문","lotteryTime":"잭팟 사운드","issueNumber":"기간 번호","lotteryNumber":"당첨 알림","lotteryRecord":"복권 기록","lastPeriod":"최근","getReady":"추첨을 위한 준비","standard":"표준","handicap":"신용도","makeANumber":"아니요를 수행합니다.","theFirst":"1 위","second":"2 위","third":"3 위","loading":"들어오세요"}
