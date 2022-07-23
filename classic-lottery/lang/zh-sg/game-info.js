@@ -1,0 +1,17 @@
+export default {
+  the: "di",
+  stage: "期間",
+  lotteryTime: "大獎音效",
+  issueNumber: "期間否",
+  lotteryNumber: "獲勝提醒",
+  lotteryRecord: "彩票記錄",
+  lastPeriod: "最近",
+  getReady: "準備彩票",
+  standard: "標準",
+  handicap: "信譽",
+  makeANumber: "做不。",
+  theFirst: "第一名",
+  second: "第二名",
+  third: "第三名",
+  loading: "進入",
+};

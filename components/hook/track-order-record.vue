@@ -2,8 +2,7 @@
 	<view class="record-list track-order-record">
 		<scroll-view-infinity-load @refresh="refreshData" @load="loadData" :load-completed="loadCompleted"
 			:show-completed="showCompleted">
-			<track-order-item v-for="(item,index) in trackOrderList" :key="index" :item="item" v-if="item.status!==2"
-				:openable="false"></track-order-item>
+			<track-order-item v-for="(item,index) in trackOrderList" :key="index" :item="item" :openable="false"></track-order-item>
 			<empty-list v-if="trackOrderList.length===0"></empty-list>
 		</scroll-view-infinity-load>
 	</view>

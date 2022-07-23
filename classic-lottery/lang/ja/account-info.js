@@ -1,0 +1,26 @@
+export default {
+  rememberPassword: "パスワードを覚える",
+  AccountId: "ユーザー名",
+  Password: "パスワード",
+  confirmPassword: "パスワードの確認",
+  captcha: "キャプチャ",
+  wechat: "微信",
+  qq: "qq",
+  mobile: "携帯電話番号",
+  nickname: "ニックネーム",
+  register: "新規会員登録する",
+  noAccount: "まだアカウントをお持ちでない？",
+  createOne: "アカウントを作成する",
+  contact: "またはオンラインカスタマーサービスに連絡する",
+  balanceNotEnough: "バランス不足",
+  realName: "リアルネーム",
+  prohibitUpdateRealName: "登録後に本名を変更することはできません。",
+  updateRealNameNotice:
+    "実名は一度しか変更できません。確認してご確認ください。",
+  realNameIsDiffenceAccountName:
+    "本名とアカウント名が同じではありません。ご確認ください",
+  gender: "性別",
+  male: "男性",
+  female: "ニュ",
+  login: "ログイン",
+};

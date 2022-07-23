@@ -1,7 +1,12 @@
 const TransformPages = require('uni-read-pages')
-const {
-	webpack
-} = new TransformPages();
+const check = require("./command/check-uni-cli-shared");
+
+let webpack = {};
+if (check()) {
+	webpack = new TransformPages().webpack;
+} else {
+	webpack = require('webpack');
+}
 
 // let extraActions = ["GetMatchList", "GetGameList", "GetMatchDetail", "sportBet"];
 // let extraProxyHost = "sport.com";
@@ -15,7 +20,7 @@ const {
 //线上
 let extraActions = [];
 let extraProxyHost = "";
-let proxyUrl = "https://www.king-688.net";
+let proxyUrl = "https://www.fc16888.com";
 
 module.exports = {
 	configureWebpack: {

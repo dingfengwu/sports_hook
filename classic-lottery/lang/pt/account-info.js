@@ -1,0 +1,25 @@
+export default {
+  rememberPassword: "Lembrando senha",
+  AccountId: "nome de usuário",
+  Password: "senhas",
+  confirmPassword: "Confirmar senha",
+  captcha: "CAPTCHA",
+  wechat: "Wechat",
+  qq: "qq",
+  mobile: "Número de telefone celular",
+  nickname: "apelidos",
+  register: "inscrever-se",
+  noAccount: "Ainda não tem uma conta?",
+  createOne: "Criar um",
+  contact: "Você também pode entrar em contato",
+  balanceNotEnough: "Saldo insuficiente",
+  realName: "Nome verdadeiro",
+  prohibitUpdateRealName: "O nome real não pode ser alterado após o registro",
+  updateRealNameNotice:
+    "O nome verdadeiro só pode ser alterado uma vez, verifique para confirmar",
+  realNameIsDiffenceAccountName:
+    "Nome verdadeiro e nome da conta não são os mesmos, confirme",
+  gender: "Giới tính",
+  male: "Nam",
+  female: "Giống cái",
+};

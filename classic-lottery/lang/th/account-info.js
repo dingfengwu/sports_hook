@@ -1,0 +1,20 @@
+export default {
+  rememberPassword: "จำรหัสผ่าน",
+  AccountId: "ชื่อผู้ใช้",
+  Password: "รหัสผ่าน",
+  confirmPassword: "ยืนยันรหัสผ่าน",
+  captcha: "แคปช่า",
+  wechat: "วีฉัตร",
+  qq: "คิวคิว",
+  nickname: "ชื่อเล่น",
+  register: "ลงชื่อ",
+  noAccount: "ยังไม่มีบัญชีใช่หรือไม่?",
+  createOne: "สร้างบัญชี",
+  contact: "คุณยังสามารถติดต่อ",
+  balanceNotEnough: "ยอดคงเหลือไม่เพียงพอ",
+  realName: "ชื่อจริง",
+  prohibitUpdateRealName: "ชื่อจริงไม่สามารถแก้ไขได้หลังจากลงทะเบียนแล้ว",
+  updateRealNameNotice:
+    "ชื่อจริงสามารถแก้ไขได้เพียงครั้งเดียวโปรดตรวจสอบเพื่อยืนยัน",
+  realNameIsDiffenceAccountName: "ชื่อจริงและชื่อบัญชีไม่ตรงกับกรุณายืนยัน",
+};

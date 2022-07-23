@@ -1,0 +1,17 @@
+export default {
+  the: "número",
+  stage: "período",
+  lotteryTime: "Sonido de lotería",
+  issueNumber: "Período No.",
+  lotteryNumber: "Recordatorio ganador",
+  lotteryRecord: "Registro de lotería",
+  lastPeriod: "último período",
+  getReady: "listo para dibujar",
+  standard: "estándar",
+  handicap: "Crédito",
+  makeANumber: "hacer números",
+  theFirst: "campeón",
+  second: "segundo lugar",
+  third: "Tercer lugar",
+  loading: "Adquisidor",
+};

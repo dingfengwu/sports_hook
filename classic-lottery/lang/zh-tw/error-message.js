@@ -1,0 +1,18 @@
+export default {
+  errorMessage1: "請選擇正確的號碼後重試",
+  errorMessage2: "服務器錯誤",
+  errorMessage3: "返回參數非正常參數",
+  errorMessage4: "非正常數據格式",
+  errorMessage5: "請生成對應的追號規則",
+  errorMessage6: "倍數不正確, 請正確輸入後重試",
+  errorMessage7: "您設置的參數無法達到預期的盈利, 請重試",
+  errorMessage8: "您輸入的金額有誤, 請重新輸入!",
+  errorMessage9: "該彩種暫無有效玩法",
+  errorMessage10: "數據獲取失敗",
+  errorMessage11: "該彩種已關閉",
+  errorMessage12: "即開型彩種",
+  errorMessage13: "該遊戲當前不可用",
+  errorMessage14: "最多只能選擇8個數字",
+  errorMessage15: "當前玩法已經關閉",
+  errorMessage16: "必須爲正確的郵箱格式",
+};
