@@ -112,5 +112,10 @@ module.exports = {
 				"secure": false
 			}
 		}
-	}
+	},
+	 pluginOptions: {
+	    translate: {
+	      params: "--langdir=./src/lang --sourcelocale=zh-CN --sourcedir=zh-cn"
+	    }
+	  }
 }
