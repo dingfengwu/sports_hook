@@ -115,7 +115,7 @@ module.exports = {
 	},
 	 pluginOptions: {
 	    translate: {
-	      params: "--langdir=./src/lang --sourcelocale=zh-CN --sourcedir=zh-cn"
+	      params: "--langdir=./lang --sourcelocale=zh-CN --sourcedir=zh-cn"
 	    }
 	  }
 }
