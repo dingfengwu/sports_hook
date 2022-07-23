@@ -23,8 +23,7 @@
 			showWindow();
 		},
 		methods: {
-			...mapActions(['getHomeConfigVersion', 'getLotteryConfigVersion', 'getSystemConfig', 'getUserInfo',
-				'getMessageCount', 'setAppId'
+			...mapActions(['getHomeConfigVersion', 'getLotteryConfigVersion', 'getSystemConfig', 'getUserInfo','getMessageCount', 'setAppId'
 			]),
 			adapteClient() {
 				let client = getClientType();
